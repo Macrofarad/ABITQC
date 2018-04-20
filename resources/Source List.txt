@@ -1,0 +1,44 @@
+
+
+========Old Section=====
+
+Gates: http://www.inetdaemon.com/img/gates.gif
+
+https://inspirehep.net/record/1320783/files/fig1b.png
+
+
+========================
+===========Things Used=============
+
+https://people.eecs.berkeley.edu/~vazirani/quantum.html
+
+https://github.com/QISKit
+  https://github.com/QISKit/ibmqx-user-guides
+  https://github.com/QISKit/qiskit-tutorial
+     https://github.com/QISKit/qiskit-tutorial/blob/master/INSTALL.md
+        https://datascience.ibm.com/
+     https://github.com/QISKit/qiskit-tutorial/blob/master/hello_world/quantum_emoticon.ipynb
+
+
+https://console.bluemix.net/dashboard/apps/
+  This is Watson and other things
+
+
+https://github.com/github/gitignore/blob/master/TeX.gitignore
+  This is the gitignore settings nessisary to not constantly upload aux files when using LaTeX
+
+
+
+========================
+==========Stuff that is handy to have=============
+
+http://backreaction.blogspot.com/2017/08/the-annotated-math-of-almost-everything.html?spref=tw
+
+https://hackaday.com/2018/01/24/quantum-weirdness-in-your-browser/
+
+Github Tutorial: 
+  https://try.github.io/
+
+========================
+==========Might use section==============
+https://www.overleaf.com/latex/examples/title-page-with-logo/hrskypjpkrpd
