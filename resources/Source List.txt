@@ -17,6 +17,7 @@ https://github.com/QISKit
   https://github.com/QISKit/qiskit-tutorial
      https://github.com/QISKit/qiskit-tutorial/blob/master/INSTALL.md
         https://datascience.ibm.com/
+        https://medium.com/qiskitters/qiskit-turns-one-looking-back-cbc2c48d7a95
      https://github.com/QISKit/qiskit-tutorial/blob/master/hello_world/quantum_emoticon.ipynb
 
 
@@ -33,7 +34,14 @@ http://web.mit.edu/rsi/www/pdfs/new-latex.pdf
 https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction
 	IBM Quantum Experience User guide
 
+http://paulklemm.com/blog/2014-07-16-use-github-for-scientific-writing/
 
+https://arxiv.org/abs/1804.03719
+
+https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
+    Also seen below, using a python game to illustrate quantum noise
+
+https://quantumcomputing.stackexchange.com/
 
 ========================
 ==========Stuff that is handy to have=============
@@ -59,3 +67,10 @@ https://www.overleaf.com/latex/examples/title-page-with-logo/hrskypjpkrpd
 
 https://github.com/adamisntdead/QuSimPy
   A quantum simulator someone wrote in python,  Could be useful to reference and see how they did things
+
+============
+=========Extended Reading?================
+https://medium.com/@decodoku/quantum-computation-in-84-short-lines-d9c7c74be0d0
+    https://medium.com/@decodoku
+        https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
+            Also seen above
