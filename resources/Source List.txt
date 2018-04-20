@@ -33,6 +33,9 @@ http://web.mit.edu/rsi/www/pdfs/new-latex.pdf
 
 https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction
 	IBM Quantum Experience User guide
+	https://quantumexperience.ng.bluemix.net/qx/community/question?questionId=e4b7b71ae47096a45e70fbcde8aee687
+		A grover's algorithm implementation
+
 
 http://paulklemm.com/blog/2014-07-16-use-github-for-scientific-writing/
 
@@ -42,6 +45,38 @@ https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master
     Also seen below, using a python game to illustrate quantum noise
 
 https://quantumcomputing.stackexchange.com/
+    --A place where people can ask questions and get help with quantum computing
+    https://quantumcomputing.stackexchange.com/questions/1404/will-deep-learning-neural-networks-run-on-quantum-computers
+	Will Neural Networks run on Quantum Computers
+
+https://www.quantiki.org/wiki/basic-concepts-quantum-computation
+
+https://www.media.mit.edu/quanta/qasm2circ/
+	to draw circuits
+https://tex.stackexchange.com/questions/9767/whats-a-good-package-for-typesetting-quantum-circuits
+
+http://kim.oyhus.no/QuantumMechanicsForProgrammers.html
+
+http://algassert.com/quantum/2014/03/07/Building-your-own-Quantum-Fourier-Transform.html
+
+https://arxiv.org/pdf/1610.06980.pdf
+	A paper on IBM Q that needs translation but looks relevant
+
+https://arxiv.org/pdf/quant-ph/0308074.pdf
+	Probability amplitute in Quantum-Like Games
+
+https://math.nist.gov/quantum/zoo/
+	Nist Quantum Algorithm Zoo
+
+https://arxiv.org/abs/1205.4926
+	Quantum Delayed Choice Experiment
+
+https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
+	Prime Numbers: In layman's Terms, How does Shor's ALgorithm Work
+
+
+
+
 
 ========================
 ==========Stuff that is handy to have=============
@@ -67,6 +102,9 @@ https://www.overleaf.com/latex/examples/title-page-with-logo/hrskypjpkrpd
 
 https://github.com/adamisntdead/QuSimPy
   A quantum simulator someone wrote in python,  Could be useful to reference and see how they did things
+
+Microsoft Q#
+	https://docs.microsoft.com/en-us/quantum/?view=qsharp-preview
 
 ============
 =========Extended Reading?================
