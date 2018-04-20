@@ -87,7 +87,8 @@ https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computation-fall-2003/
 
 https://www.quora.com/Is-it-possible-to-build-a-very-primitive-quantum-computer-at-home
 
-https://www.cs.cmu.edu/~odonnell/quantum15/lecture01.pdf
+https://www.cs.cmu.edu/~odonnell/quantum15/
+	https://www.cs.cmu.edu/~odonnell/quantum15/lecture01.pdf
 
 https://arxiv.org/pdf/quant-ph/0503228v1.pdf
 	The Physics of Factorization
