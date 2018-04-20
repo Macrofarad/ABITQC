@@ -27,6 +27,12 @@ https://console.bluemix.net/dashboard/apps/
 https://github.com/github/gitignore/blob/master/TeX.gitignore
   This is the gitignore settings nessisary to not constantly upload aux files when using LaTeX
 
+http://web.mit.edu/rsi/www/pdfs/new-latex.pdf
+  How to write in LaTeX
+
+https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction
+	IBM Quantum Experience User guide
+
 
 
 ========================
@@ -39,6 +45,17 @@ https://hackaday.com/2018/01/24/quantum-weirdness-in-your-browser/
 Github Tutorial: 
   https://try.github.io/
 
+https://www.overleaf.com/latex/templates/
+  LaTeX Document templates for things like Resumes and Academic Reports
+
+https://hackaday.com/2018/04/19/when-4-1-equals-8-an-advanced-take-on-pointers-in-c/
+  A good tutorial on pointers in C
+
+
+
 ========================
 ==========Might use section==============
 https://www.overleaf.com/latex/examples/title-page-with-logo/hrskypjpkrpd
+
+https://github.com/adamisntdead/QuSimPy
+  A quantum simulator someone wrote in python,  Could be useful to reference and see how they did things
