@@ -58,6 +58,14 @@ https://tex.stackexchange.com/questions/9767/whats-a-good-package-for-typesettin
 http://kim.oyhus.no/QuantumMechanicsForProgrammers.html
 
 http://algassert.com/quantum/2014/03/07/Building-your-own-Quantum-Fourier-Transform.html
+	http://algassert.com/post/1704
+		circuit width talk
+	http://algassert.com/post/1628
+		swapping to teleporting with simple circuit moves
+	http://algassert.com/post/1618
+		Affecting atoms by looking at emitted light
+	http://algassert.com/quantum/2015/05/01/Quantum-Network-Flow-Puzzle.html
+
 
 https://arxiv.org/pdf/1610.06980.pdf
 	A paper on IBM Q that needs translation but looks relevant
@@ -74,8 +82,30 @@ https://arxiv.org/abs/1205.4926
 https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
 	Prime Numbers: In layman's Terms, How does Shor's ALgorithm Work
 
+https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computation-fall-2003/
+	MIT Opencourseware Quantum Computation fall 2003 Peter Shor
 
+https://www.quora.com/Is-it-possible-to-build-a-very-primitive-quantum-computer-at-home
 
+https://www.cs.cmu.edu/~odonnell/quantum15/lecture01.pdf
+
+https://arxiv.org/pdf/quant-ph/0503228v1.pdf
+	The Physics of Factorization
+
+https://arxiv.org/abs/1505.04577
+	Analogue algorithm for parallell factorization of an exponential number of Large integers 1. Theoretical Description
+
+http://stationq.github.io/Liquid/
+	Language integrated Quantum Op Simulator
+		Don't remember using, but it was with the links so I'll check on it later
+
+https://kukuruku.co/post/quantum-circuits-methods-and-techniques/
+
+https://hackaday.com/2017/01/24/the-birth-of-quantum-electrodynamics/
+
+https://www.media.mit.edu/quanta/qasm2circ/
+
+https://www.dwavesys.com/software
 
 
 ========================
@@ -105,6 +135,7 @@ https://github.com/adamisntdead/QuSimPy
 
 Microsoft Q#
 	https://docs.microsoft.com/en-us/quantum/?view=qsharp-preview
+	https://docs.microsoft.com/en-us/quantum/quantum-writeaquantumprogram?view=qsharp-preview&tabs=tabid-vs2017
 
 ============
 =========Extended Reading?================
@@ -112,3 +143,38 @@ https://medium.com/@decodoku/quantum-computation-in-84-short-lines-d9c7c74be0d0
     https://medium.com/@decodoku
         https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
             Also seen above
+
+Data structure search visualization
+	https://visualgo.net/en
+
+
+https://www.nextplatform.com/2017/03/29/neuromorphic-quantum-supercomputing-mesh-deep-learning/
+
+https://arstechnica.com/science/2017/04/the-route-to-high-speed-quantum-computing-is-paved-with-error/
+
+https://drstienecker.com/tech-332/5-ladder-logic/
+
+https://www.youtube.com/user/LookingGlassUniverse/videos
+	videos on quantum computing and weirdness
+
+https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.69.2881
+
+https://arxiv.org/abs/quant-ph/0006004
+	Fast paralell Circuits for the Quantum Fourier Transform
+
+https://www.nature.com/news/quantum-computers-ready-to-leap-out-of-the-lab-in-2017-1.21239
+
+
+
+=========Misc Helpful Links ===============
+
+news.ycombinator.com
+	Tech news
+
+hackaday.com
+	Various projects
+
+
+
+
+
