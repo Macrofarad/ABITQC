@@ -19,6 +19,7 @@ Brief discussion of the different architectures
 Discuss access of machines themselves
 Discuss how to use code API such as QiSkit
 Find a way to highlight comment begins and ends
+replace emphasis in biblio with italix to fix the spacing issues
 
 \end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -226,29 +227,77 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 
 \bibitem{junctNew}  
 	Richard Newrock,
-	\emph{What are Joesphson Junctions? How do they work?}
+	\emph{"What are Joesphson Junctions? How do they work?"}
 	Scientific American
 	
 
 \bibitem{mitqcshor}
-	Shor, Peter. \emph{Quantum Computation.} MIT OpenCourseware. Massachusetts Institute of Technology, 2003,18.435J / 2.111J / ESD.79J, \newline https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computation-fall-2003/
+	Shor, Peter. \emph{"Quantum Computation".} MIT OpenCourseware. Massachusetts Institute of Technology, 2003,18.435J / 2.111J / ESD.79J, \newline https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computation-fall-2003/
 
 \bibitem{cmuqc15}
-	O'Donnell, Ryan. Wright, John. \emph{Quantum Computation and Information.} Carnegie Mellon University, 2015, 15-859BB, \newline https://www.cs.cmu.edu/~odonnell/quantum15/
+	O'Donnell, Ryan. Wright, John. \emph{"Quantum Computation and Information".} Carnegie Mellon University, 2015, 15-859BB, \newline https://www.cs.cmu.edu/~odonnell/quantum15/
 
 \bibitem{qazoo}
-	Jordan, Stephan. \emph{Quantum Algorithm Zoo.} National Institute of Standards and Technology (NIST),  https://math.nist.gov/quantum/zoo/
+	Jordan, Stephan. \emph{"Quantum Algorithm Zoo".} National Institute of Standards and Technology (NIST),  https://math.nist.gov/quantum/zoo/
 	
+\bibitem{qiskit}
+	QISKit. \emph{"QISKit."} https://github.com/QISKit. Accessed: February 14 2018
+\begin{comment} % More info on QISKit
+https://github.com/QISKit
+  https://github.com/QISKit/ibmqx-user-guides
+  https://github.com/QISKit/qiskit-tutorial
+     https://github.com/QISKit/qiskit-tutorial/blob/master/INSTALL.md
+        https://datascience.ibm.com/
+        https://medium.com/qiskitters/qiskit-turns-one-looking-back-cbc2c48d7a95
+     https://github.com/QISKit/qiskit-tutorial/blob/master/hello_world/quantum_emoticon.ipynb
+\end{comment}
 
+\bibitem{qbenchgame}
+	Wooten, James. \emph{"Using a Simple Puzzle Game to Benchmark Quantum Computers".} Medium, January 16 2018. https://medium.com/@decodoku/understanding-quantum-computers-through-a-simple-puzzle-game-a290dde89fb2
+
+\begin{comment}% Further info on the benchmark game
+
+https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
+    Also seen below, using a python game to illustrate quantum noise
+
+https://medium.com/@decodoku/quantum-computation-in-84-short-lines-d9c7c74be0d0
+    https://medium.com/@decodoku
+        https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
+            Also seen above
+\end{comment}% End further info on quantum benchmark game
+
+\bibitem{algoassert} %finish this up
+	Gidney, Craig. \emph{"Algorithmic Assertions"}
+
+
+%========================================================================================
 
 %\bibitem{template}
 %	AuthorLast, AuthorF MI. \emph{"TitleOfSource.} OptionalCityOfPublication, OptionalDateOfOriginalPublication" TitleOfContainer. Version, OtherContributers, NumberSuchAsEpisodeVolume. Publisher, PublicationDate, LocationSuchAsPageNumberOrURL_Or_DOI. AccessedDayMonthSpelledOutYear
 
 %https://owl.english.purdue.edu/owl/resource/747/01/
 
-
+%========================================================================================
 
 \begin{comment}
+
+http://algassert.com/quantum/2014/03/07/Building-your-own-Quantum-Fourier-Transform.html
+	http://algassert.com/post/1704
+		circuit width talk
+	http://algassert.com/post/1628
+		swapping to teleporting with simple circuit moves
+	http://algassert.com/post/1618
+		Affecting atoms by looking at emitted light
+	http://algassert.com/quantum/2015/05/01/Quantum-Network-Flow-Puzzle.html
+
+https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
+    Also seen below, using a python game to illustrate quantum noise
+
+%https://medium.com/@decodoku/quantum-computation-in-84-short-lines-d9c7c74be0d0
+%    https://medium.com/@decodoku
+%        https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
+%            Also seen above
+
 
 ========Old Section=====
 
@@ -291,8 +340,7 @@ http://paulklemm.com/blog/2014-07-16-use-github-for-scientific-writing/
 
 https://arxiv.org/abs/1804.03719
 
-https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
-    Also seen below, using a python game to illustrate quantum noise
+
 
 https://quantumcomputing.stackexchange.com/
     --A place where people can ask questions and get help with quantum computing
@@ -306,15 +354,6 @@ https://www.media.mit.edu/quanta/qasm2circ/
 https://tex.stackexchange.com/questions/9767/whats-a-good-package-for-typesetting-quantum-circuits
 
 http://kim.oyhus.no/QuantumMechanicsForProgrammers.html
-
-http://algassert.com/quantum/2014/03/07/Building-your-own-Quantum-Fourier-Transform.html
-	http://algassert.com/post/1704
-		circuit width talk
-	http://algassert.com/post/1628
-		swapping to teleporting with simple circuit moves
-	http://algassert.com/post/1618
-		Affecting atoms by looking at emitted light
-	http://algassert.com/quantum/2015/05/01/Quantum-Network-Flow-Puzzle.html
 
 
 https://arxiv.org/pdf/1610.06980.pdf
@@ -352,7 +391,7 @@ https://www.media.mit.edu/quanta/qasm2circ/
 https://www.dwavesys.com/software
 
 
-========================
+
 ==========Stuff that is handy to have=============
 
 http://backreaction.blogspot.com/2017/08/the-annotated-math-of-almost-everything.html?spref=tw
@@ -383,10 +422,7 @@ Microsoft Q#
 %
 %============
 %=========Extended Reading?================
-%https://medium.com/@decodoku/quantum-computation-in-84-short-lines-d9c7c74be0d0
-%    https://medium.com/@decodoku
-%        https://mybinder.org/v2/gh/decodoku/A_Game_to_Benchmark_Quantum_Computers/master?filepath=Play_Quantum_Awesomeness.ipynb
-%            Also seen above
+
 %
 %Data structure search visualization
 %	https://visualgo.net/en
@@ -420,28 +456,6 @@ Microsoft Q#
 %	Various projects
 
 
-
-
-
-
-
-	
-	
- % @online{ID,
- % author = {Richard Newrock},
- % title = {What are Josephson Junctions? How do they work},
- % date = {04/18/2018},
- % url = {https://www.scientificamerican.com/article/what-are-josephson-juncti/},
- % organization = {Scientific American},
- % }
- % @online{18.435J,
- % author = {Peter Shor},
- % title = {Quantum Computation},
- % date = {Fall 2003},
- % url = {https://ocw.mit.edu},
- % organization = {Massachusetts Institute of Technology: MIT OpenCourseWare},
- % year = {2003},
- % }
   
 %%%%EXAMPLE MLA FORMAT
 
@@ -453,36 +467,7 @@ Microsoft Q#
 
 
 
-
-%Works Cited examples
-
-%Dean, Cornelia. "Executive on a Mission: Saving the Planet." The New York Times, 22 May 2007, www.nytimes.com/2007/05/22/science/earth/22ander.html?_r=0. Accessed 12 May 2016.
-%
-%Ebert, Roger. Review of An Inconvenient Truth, directed by Davis Guggenheim. rogerebert.com, 1 June 2006, www.rogerebert.com/reviews/an-inconvenient-truth-2006. Accessed 15 June 2016.
-%
-%Gowdy, John. "Avoiding Self-organized Extinction: Toward a Co-evolutionary Economics of Sustainability." International Journal of Sustainable Development and World Ecology, vol. 14, no. 1, 2007, pp. 27-36.
-%
-%An Inconvenient Truth. Directed by Davis Guggenheim, performances by Al Gore and Billy West, Paramount, 2006.
-%
-%Leroux, Marcel. Global Warming: Myth Or Reality?: The Erring Ways of Climatology. Springer, 2005.
-%
-%Milken, Michael, et al. "On Global Warming and Financial Imbalances." New Perspectives Quarterly, vol. 23, no. 4, 2006, p. 63.
-%
-%Nordhaus, William D. "After Kyoto: Alternative Mechanisms to Control Global Warming." American Economic Review, vol. 96, no. 2, 2006, pp. 31-34.
-%
-%---. "Global Warming Economics." Science, vol. 294, no. 5545, 9 Nov. 2001, pp. 1283-84, DOI: 10.1126/science.1065007.
-%
-%Regas, Diane. “Three Key Energy Policies That Can Help Us Turn the Corner on Climate.” Environmental Defense Fund, 1 June 2016, www.edf.org/blog/2016/06/01/3-key-energy-policies-can-help-us-turn-corner-climate. Accessed 19 July 2016.
-%
-%Revkin, Andrew C. “Clinton on Climate Change.” The New York Times, 17 May 2007, www.nytimes.com/video/world/americas/1194817109438/clinton-on-climate-change.html. Accessed 29 July 2016.
-%
-%Shulte, Bret. "Putting a Price on Pollution." US News & World Report, vol. 142, no. 17, 14 May 2007, p. 37. Ebsco, Access no: 24984616.
-%
-%Uzawa, Hirofumi. Economic Theory and Global Warming. Cambridge UP, 2003.
-
 \end{comment}
-
-
 \end{thebibliography}
 \begin{scriptsize}
 \textcolor{mygray}{For extended reading list, consult source code, available at: \newline https://www.github.com/Macrofarad/ABriefIntroductionToQuantumComputingFromThePerspectiveOfLadderLogic}
