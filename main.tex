@@ -11,13 +11,16 @@
 
 %TODO
 
-% Add background concepts
-%	use as an intro to probability current
-% Physical Implementations
-% Brief discussion of the different archetectures
-% Discuss access of machines themselves
-% Discuss how to use code API such as QiSkit
+\begin{comment}
+ Add background concepts
+	use balanced ternary as an intro to probability current
+Physical Implementations
+Brief discussion of the different architectures
+Discuss access of machines themselves
+Discuss how to use code API such as QiSkit
+Find a way to highlight comment begins and ends
 
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom Defines
 \definecolor{mygray}{gray}{0.6}
@@ -36,13 +39,15 @@
 \maketitle
 
 \begin{abstract}
-	
+
+\begin{comment}
 	%Reword this, it's  too boring
 	
 %Enter a short summary here. What topic do you want to investigate and why? What experiment did you perform? What were your main results and conclusion?
 %
 
 %Quantum computing, for several years the media and public perception of the subject has treated it akin to magic, using it as a catchall for any science fiction plot device deemed necessary.  Because of this, otherwise capable individuals may tend to stray away from the subject purely due to its perceived difficulty, many assuming they would need doctorates to even begin to comprehend the complexities of quantum computing.  Indeed, quantum physics is very complex, having many important real-world ramifications. With that said, quantum computing is merely a small part of quantum physics, and much like the computing most people use daily, operates by a well-defined set of rules.  By utilizing a subset of these rules, specifically tools such as quantum ladder logic, quantum assembly (QASM), and visual aids such as Bloch spheres, much of the initial barrier to entry can be circumvented.  While this approach isn’t perfect, and will require more serious individuals to pursue much of the background math and physics on their own.  It is my hope that students, specifically those with a background in electronic circuits and/or programming will find the contents of this paper able to greatly reduce the amount of time and effort needed in order to start learning how to program a quantum computer and thus prepare themselves for a future where such technology is prevalent.
+\end{comment}
 
 Insert Better Version of introduction here.  Didn't Like the original one.
 
@@ -79,10 +84,10 @@ insert balanced ternary section here along with comparison table.
 
 Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example.
 
-\begin{table}
+\begin{table} %Table used to illustrate comparison between bases
 	\centering
 	\begin{tabular}{l|l|l} % Justification l-left, c-center, r-right
-		Decimal & Binary (IEEE 754*) & Balanced Ternary \\\hline
+		Decimal & Binary (IEEE 754*) & Balanced Ternary \\\hline %might remove the 754 example if it becomes an issue to clarity
 		0 & 0 & 0 \\
 		3 & 11 & 10 \\
 		5 & 101 & + 0 - \\
@@ -197,7 +202,7 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 
 \begin{thebibliography}{9}
 	
-	%Begin Original Text, keeping for referece========================
+	%Begin Original Text, keeping for reference========================
 	
 % \bibitem{nano3}
 % 	K. Grove-Rasmussen og Jesper Nygård,
@@ -227,6 +232,14 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 
 \bibitem{mitqcshor}
 	Shor, Peter. \emph{Quantum Computation.} MIT OpenCourseware. Massachusetts Institute of Technology, 2003,18.435J / 2.111J / ESD.79J, \newline https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computation-fall-2003/
+
+\bibitem{cmuqc15}
+	O'Donnell, Ryan. Wright, John. \emph{Quantum Computation and Information.} Carnegie Mellon University, 2015, 15-859BB, \newline https://www.cs.cmu.edu/~odonnell/quantum15/
+
+\bibitem{qazoo}
+	Jordan, Stephan. \emph{Quantum Algorithm Zoo.} National Institute of Standards and Technology (NIST),  https://math.nist.gov/quantum/zoo/
+	
+
 
 %\bibitem{template}
 %	AuthorLast, AuthorF MI. \emph{"TitleOfSource.} OptionalCityOfPublication, OptionalDateOfOriginalPublication" TitleOfContainer. Version, OtherContributers, NumberSuchAsEpisodeVolume. Publisher, PublicationDate, LocationSuchAsPageNumberOrURL_Or_DOI. AccessedDayMonthSpelledOutYear
@@ -310,22 +323,15 @@ https://arxiv.org/pdf/1610.06980.pdf
 https://arxiv.org/pdf/quant-ph/0308074.pdf
 	Probability amplitute in Quantum-Like Games
 
-https://math.nist.gov/quantum/zoo/
-	Nist Quantum Algorithm Zoo
-
 https://arxiv.org/abs/1205.4926
 	Quantum Delayed Choice Experiment
 
 https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
 	Prime Numbers: In layman's Terms, How does Shor's ALgorithm Work
 
-https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computation-fall-2003/
-	MIT Opencourseware Quantum Computation fall 2003 Peter Shor
 
 https://www.quora.com/Is-it-possible-to-build-a-very-primitive-quantum-computer-at-home
 
-https://www.cs.cmu.edu/~odonnell/quantum15/
-	https://www.cs.cmu.edu/~odonnell/quantum15/lecture01.pdf
 
 https://arxiv.org/pdf/quant-ph/0503228v1.pdf
 	The Physics of Factorization
