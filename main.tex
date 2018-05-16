@@ -29,9 +29,17 @@
 \maketitle
 
 \begin{abstract}
+	
+	%Reword this, it's  too boring
+	
 %Enter a short summary here. What topic do you want to investigate and why? What experiment did you perform? What were your main results and conclusion?
-Quantum computing, for several years the media and public perception of the subject has treated it akin to magic, using it as a catchall for any science fiction plot device deemed necessary.  Because of this, otherwise capable individuals may tend to stray away from the subject purely due to its perceived difficulty, many assuming they would need doctorates to even begin to comprehend the complexities of quantum computing.  Indeed, quantum physics is very complex, having many important real-world ramifications. With that said, quantum computing is merely a small part of quantum physics, and much like the computing most people use daily, operates by a well-defined set of rules.  By utilizing a subset of these rules, specifically tools such as quantum ladder logic, quantum assembly (QASM), and visual aids such as Bloch spheres, much of the initial barrier to entry can be circumvented.  While this approach isn’t perfect, and will require more serious individuals to pursue much of the background math and physics on their own.  It is my hope that students, specifically those with a background in electronic circuits and/or programming will find the contents of this paper able to greatly reduce the amount of time and effort needed in order to start learning how to program a quantum computer and thus prepare themselves for a future where such technology is prevalent.
-Keywords:  Quantum, Computing, Ladder, Logic, QASM, Introduction
+%
+
+%Quantum computing, for several years the media and public perception of the subject has treated it akin to magic, using it as a catchall for any science fiction plot device deemed necessary.  Because of this, otherwise capable individuals may tend to stray away from the subject purely due to its perceived difficulty, many assuming they would need doctorates to even begin to comprehend the complexities of quantum computing.  Indeed, quantum physics is very complex, having many important real-world ramifications. With that said, quantum computing is merely a small part of quantum physics, and much like the computing most people use daily, operates by a well-defined set of rules.  By utilizing a subset of these rules, specifically tools such as quantum ladder logic, quantum assembly (QASM), and visual aids such as Bloch spheres, much of the initial barrier to entry can be circumvented.  While this approach isn’t perfect, and will require more serious individuals to pursue much of the background math and physics on their own.  It is my hope that students, specifically those with a background in electronic circuits and/or programming will find the contents of this paper able to greatly reduce the amount of time and effort needed in order to start learning how to program a quantum computer and thus prepare themselves for a future where such technology is prevalent.
+
+Insert Better Version of introduction here.  Didn't Like the original one.
+
+Keywords:  Quantum, QISKit, Computing, Ladder, Logic, QASM, Introduction
 % Need to reword this section, Find the abstract from source and merge the two
 % Author note: the intention of this paper is to fill some of the skill gap many novices encounter in learning quantum computing.  By no means should this be considered an all-encompassing guide to the subject matter.
 \end{abstract}
@@ -42,20 +50,44 @@ Keywords:  Quantum, Computing, Ladder, Logic, QASM, Introduction
 \section{Introduction 5 lines to max 1/2 page}
 \label{sec:introduction}
 
-Explain the context of the experiment here. Why is condensed matter physics interesting or important?
-Optional things you could talk about (but don't have to -- this is up to you): transistors, computers, Quantum computers, fundamental knowledge (e.g. the resistance quantum).
+%Explain the context of the experiment here. Why is condensed matter physics interesting or important?
+%Optional things you could talk about (but don't have to -- this is up to you): transistors, computers, Quantum computers, fundamental knowledge (e.g. the resistance quantum).
 
-Briefly explain what methods you will use in the experiment, and what values you will extract from the data.
+%Briefly explain what methods you will use in the experiment, and what values you will extract from the data.
 
-For this section and all following sections: If you refer to an equation, previous result or theory that is not regarded as common knowledge, then cite the source (article or book) where you found this. For example, you can cite the Nano 3 Lecture notes \cite{nano3}.
+%For this section and all following sections: If you refer to an equation, previous result or theory that is not regarded as common knowledge, then cite the source (article or book) where you found this. For example, you can cite the Nano 3 Lecture notes \cite{nano3}.
+
+This section is for context.  The how, and why.  From here on out, if I refer to a theory that isn't common knowledge, cite the source. \cite{junctNew}.
+
 
 \section{Background Concepts}
 \label{sec:backgroundconcepts}
 %brief intro to this section, needs rewording
 This section is not meant to be an exhaustive list, but, in my personal experience, learning about the background concepts below will greatly assist a person’s ability to better understand quantum computing.  The following sections will provide a brief explanation of the concepts.
-\subsection{Balanced Ternary}
-
+\subsection{Balanced Ternary} %The basics from the ground up
+%note: blanaced ternary is not, strictly speaking a core mechanic in quantum computing.  However, it could serve as a gentle introduction to non-binary coding for many students.  A bridge between hard digital and the strangeness of qubits
 insert balanced ternary section here along with comparison table.
+
+%\subsection{How to Make Tables}
+
+Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example.
+
+\begin{table}
+	\centering
+	\begin{tabular}{l|l|l} % Justification l-left, c-center, r-right
+		Decimal & Binary (IEEE 754*) & Balanced Ternary \\\hline
+		0 & 0 & 0 \\
+		3 & 11 & 10 \\
+		5 & 101 & + 0 - \\
+		-254 & 11000011011111100000000000000000* & - 0 0 - + - \\ % -3^5 + 0 + 0 - 3^2 + 3^1 -3^0
+	\end{tabular}
+	\caption{\label{tab:widgets}comparison table showing equivalent numbers in different display forms}
+\end{table}
+
+
+\subsection{Reversible Logic Gates} %The basics from the ground up
+%there was a time when reversible logic was seen as a fatal flaw in QC, but some dude who was pretty clever figured out any standard logic gate could be simulated within reversible logic
+Talk about why reversible logic gates are important to quantum computing, a bit of the history, etc.
 
 
 \section{Theory 2-3 pages}
@@ -114,19 +146,7 @@ First you have to upload the image file (JPEG, PNG or PDF) from your computer to
 %\caption{\label{fig:frog}This frog was uploaded to writeLaTeX via %the project menu.}
 %\end{figure}
 
-\subsection{How to Make Tables}
 
-Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example.
-
-\begin{table}
-\centering
-\begin{tabular}{l|r}
-Item & Quantity \\\hline
-Widgets & 42 \\
-Gadgets & 13
-\end{tabular}
-\caption{\label{tab:widgets}An example table.}
-\end{table}
 
 \subsection{How to Write Mathematics}
 
@@ -169,12 +189,49 @@ You can make lists with automatic numbering \dots
 We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
 
 \begin{thebibliography}{9}
-\bibitem{nano3}
-  K. Grove-Rasmussen og Jesper Nygård,
-  \emph{Kvantefænomener i Nanosystemer}.
-  Niels Bohr Institute \& Nano-Science Center, Københavns Universitet
+	
+	%Begin Original Text, keeping for referece========================
+	
+% \bibitem{nano3}
+% 	K. Grove-Rasmussen og Jesper Nygård,
+%  	\emph{Kvantefænomener i Nanosystemer}.
+%  	Niels Bohr Institute \& Nano-Science Center, Københavns Universitet
 
-  
+%When deciding how to cite your source, start by consulting the list of core elements. These are the general pieces of information that MLA suggests including in each Works Cited entry. In your citation, the elements should be listed in the following order:
+
+%    Author.
+%    Title of source.
+%    Title of container,
+%    Other contributors,
+%    Version,
+%    Number,
+%    Publisher,
+%    Publication date,
+%    Location.
+
+
+	%End Original Text, keeping for referece =========================
+
+\bibitem{junctNew}  
+	Richard Newrock,
+	\emph{What are Joesphson Junctions? How do they work?}
+	Scientific American
+	
+\bibitem{nano3}  
+	Peter Shor,
+	\emph{Quantum Computation}
+	MIT OpenCourseWare, Massachusetts Institute of Technology
+
+\bibitem{template}
+	AuthorLast, AuthorF MI. "TitleOfSource. OptionalCityOfPublication, OptionalDateOfOriginalPublication" TitleOfContainer. Version, OtherContributers, NumberSuchAsEpisodeVolume. Publisher, PublicationDate, LocationSuchAsPageNumberOrURL_Or_DOI. AccessedDayMonthSpelledOutYear
+
+
+
+
+%https://owl.english.purdue.edu/owl/resource/747/01/
+
+	
+	
  % @online{ID,
  % author = {Richard Newrock},
  % title = {What are Josephson Junctions? How do they work},
@@ -191,6 +248,42 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
  % year = {2003},
  % }
   
+%%%%EXAMPLE MLA FORMAT
+
+%https://owl.english.purdue.edu/owl/resource/747/12/
+%
+
+
+%https://owl.english.purdue.edu/owl/resource/747/01/
+
+
+
+
+%Works Cited
+
+%Dean, Cornelia. "Executive on a Mission: Saving the Planet." The New York Times, 22 May 2007, www.nytimes.com/2007/05/22/science/earth/22ander.html?_r=0. Accessed 12 May 2016.
+%
+%Ebert, Roger. Review of An Inconvenient Truth, directed by Davis Guggenheim. rogerebert.com, 1 June 2006, www.rogerebert.com/reviews/an-inconvenient-truth-2006. Accessed 15 June 2016.
+%
+%Gowdy, John. "Avoiding Self-organized Extinction: Toward a Co-evolutionary Economics of Sustainability." International Journal of Sustainable Development and World Ecology, vol. 14, no. 1, 2007, pp. 27-36.
+%
+%An Inconvenient Truth. Directed by Davis Guggenheim, performances by Al Gore and Billy West, Paramount, 2006.
+%
+%Leroux, Marcel. Global Warming: Myth Or Reality?: The Erring Ways of Climatology. Springer, 2005.
+%
+%Milken, Michael, et al. "On Global Warming and Financial Imbalances." New Perspectives Quarterly, vol. 23, no. 4, 2006, p. 63.
+%
+%Nordhaus, William D. "After Kyoto: Alternative Mechanisms to Control Global Warming." American Economic Review, vol. 96, no. 2, 2006, pp. 31-34.
+%
+%---. "Global Warming Economics." Science, vol. 294, no. 5545, 9 Nov. 2001, pp. 1283-84, DOI: 10.1126/science.1065007.
+%
+%Regas, Diane. “Three Key Energy Policies That Can Help Us Turn the Corner on Climate.” Environmental Defense Fund, 1 June 2016, www.edf.org/blog/2016/06/01/3-key-energy-policies-can-help-us-turn-corner-climate. Accessed 19 July 2016.
+%
+%Revkin, Andrew C. “Clinton on Climate Change.” The New York Times, 17 May 2007, www.nytimes.com/video/world/americas/1194817109438/clinton-on-climate-change.html. Accessed 29 July 2016.
+%
+%Shulte, Bret. "Putting a Price on Pollution." US News & World Report, vol. 142, no. 17, 14 May 2007, p. 37. Ebsco, Access no: 24984616.
+%
+%Uzawa, Hirofumi. Economic Theory and Global Warming. Cambridge UP, 2003.
 
 
 
