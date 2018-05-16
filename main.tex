@@ -5,20 +5,27 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{xcolor} % note: there's also a color package instead of xcolor
 % \usepackage{comment}
 
 
 %TODO
 
 % Add background concepts
-% Add table for balanced ternary
 %	use as an intro to probability current
 % Physical Implementations
 % Brief discussion of the different archetectures
 % Discuss access of machines themselves
 % Discuss how to use code API such as QiSkit
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Defines
+\definecolor{mygray}{gray}{0.6}
+% Put a URL Define Here
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{A Brief introduction to Quantum Computing from the Perspective of Ladder Logic}
 
 \author{Jerry Kensler}
@@ -217,13 +224,12 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 	\emph{What are Joesphson Junctions? How do they work?}
 	Scientific American
 	
-\bibitem{nano3}  
-	Peter Shor,
-	\emph{Quantum Computation}
-	MIT OpenCourseWare, Massachusetts Institute of Technology
 
-\bibitem{template}
-	AuthorLast, AuthorF MI. "TitleOfSource. OptionalCityOfPublication, OptionalDateOfOriginalPublication" TitleOfContainer. Version, OtherContributers, NumberSuchAsEpisodeVolume. Publisher, PublicationDate, LocationSuchAsPageNumberOrURL_Or_DOI. AccessedDayMonthSpelledOutYear
+\bibitem{mitqcshor}
+	Shor, Peter. \emph{Quantum Computation.} MIT OpenCourseware. Massachusetts Institute of Technology, 2003,18.435J / 2.111J / ESD.79J, \newline https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computation-fall-2003/
+
+%\bibitem{template}
+%	AuthorLast, AuthorF MI. \emph{"TitleOfSource.} OptionalCityOfPublication, OptionalDateOfOriginalPublication" TitleOfContainer. Version, OtherContributers, NumberSuchAsEpisodeVolume. Publisher, PublicationDate, LocationSuchAsPageNumberOrURL_Or_DOI. AccessedDayMonthSpelledOutYear
 
 
 
@@ -259,7 +265,7 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 
 
 
-%Works Cited
+%Works Cited examples
 
 %Dean, Cornelia. "Executive on a Mission: Saving the Planet." The New York Times, 22 May 2007, www.nytimes.com/2007/05/22/science/earth/22ander.html?_r=0. Accessed 12 May 2016.
 %
@@ -289,4 +295,9 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 
 
 \end{thebibliography}
+\begin{scriptsize}
+\textcolor{mygray}{For extended reading list, consult source code, available at: \newline https://www.github.com/Macrofarad/ABriefIntroductionToQuantumComputingFromThePerspectiveOfLadderLogic}
+
+%Edit as url changes, suggest placing completed project as new repository with a slightly better name
+\end{scriptsize} %size list: Huge, huge, LARGE, Large, large, normalsize, small, footnotesize, scriptsize, tiny
 \end{document}
