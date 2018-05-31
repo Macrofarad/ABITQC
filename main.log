@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 15:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -919,79 +919,90 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) ABD: EveryShipout initializing macros [1
+) ABD: EveryShipout initializing macros
+Underfull \hbox (badness 10000) in paragraph at lines 87--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--94
+
+ []
+
+[1
 
 {C:/Users/Macro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 137.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 144.
 
 
-LaTeX Warning: Reference `fig:data' on page 2 undefined on input line 140.
-
-
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 160.
-
-
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 225.
+LaTeX Warning: Reference `fig:data' on page 2 undefined on input line 147.
 
 [2]
-Underfull \hbox (badness 7362) in paragraph at lines 247--248
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 167.
+
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 232.
+
+
+Underfull \hbox (badness 7362) in paragraph at lines 254--255
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 247--248
+Underfull \hbox (badness 2221) in paragraph at lines 254--255
 \OT1/cmr/m/it/10 ter"\OT1/cmr/m/n/10 . Oc-to-ber 2 2014, Sci-en-tific Amer-i-ca
 n. Ac-cessed April 4 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \OT1/cmr/m/n/10 https://www.scientificamerican.com/article/majorana-particle-ma
 tter-and-
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 253--254
+Underfull \hbox (badness 2922) in paragraph at lines 260--261
 []\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
 1/cmr/m/n/10 MIT Open-Course-ware. Mas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 \OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
 tion-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 271.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 278.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 []\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
 e to Bench-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 \OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
 6 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 \OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 285.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 292.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 298.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 305.
 
 
-Overfull \hbox (60.04631pt too wide) in paragraph at lines 477--478
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 484--485
 \OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
 putingFromThePerspectiveOfLadderLogic[] 
  []
@@ -1004,11 +1015,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  13315 strings out of 493305
  263571 string characters out of 3129802
- 304476 words of memory out of 3000000
+ 307476 words of memory out of 3000000
  16587 multiletter control sequences out of 15000+200000
  9976 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,1398b,226s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,8n,56p,1398b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1022,7 +1033,7 @@ amsfonts/cm/cmr17.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Macro/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (3 pages, 155485 bytes).
+Output written on main.pdf (3 pages, 156992 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
