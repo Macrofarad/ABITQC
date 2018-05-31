@@ -76,7 +76,7 @@ Make no mistake, quantum physics as a whole is an exceptionally advanced topic. 
 In order to avoid excessive noise, this paper assumes the reader has some basic knowledge of programming as well as electronics.  It will not go into depth with much of the math, instead focusing primarily on the act of programming itself.  There are many topics which should be covered if one wishes to become skilled in quantum computing, most of which the reader will need to research on their own time; however, the sections below should provide enough context in order to provide a suitable foothold should one wish to continue with the subject.
 
 \subsection{Use Case for Quantum Computing} %AKA, why should you care
-Quantum computing is what's called a Disruptive Emergent Technology.  Meaning, as far as industry is concerned, the implementation of these concepts have not only never been seen in any technology prior, but they also have the potential to revolutionize how things are done should these implementations prove successful.  Quantum computing is not a magic bullet that can handle every problem; however, it does have the potential to be exceptionally good at problems that current technology has issues solving.  Examples of such problems can be as varied as weather prediction, factoring, or even protein folding. \cite{dwavepfold}
+Quantum computing is what's called a Disruptive Emergent Technology.  Meaning, as far as industry is concerned, the implementation of these concepts have not only never been seen in any technology prior, but they also have the potential to revolutionize how things are done should these implementations prove successful.  Quantum computing is not a magic bullet that can handle every problem; however, it does have the potential to be exceptionally good at problems that current technology has issues solving.  Examples of such problems can be as varied as weather prediction, factoring \cite{shorsAlgorithm}, or even protein folding \cite{dwavepfold}.
 
 
 \subsection{Removing Misleading Assumptions}
@@ -233,7 +233,7 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{9}
-	
+	\label{sec:bibliography} %allows for quick navigation via side bar	
 %========================================================================================
 
 %\bibitem{template}
@@ -242,11 +242,11 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 %https://owl.english.purdue.edu/owl/resource/747/01/
 
 %========================================================================================
-%https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
-%Prime Numbers: In layman's Terms, How does Shor's ALgorithm Work
+\bibitem{shorsAlgorithm}
+	Shor, Peter W. \emph{"Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer"}. ARXIV, August 30 1995, eprint arXiv:quant-ph/9508027. Accessed August 30 2017. https://arxiv.org/abs/quant-ph/9508027   
 
 \bibitem{laymanShor}
-	Forum Users. \emph{"In Layman's Terms, How does Shors Algorithm Work?"}, October 9 2012. Cryptography Stack Exchange.  StackExchange, Accessed March 4 2017. https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
+	Forum Users. \emph{"Prime Numbers: In Layman's Terms, How does Shors Algorithm Work?"}, October 9 2012. Cryptography Stack Exchange.  StackExchange, Accessed March 4 2017. https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
 
 \bibitem{junctNew}  
 	Richard Newrock,

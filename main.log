@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 16:21
 entering extended mode
 **./main.tex
 (main.tex
@@ -949,7 +949,36 @@ LaTeX Warning: Characters dropped after `\end{comment}' on input line 165.
 
 LaTeX Warning: Characters dropped after `\end{comment}' on input line 230.
 
+
+Underfull \hbox (badness 2435) in paragraph at lines 246--247
+\OT1/cmr/m/n/10 30 1995, eprint arXiv:quant-ph/9508027. Ac-cessed Au-gust 30 20
+17.
+ []
+
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+[]\OT1/cmr/m/n/10 Forum Users. \OT1/cmr/m/it/10 "Prime Num-bers: In Lay-man's T
+erms, How
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+\OT1/cmr/m/it/10 does Shors Al-go-rithm Work?"\OT1/cmr/m/n/10 , Oc-to-ber 9 201
+2. Cryp-tog-ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+\OT1/cmr/m/n/10 phy Stack Ex-change. Stack-Ex-change, Ac-cessed March 4 2017.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+\OT1/cmr/m/n/10 https://crypto.stackexchange.com/questions/3932/in-laymans-term
+s-
+ []
+
+
 Underfull \hbox (badness 7362) in paragraph at lines 257--258
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
@@ -1035,13 +1064,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13317 strings out of 493305
- 263595 string characters out of 3129802
- 308485 words of memory out of 3000000
- 16589 multiletter control sequences out of 15000+200000
+ 13319 strings out of 493305
+ 263629 string characters out of 3129802
+ 308498 words of memory out of 3000000
+ 16591 multiletter control sequences out of 15000+200000
  9976 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,1016b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,8n,56p,1016b,226s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1055,7 +1084,7 @@ amsfonts/cm/cmr17.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Macro/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (4 pages, 161843 bytes).
+Output written on main.pdf (4 pages, 163063 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
