@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 14:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -923,76 +923,76 @@ G,.JBIG2,.JB2,.eps]
 
 {C:/Users/Macro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 132.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 137.
 
 
-LaTeX Warning: Reference `fig:data' on page 2 undefined on input line 135.
+LaTeX Warning: Reference `fig:data' on page 2 undefined on input line 140.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 155.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 160.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 220.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 225.
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 242--243
+Underfull \hbox (badness 7362) in paragraph at lines 247--248
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 242--243
+Underfull \hbox (badness 2221) in paragraph at lines 247--248
 \OT1/cmr/m/it/10 ter"\OT1/cmr/m/n/10 . Oc-to-ber 2 2014, Sci-en-tific Amer-i-ca
 n. Ac-cessed April 4 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 \OT1/cmr/m/n/10 https://www.scientificamerican.com/article/majorana-particle-ma
 tter-and-
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 248--249
+Underfull \hbox (badness 2922) in paragraph at lines 253--254
 []\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
 1/cmr/m/n/10 MIT Open-Course-ware. Mas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 \OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
 tion-
  []
 
 [2]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 266.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 271.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 []\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
 e to Bench-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 \OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
 6 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 \OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 280.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 285.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 293.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 298.
 
 
-Overfull \hbox (60.04631pt too wide) in paragraph at lines 472--473
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 477--478
 \OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
 putingFromThePerspectiveOfLadderLogic[] 
  []
@@ -1005,7 +1005,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  13315 strings out of 493305
  263571 string characters out of 3129802
- 305476 words of memory out of 3000000
+ 304476 words of memory out of 3000000
  16587 multiletter control sequences out of 15000+200000
  9976 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1023,7 +1023,7 @@ amsfonts/cm/cmr17.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Macro/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (3 pages, 154221 bytes).
+Output written on main.pdf (3 pages, 155196 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
