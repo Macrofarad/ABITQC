@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  14 MAY 2018 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 13:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -820,21 +820,27 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count124
 )
-(main.aux)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks36
+\verbatim@line=\toks37
+\verbatim@in@stream=\read2
+) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -844,12 +850,12 @@ ii"
 \scratchbox=\box39
 \nofMPsegments=\count126
 \nofMParguments=\count127
-\everyMPshowfont=\toks36
+\everyMPshowfont=\toks38
 \MPscratchCnt=\count128
 \MPscratchDim=\dimen164
 \MPnumerator=\count129
 \makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks37
+\everyMPtoPDFconversion=\toks39
 )
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -913,57 +919,95 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) ABD: EveryShipout initializing macros [1
+) ABD: EveryShipout initializing macros
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 128.
+
+
+LaTeX Warning: Reference `fig:data' on page 1 undefined on input line 131.
+
+[1
 
 {C:/Users/Macro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Reference `fig:data' on page 2 undefined on input line 112.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 151.
 
-[2] [3]
 
-LaTeX Warning: Reference `fig:frog' on page 4 undefined on input line 141.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 216.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 179.
 
-("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 179.
+Underfull \hbox (badness 2922) in paragraph at lines 232--233
+[]\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
+1/cmr/m/n/10 MIT Open-Course-ware. Mas-
+ []
 
-[4] [5] (main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+\OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
+tion-
+ []
+
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 250.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+[]\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
+e to Bench-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+\OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
+6 2018.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
+ []
+
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 264.
+
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 277.
+
+
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 456--457
+\OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
+putingFromThePerspectiveOfLadderLogic[] 
+ []
+
+[2] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13301 strings out of 493305
- 263340 string characters out of 3129802
- 304794 words of memory out of 3000000
- 16572 multiletter control sequences out of 15000+200000
+ 13314 strings out of 493305
+ 263559 string characters out of 3129802
+ 305472 words of memory out of 3000000
+ 16586 multiletter control sequences out of 15000+200000
  9976 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,1398b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,8n,56p,1398b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Macro/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Macro/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mac
-ro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Macro/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Macro/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/M
-acro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmti10.pfb>
-Output written on main.pdf (5 pages, 182192 bytes).
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Macro/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Macr
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Macro/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (2 pages, 150125 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
