@@ -41,14 +41,6 @@ replace emphasis in biblio with italix to fix the spacing issues
 
 \begin{abstract}
 
-\begin{comment}
-	%Reword this, it's  too boring
-	
-%Enter a short summary here. What topic do you want to investigate and why? What experiment did you perform? What were your main results and conclusion?
-%
-
-%Quantum computing, for several years the media and public perception of the subject has treated it akin to magic, using it as a catchall for any science fiction plot device deemed necessary.  Because of this, otherwise capable individuals may tend to stray away from the subject purely due to its perceived difficulty, many assuming they would need doctorates to even begin to comprehend the complexities of quantum computing.  Indeed, quantum physics is very complex, having many important real-world ramifications. With that said, quantum computing is merely a small part of quantum physics, and much like the computing most people use daily, operates by a well-defined set of rules.  By utilizing a subset of these rules, specifically tools such as quantum ladder logic, quantum assembly (QASM), and visual aids such as Bloch spheres, much of the initial barrier to entry can be circumvented.  While this approach isn’t perfect, and will require more serious individuals to pursue much of the background math and physics on their own.  It is my hope that students, specifically those with a background in electronic circuits and/or programming will find the contents of this paper able to greatly reduce the amount of time and effort needed in order to start learning how to program a quantum computer and thus prepare themselves for a future where such technology is prevalent.
-\end{comment}
 
 While Quantum Computing is a fairly advanced topic, it suffers from a perception of complexity beyond what is reasonable for the actual subject matter.  This paper provides a means to take that perception and bring it down to a more realistic level.  The primary targets of this paper are students currently enrolled in or freshly graduated from an electrical engineering or similar program; however, any individual with a base knowledge in programming or digital logic should be able to gain some level of benefit.
 
@@ -83,6 +75,10 @@ Make no mistake, quantum physics as a whole is an exceptionally advanced topic. 
 %This section is not meant to be an exhaustive list, but, in my personal experience, learning about the background concepts below will greatly assist a person’s ability to better understand quantum computing.  The following sections will provide a brief explanation of the concepts.
 In order to avoid excessive noise, this paper assumes the reader has some basic knowledge of programming as well as electronics.  It will not go into depth with much of the math, instead focusing primarily on the act of programming itself.  There are many topics which should be covered if one wishes to become skilled in quantum computing, most of which the reader will need to research on their own time; however, the sections below should provide enough context in order to provide a suitable foothold should one wish to continue with the subject.
 
+\subsection{Use Case for Quantum Computing} %AKA, why should you care
+Quantum computing is what's called a Disruptive Emergent Technology.  Meaning, as far as industry is concerned, the implementation of these concepts have not only never been seen in any technology prior, but they also have the potential to revolutionize how things are done should these implementations prove successful.  Quantum computing is not a magic bullet that can handle every problem; however, it does have the potential to be exceptionally good at problems that current technology has issues solving.  Examples of such problems can be as varied as weather prediction, factoring, or even protein folding. \cite{dwavepfold}
+
+
 \subsection{Removing Misleading Assumptions}
 The first and easily one of the most important concepts in quantum computing is to understand that the general public and most media 'experts' do not work in the field of quantum computing.  Therefore, it is important to note that many of the common assumptions people tend to have can be misleading or plain wrong due to lack of context or the background knowledge required to properly articulate the concepts at hand.
 \newline
@@ -92,7 +88,7 @@ To briefly summarize, Schrödinger's cat is a brilliant thought experiment meant
 \newline
  In context, this is meant to demonstrate the concepts of complex, superimposed states collapsing upon measurement. For better or worse, this concept of a not dead, yet dead cat in a box has spread like wildfire, it has become the cornerstone of what the public sees as quantum computing. This has allowed the idea that the quantum state is both 1 and 0 to become the very first thing that anyone learns in regards to quantum computing.  While this statement is not technically wrong, it is fundamentally incomplete. In many ways, it's similar to the question "which came first: the chicken, or the egg?", the answer to which can only be something along the lines of 'invalid question', as it not only fails to define what denotes the term chicken, but it also leads the individual being asked to assume the term 'egg' is specifically in the context of a chicken egg. \newline
  \newline
- 
+ In reality, a better way to think of this is through vectors and complex numbers.  The value is in fact both 1 and 0, but it's that way not because it is two things in a binary sense, but because it is a complex mixing of both.  To put this back into cat analogies, let's take the premise back to the start.  There is a cat, that cat is now infected with a zombie pathogen.  For all purposes, the cat is neither alive, nor dead, as it cannot cleanly fit into either category, yet it does have many of the defining characteristics that comprise both.  From here, the cat is injected with an antidote,  being a rushed marvel of medicine meant to save the feline race, it will near instantly result in either a complete cure or certain death for our kitten subject.  For this analogy, the zombified state represents the ability of qubits to be in a mixed state, the antidote representing the act of measuring this mixed state and thus collapsing the end result into a binary value: 1 or 0, alive or dead.
 
 
 \subsection{Balanced Ternary} %The basics from the ground up
@@ -246,6 +242,11 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 %https://owl.english.purdue.edu/owl/resource/747/01/
 
 %========================================================================================
+%https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
+%Prime Numbers: In layman's Terms, How does Shor's ALgorithm Work
+
+\bibitem{laymanShor}
+	Forum Users. \emph{"In Layman's Terms, How does Shors Algorithm Work?"}, October 9 2012. Cryptography Stack Exchange.  StackExchange, Accessed March 4 2017. https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
 
 \bibitem{junctNew}  
 	Richard Newrock,
@@ -255,7 +256,8 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 \bibitem{mindBoggle}
 	Moskowitz, Clara. \emph{"New Particle Is Both Matter and Antimatter"}. October 2 2014, Scientific American. Accessed April 4 2018. https://www.scientificamerican.com/article/majorana-particle-matter-and-antimatter/
 
-
+\bibitem{dwavepfold}
+	Brumfiel, Geoffrey. \emph{"D-Wave quantum computer solves protein folding problem"}. August 17 2012. Nature. Accessed August 1 2017. http://blogs.nature.com/news/2012/08/d-wave-quantum-computer-solves-protein-folding-problem.html
 	
 
 \bibitem{mitqcshor}
@@ -377,9 +379,6 @@ https://arxiv.org/pdf/quant-ph/0308074.pdf
 
 https://arxiv.org/abs/1205.4926
 	Quantum Delayed Choice Experiment
-
-https://crypto.stackexchange.com/questions/3932/in-laymans-terms-how-does-shors-algorithm-work
-	Prime Numbers: In layman's Terms, How does Shor's ALgorithm Work
 
 
 https://www.quora.com/Is-it-possible-to-build-a-very-primitive-quantum-computer-at-home
