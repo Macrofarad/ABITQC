@@ -8,6 +8,8 @@
 \usepackage{xcolor} % note: there's also a color package instead of xcolor
 \usepackage{verbatim} % For block comments
 \usepackage{tikz} % allow the drawing of images
+\usepackage{ amssymb } %for math notation that is needed
+\usepackage{physics}
 
 %more complex installs with file dependancies
 \usepackage[american]{circuitikzgit} % To draw digital logic circuits 
@@ -150,7 +152,25 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 	\caption{\label{tab:ternary}comparison table showing equivalent numbers in different display forms}
 \end{table}
 \subsection{Vectors}
-\label{THISNEEDSTOGETDONE} %or commented out until it is ready
+\label{THISNEEDSACCURACYREVIEW} % Getting into nitpick notation stuff, need to be careful
+A proper discussion of quantum computing cannot be had without discussing vectors and their function in understanding the circuit.  This will be discussed more in a later section (~\ref{Qubits}); however, the shorthand version is as follows.  Due to the fact that quantum computers operate on qubits rather than classical (binary) bits, a quantum computer is effectively nothing more than a very complex probabilistic vector equation. To be specific, this state space $\mathcal{H}$, is not just vector space but a Hilbert space, meaning it has a positive-definite Hermitian inner product $\bra{\cdot}\ket{\cdot}$.  This has quite a few implications and entire papers can be written on the vector space alone, but in simple terms what it means is that the sum of the probabilities of a quantum computer being in any given state post measurement will always be 1.
+
+\subsubsection{Notation}
+%https://tex.stackexchange.com/questions/214728/braket-notation-in-latex
+In quantum computing, and quantum mechanics as a whole for that matter the standard notation is Bra-Ket notation, also known as Dirac notation. \newline $\bra{\phi}\ket{\psi}$ \newline
+The right part, called ket, is typically represented as a column vector and written as $\ket{\psi}$.
+
+The left part, called bra, is the Hermitian conjugate of the ket with the same label, is typically represented as a row vector and written as $\bra{\phi}$.
+
+
+
+
+
+
+%$\expval{A}{\Psi}$
+
+%http://detexify.kirelabs.org/classify.html
+%Use to help figure out what symbol is where and how to write it out
 \section{Advanced Concepts}
 \label{sec:AdvConcepts}
 The following sections are more advanced concepts moving towards the target goal of quantum circuits.  These sections assume that the reader understands all prior sections and has completed further reading when necessary. 
@@ -163,7 +183,7 @@ The following sections are more advanced concepts moving towards the target goal
 %self note: tons of comments here
 
 
-\begin{comment} % A helpful Demo circuit graphic
+\begin{comment} % A helpful Demo circuit graphic, delete dependancy and this once it is removed in favor of using tikzpicture
 \begin{circuitikz} 
 	\draw
 (0,2) node[and port] (myand1) {}
@@ -237,7 +257,9 @@ A more advanced concept that is still core to quantum computing is the idea of r
 \label{ternaryRelevance} %allows linking to this spot regardless of location
 \label{currentSpot}
 % and oh boy is it a heavy topic: https://www.math.ucdavis.edu/~greg/intro.pdf
-Back in the section involving balanced ternary it was mentioned that the concept of quantities innately having a sign polarity would be relevant later, this section is that aforementioned later.
+Back in the section involving balanced ternary it was mentioned that the concept of quantities innately having a sign polarity would be relevant later, this section is that aforementioned later. Fair warning, this section will get very math heavy. \newline
+\newline
+
 
 
 \label{FigureisThecommandYouAlwaysForget}
@@ -282,6 +304,7 @@ This section deals in the various coding languages utilized in programming quant
 \subsection{Quantum Ladder Logic}
 \label{QladderLogicHere} %referenced in a previous section
 \subsubsection{Qubits}
+\label{Qubits}
 \subsubsection{Single-Qubit Gates}
 \subsubsection{Multi-Qubit Gates}
 
