@@ -15,8 +15,8 @@
 % circuitikz install instructions https://github.com/circuitikz/circuitikz/wiki/Installation
 
 \label{depreciateRemove} %things that should be removed in final version but might still be useful here
-%\usepackage[matrix,frame,arrow]{xypic}
-%\usepackage{qcircuit}
+\usepackage[matrix,frame,arrow]{xypic}
+\usepackage{qcircuit}
 %https://github.com/CQuIC/qcircuit
 
 
@@ -146,7 +146,7 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 
 \section{Advanced Concepts}
 \label{sec:AdvConcepts}
-\label{currentSpot}
+
 %helpful link: https://arxiv.org/pdf/quant-ph/0406003.pdf Q-circuit latex tutorial
 % https://www.media.mit.edu/quanta/qasm2circ/
 %https://github.com/CQuIC/qcircuit Qcircuit package location
@@ -167,7 +167,12 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 
 \subsection{Reversible Logic Gates} %The basics from the ground up
 %there was a time when reversible logic was seen as a fatal flaw in QC, but some dude who was pretty clever figured out any standard logic gate could be simulated within reversible logic
-A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the digital logic circuit as seen in Figure~\ref{Circuit:1}.  In this circuit, there are three inputs and a single output, even knowing the gate layout and the end value of $f_{1}$, the best that could be done for determining the input values is narrowing it to a range of possibilities. 
+A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the digital logic circuit as seen in Figure~\ref{Circuit:1}.  In this circuit, there are three inputs and a single output, even knowing the gate layout and the end value of $f_{1}$, the best that could be done for determining the input values is narrowing it to a range of possibilities as all the values have been combined into one, irreversible output. Now consider the reversible logic circuit as seen in Figure~\ref{Circuit:2}
+
+
+
+\label{currentSpot}
+
 
 %consider deleting circuitikz if it isn't used elsewhere
 
@@ -197,13 +202,57 @@ A more advanced concept that is still core to quantum computing is the idea of r
 \draw (noty.output) -- ([xshift=0.2cm]noty.output) |- (xory.input 2);
 \draw (z) -| ($(noty.output) + (0.2, -0.5)$) |- (xory.input 3);
 
-\draw (xory.output) -- node[above]{$f_{1}$} ($(xory) + (3, 0)$);
+\draw (xory.output) -- node[above]{$f_{1}= \bar x_{1} + \bar x_{2} + x_{3}$} ($(xory) + (3.5, 0)$);
 %\draw (xory.output) -- node[above]{$\overline{x + \bar x + \bar y + z}$} ($(xory) + (3, 0)$);
 \end{tikzpicture}
 \caption{Digital Logic Circuit}\label{Circuit:1}
 \end{figure}
 
+%\begin{comment}%debugging
 
+\begin{figure}
+\begin{comment}%keeping for reference
+\[ \Qcircuit @C=1em @R=.7em {
+	& \gate{X} & \qw
+}\]
+
+\[ \Qcircuit @C=1em @R=.7em {
+& \gate{H} & \gate{Z} & \gate{H} & \qw \\
+& \qw & \gate{X} & \qw & \qw
+} \]
+
+	\[ \Qcircuit @C=1em @R=.7em {
+& \ctrl{1} & \targ & \qw \\
+& \targ & \ctrl{-1} & \qw
+}\]
+
+
+\end{comment}
+ 
+ %helpful for understanding the syntax https://github.com/CQuIC/qcircuit/blob/master/Qtutorial.tex
+
+\begin{comment}%backup
+\[\Qcircuit @C=1em @R=.7em {
+	& \targ & \targ & \qw & \targ & \qw\\
+	& \ctrl{-1} & \qw &\qw & \qw & \qw \\
+	& \qw & \ctrl{-2} & \qw & \qw & \qw \\
+	& \qw & \qw & \qw & \ctrl{-3} & \qw \\
+}\]
+\end{comment}%backup
+
+%\small \begin{verbatim} %verbatim displays the code itself instead of rendering it
+\[\Qcircuit @C=1em @R=.7em {
+	& \lstick{\ket{\psi}} & \targ & \targ & \qw & \targ & \qw & \meter \\
+	& \lstick{\ket{\psi}} & \ctrl{-1} & \qw &\qw & \qw & \qw & \meter \\
+	& \lstick{\ket{\psi}} & \qw & \ctrl{-2} & \qw & \qw & \qw & \meter \\
+	& \lstick{\ket{\psi}} & \qw & \qw & \qw & \ctrl{-3} & \qw & \meter\\
+}\]
+%\end{verbatim}}
+%&\lstick{\ket{\psi}}
+	\caption{Reversible Logic Circuit}\label{Circuit:2}
+\end{figure}
+
+%\end{comment}%debugging
 
 
 \subsection{Probability Amplitudes}

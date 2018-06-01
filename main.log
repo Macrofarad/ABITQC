@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 22:14
 entering extended mode
 **./main.tex
 (main.tex
@@ -849,7 +849,134 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \pgf@circ@res@temp=\dimen171
 \pgfstartlinewidth=\dimen172
 \pgf@circ@Rlen=\dimen173
-) (main.aux)
+)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypic.sty"
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.sty"
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.tex"
+Bootstrap'ing: catcodes, docmode,
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyrecat.te
+x")
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyidioms.t
+ex")
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen174
+\Y@c=\dimen175
+\U@c=\dimen176
+\D@c=\dimen177
+\L@c=\dimen178
+\R@c=\dimen179
+\Edge@c=\toks38
+\X@p=\dimen180
+\Y@p=\dimen181
+\U@p=\dimen182
+\D@p=\dimen183
+\L@p=\dimen184
+\R@p=\dimen185
+\Edge@p=\toks39
+\X@origin=\dimen186
+\Y@origin=\dimen187
+\X@xbase=\dimen188
+\Y@xbase=\dimen189
+\X@ybase=\dimen190
+\Y@ybase=\dimen191
+\X@min=\dimen192
+\Y@min=\dimen193
+\X@max=\dimen194
+\Y@max=\dimen195
+\lastobjectbox@=\box39
+\zerodotbox@=\box40
+\almostz@=\dimen196
+ direction,
+\d@X=\dimen197
+\d@Y=\dimen198
+\K@=\count125
+\KK@=\count126
+\Direction=\count127
+\K@dXdY=\dimen199
+\K@dYdX=\dimen256
+\xyread@=\read3
+\xywrite@=\write4
+\csp@=\count128
+\quotPTK@=\dimen257
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks40
+\connectobjectbox@@=\box41
+ objects,
+\styletoks@=\toks41
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+
+LaTeX Warning: You have requested package `xypic',
+               but the package provides `xy'.
+
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xymatrix.t
+ex"  Xy-pic option: Matrix feature v.3.14
+\Row=\count129
+\Col=\count130
+\queue@=\toks42
+\queue@@=\toks43
+\qcount@=\count131
+\qcount@@=\count132
+\matrixsize@=\count133
+ loaded)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyframe.te
+x"  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyarrow.te
+x"  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf.tex"
+ Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `frame' extension support
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-fr.t
+ex"
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xycurve.te
+x"  Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count134
+\crvpts@=\toks44
+\splinebox@=\box42
+\splineval@=\dimen258
+\splinedepth@=\dimen259
+\splinetol@=\dimen260
+\splinelength@=\dimen261
+ circles,
+\L@=\dimen262
+ loaded)
+Xy-pic pdf driver: `curve' extension support
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.t
+ex" loaded) loaded) loaded))
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyv2.tex"
+ Xy-pic option: Version 2 Compatibility v.3.8
+
+Xy-pic Warning: `\stop' redefined.
+
+loaded)) (qcircuit.sty
+Package: qcircuit 2016/12/29
+
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.sty"
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.tex"
+not reloaded)
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xymatrix.t
+ex"  Xy-pic option: Matrix feature v.3.14 not reloaded)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyframe.te
+x"  Xy-pic option: Frame and Bracket extension v.3.14 not reloaded)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyarrow.te
+x"  Xy-pic option: Arrow and Path feature v.3.9 not reloaded)
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyarc.tex"
+ Xy-pic option: Circle, Ellipse, Arc feature v.3.8 circles, ellipses,
+elliptical arcs, loaded)) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -868,17 +995,17 @@ LaTeX Font Info:    ... okay on input line 66.
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen174
-\scratchbox=\box39
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen175
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count135
+\scratchdimen=\dimen263
+\scratchbox=\box43
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen264
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks46
 )
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -926,11 +1053,6 @@ Package etexcmds Info: Could not find \expanded.
 mds.sty"
 Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
-ty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -942,7 +1064,9 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) ABD: EveryShipout initializing macros [1
+) ABD: EveryShipout initializing macros
+Package xypdf Info: Line width: 0.39998pt on input line 66.
+ [1
 
 {C:/Users/Macro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 115--124
@@ -989,166 +1113,259 @@ apes\circuits\pgflibraryshapes.gates.logic.US.code.tex"
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
 apes\circuits\pgflibraryshapes.gates.logic.code.tex")))
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 223.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 241.
+
+<xymatrix
+! Undefined control sequence.
+<argument> \ket 
+                {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \ket 
+                {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \ket 
+                {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \ket 
+                {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+7x4
+! Undefined control sequence.
+<argument> ... \let \COORD@ =\xymatrixCOORD@ \ket 
+                                                  {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... \let \COORD@ =\xymatrixCOORD@ \ket 
+                                                  {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... \let \COORD@ =\xymatrixCOORD@ \ket 
+                                                  {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... \let \COORD@ =\xymatrixCOORD@ \ket 
+                                                  {\psi }
+l.249 }
+       \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+1276>
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 272.
 
 
-LaTeX Warning: Reference `fig:data' on page 4 undefined on input line 226.
+LaTeX Warning: Reference `fig:data' on page 4 undefined on input line 275.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 246.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 295.
 
 [4]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 311.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 360.
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 327--328
+Underfull \hbox (badness 1681) in paragraph at lines 376--377
 []\OT1/cmr/m/n/10 University of New Mex-ico. \OT1/cmr/m/it/10 "Q-circuit Tu-to-
 rial" \OT1/cmr/m/n/10 ARXIV, Au-gust 24
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 330--331
+Underfull \hbox (badness 2707) in paragraph at lines 379--380
 []\OT1/cmr/m/n/10 Google Quan-tum AI Lab-o-ra-tory. \OT1/cmr/m/it/10 "Com-mer-c
 ial-ize quan-tum tech-nolo-
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 330--331
+Underfull \hbox (badness 1688) in paragraph at lines 379--380
 \OT1/cmr/m/it/10 gies in five years"\OT1/cmr/m/n/10 . March 03 2017. Ma-soud Mo
 hseni, Pe-ter Read,
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 330--331
+Underfull \hbox (badness 1540) in paragraph at lines 379--380
 \OT1/cmr/m/n/10 Fowler, Vadim Smelyan-skiy, John Mar-ti-nis. Ac-cessed May 06 2
 018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 \OT1/cmr/m/n/10 https://www.nature.com/news/commercialize-quantum-technologies-
 in-
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 333--334
+Underfull \hbox (badness 4673) in paragraph at lines 382--383
 []\OT1/cmr/m/n/10 Castelvecchi, Da-vide. \OT1/cmr/m/it/10 "The quan-tum in-ter-
 net has ar-rived (and it
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 333--334
+Underfull \hbox (badness 4621) in paragraph at lines 382--383
 \OT1/cmr/m/it/10 hasn't)"\OT1/cmr/m/n/10 . Febru-ary 14 2018, Na-ture. Ac-cesse
 d Febru-ary 20 2018.
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 339--340
+Underfull \hbox (badness 2435) in paragraph at lines 388--389
 \OT1/cmr/m/n/10 30 1995, eprint arXiv:quant-ph/9508027. Ac-cessed Au-gust 30 20
 17.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 []\OT1/cmr/m/n/10 Forum Users. \OT1/cmr/m/it/10 "Prime Num-bers: In Lay-man's T
 erms, How
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 \OT1/cmr/m/it/10 does Shors Al-go-rithm Work?"\OT1/cmr/m/n/10 , Oc-to-ber 9 201
 2. Cryp-tog-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 \OT1/cmr/m/n/10 phy Stack Ex-change. Stack-Ex-change, Ac-cessed March 4 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 \OT1/cmr/m/n/10 https://crypto.stackexchange.com/questions/3932/in-laymans-term
 s-
  []
 
-
-Underfull \hbox (badness 7362) in paragraph at lines 350--351
+[5]
+Underfull \hbox (badness 7362) in paragraph at lines 399--400
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 350--351
+Underfull \hbox (badness 2221) in paragraph at lines 399--400
 \OT1/cmr/m/it/10 ter"\OT1/cmr/m/n/10 . Oc-to-ber 2 2014, Sci-en-tific Amer-i-ca
 n. Ac-cessed April 4 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 \OT1/cmr/m/n/10 https://www.scientificamerican.com/article/majorana-particle-ma
 tter-and-
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 353--354
+Underfull \hbox (badness 2326) in paragraph at lines 402--403
 []\OT1/cmr/m/n/10 Brumfiel, Ge-of-frey. \OT1/cmr/m/it/10 "D-Wave quan-tum com-p
 uter solves pro-tein fold-
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 353--354
+Underfull \hbox (badness 3547) in paragraph at lines 402--403
 \OT1/cmr/m/it/10 ing prob-lem"\OT1/cmr/m/n/10 . Au-gust 17 2012. Na-ture. Ac-ce
 ssed Au-gust 1 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 \OT1/cmr/m/n/10 http://blogs.nature.com/news/2012/08/d-wave-quantum-computer-so
 lves-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 357--358
+Underfull \hbox (badness 1748) in paragraph at lines 406--407
 []\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
 1/cmr/m/n/10 MIT Open-Course-ware. Mas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 \OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
 tion-
  []
 
-[5]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 375.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 424.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 []\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
 e to Bench-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 \OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
 6 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 \OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 389.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 438.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 402.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 451.
 
 
-Overfull \hbox (60.04631pt too wide) in paragraph at lines 578--579
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 627--628
 \OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
 putingFromThePerspectiveOfLadderLogic[] 
  []
@@ -1159,13 +1376,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20720 strings out of 493305
- 486461 string characters out of 3129802
- 617502 words of memory out of 3000000
- 23970 multiletter control sequences out of 15000+200000
- 9976 words of font info for 36 fonts, out of 3000000 for 9000
+ 23533 strings out of 493305
+ 519157 string characters out of 3129802
+ 730287 words of memory out of 3000000
+ 26724 multiletter control sequences out of 15000+200000
+ 10849 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,1185b,834s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,25n,56p,1463b,1143s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1180,12 +1397,13 @@ ype1/public/amsfonts/cm/cmr6.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Macro/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Macro/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Mac
-ro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmti10.pfb>
-Output written on main.pdf (6 pages, 201953 bytes).
+ro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (6 pages, 210881 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
