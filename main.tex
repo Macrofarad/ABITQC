@@ -10,6 +10,7 @@
 \usepackage{tikz} % allow the drawing of images
 \usepackage{ amssymb } %for math notation that is needed
 \usepackage{physics}
+\usepackage{float} % Fixing formatting
 
 %more complex installs with file dependancies
 \usepackage[american]{circuitikzgit} % To draw digital logic circuits 
@@ -212,7 +213,7 @@ A more advanced concept that is still core to quantum computing is the idea of r
 %consider deleting circuitikz if it isn't used elsewhere
 
 
-\begin{figure} %note: Tikz does not like playing with multiple circuits.  Either find a solution by learning the syntax well enough to compensate or don't use any more standard circuits.  Given that this paper isn't on standard digital circuits, the latter is likely the better option
+\begin{figure}[H] %note: Tikz does not like playing with multiple circuits.  Either find a solution by learning the syntax well enough to compensate or don't use any more standard circuits.  Given that this paper isn't on standard digital circuits, the latter is likely the better option
 %	\centering
 \label{tikzSettings} %in case it needs to move up
 \usetikzlibrary{arrows, shapes.gates.logic.US, calc}
@@ -420,10 +421,15 @@ For all this interface brings to the table, there is one very important thing th
 \begin{comment}
 Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
 \end{comment}
-%\subsection{Source Code}
-\subsection{Analysis and Future Plans} %First person should be fine for this section given that it's commentary
-Given that the goal of this project was to teach myself the basics of quantum computing and provide a path for other undergraduates to do the same, this project was a resounding success.  In the scope of this project, I taught myself the following languages: Quantum Ladder Logic, Quantum Assembly Language, Q\# (Microsoft's Quantum Computing language), LaTeX, CSS, and how to work with QISKit a specific coding API for quantum computers which is written in Python.
+\subsection{Source Code}
 
+
+\subsection{Analysis} %First person should be fine for this section given that it's commentary
+Given that the goal of this project was to teach myself the basics of quantum computing and provide a path for other undergraduates to do the same, this project was a resounding success.  In the scope of this project, I taught myself the following languages: Quantum Ladder Logic, Quantum Assembly Language, Q\# (Microsoft's Quantum Computing language), LaTeX, CSS, and how to work with QISKit a specific coding API for quantum computers which is written in Python.\newline
+\newline
+In addition to the coding languages this project enabled me to pursue, I was able to meet with multiple professionals in the industry of Quantum Computing, from PhD's in quantum physics, to up and coming startups.  Moreover, the knowledge and source material required for this project to happen has also been requested by multiple professors at varied levels of teaching.  Partly
+
+\subsection{Future Plans}
 
 %\section{Discussion} % 1/2 page to a page, %bring this section back from commenting if it is deemed nessisary
 
