@@ -2,8 +2,8 @@
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
+\usepackage{amsmath} % matricies and math notation
+\usepackage{graphicx} %Check if still needed, have been using tikz in place
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{xcolor} % note: there's also a color package instead of xcolor
 \usepackage{verbatim} % For block comments
@@ -384,10 +384,28 @@ Much like a digital logic gate operates on an individual or set of classical bit
 
 Among the single qubit gates, the most well known and frequently used are the Pauli gates. These gates are as follows:
 \subparagraph{Pauli X}
+
 \begin{multicols}{2}
+	
+	
+
 \[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
 	\lstick{ }   & \gate{X} & \qw \\
 }\]
+%\newline
+	\begin{figure}[H]
+		%\newline
+		$\theta_{1}=\theta_{x} =$ \newline
+	\[\begin{bmatrix}
+	0 & 1 \\
+	1 & 0 \\
+	\end{bmatrix}
+	\]
+\end{figure}
+
+
+
+
 \end{multicols}
 
 
@@ -396,6 +414,17 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 \[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
 	\lstick{ }  & \gate{Y} & \qw \\
 }\]
+
+	\begin{figure}[H]
+		%\newline
+		$\theta_{2}=\theta_{y} =$ \newline
+	\[\begin{bmatrix}
+	0 & $-i$ \\
+	$i$ & 0 \\
+	\end{bmatrix}
+	\]
+\end{figure}
+
 \end{multicols}
 
 
@@ -404,11 +433,22 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 \[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
 	\lstick{ } & \gate{Z} & \qw \\
 }\]
+
+	\begin{figure}[H]
+		%\newline
+		$\theta_{3}=\theta_{z} =$ \newline
+	\[\begin{bmatrix}
+	1 & 0 \\
+	0 & -1 \\
+	\end{bmatrix}
+	\]
+\end{figure}
+
 \end{multicols}
 
 
 
-\paragraph{Multi-Qubit Gates}
+%\paragraph{Multi-Qubit Gates} %Add section back in once Pauli gate details are complete 
 %advanced Gates
 
 \subsection{Quantum Assembly Language}
