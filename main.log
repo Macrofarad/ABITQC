@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  1 JUN 2018 00:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -1124,179 +1124,176 @@ apes\circuits\pgflibraryshapes.gates.logic.US.code.tex"
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
 apes\circuits\pgflibraryshapes.gates.logic.code.tex"))) <xymatrix 6x4 1124>
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 256.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 300.
 
 
-LaTeX Warning: Reference `fig:data' on page 5 undefined on input line 259.
+LaTeX Warning: Reference `fig:data' on page 5 undefined on input line 303.
 
-[5]
+[5] [6]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 279.
-
-
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 344.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 343.
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 360--361
+Underfull \hbox (badness 1681) in paragraph at lines 359--360
 []\OT1/cmr/m/n/10 University of New Mex-ico. \OT1/cmr/m/it/10 "Q-circuit Tu-to-
 rial" \OT1/cmr/m/n/10 ARXIV, Au-gust 24
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 363--364
+Underfull \hbox (badness 2707) in paragraph at lines 362--363
 []\OT1/cmr/m/n/10 Google Quan-tum AI Lab-o-ra-tory. \OT1/cmr/m/it/10 "Com-mer-c
 ial-ize quan-tum tech-nolo-
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 363--364
+Underfull \hbox (badness 1688) in paragraph at lines 362--363
 \OT1/cmr/m/it/10 gies in five years"\OT1/cmr/m/n/10 . March 03 2017. Ma-soud Mo
 hseni, Pe-ter Read,
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 363--364
+Underfull \hbox (badness 1540) in paragraph at lines 362--363
 \OT1/cmr/m/n/10 Fowler, Vadim Smelyan-skiy, John Mar-ti-nis. Ac-cessed May 06 2
 018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 \OT1/cmr/m/n/10 https://www.nature.com/news/commercialize-quantum-technologies-
 in-
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 366--367
+Underfull \hbox (badness 4673) in paragraph at lines 365--366
 []\OT1/cmr/m/n/10 Castelvecchi, Da-vide. \OT1/cmr/m/it/10 "The quan-tum in-ter-
 net has ar-rived (and it
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 366--367
+Underfull \hbox (badness 4621) in paragraph at lines 365--366
 \OT1/cmr/m/it/10 hasn't)"\OT1/cmr/m/n/10 . Febru-ary 14 2018, Na-ture. Ac-cesse
 d Febru-ary 20 2018.
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 372--373
+Underfull \hbox (badness 2435) in paragraph at lines 371--372
 \OT1/cmr/m/n/10 30 1995, eprint arXiv:quant-ph/9508027. Ac-cessed Au-gust 30 20
 17.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 []\OT1/cmr/m/n/10 Forum Users. \OT1/cmr/m/it/10 "Prime Num-bers: In Lay-man's T
 erms, How
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 \OT1/cmr/m/it/10 does Shors Al-go-rithm Work?"\OT1/cmr/m/n/10 , Oc-to-ber 9 201
 2. Cryp-tog-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 \OT1/cmr/m/n/10 phy Stack Ex-change. Stack-Ex-change, Ac-cessed March 4 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 \OT1/cmr/m/n/10 https://crypto.stackexchange.com/questions/3932/in-laymans-term
 s-
  []
 
-[6]
-Underfull \hbox (badness 7362) in paragraph at lines 383--384
+[7]
+Underfull \hbox (badness 7362) in paragraph at lines 382--383
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 383--384
+Underfull \hbox (badness 2221) in paragraph at lines 382--383
 \OT1/cmr/m/it/10 ter"\OT1/cmr/m/n/10 . Oc-to-ber 2 2014, Sci-en-tific Amer-i-ca
 n. Ac-cessed April 4 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 \OT1/cmr/m/n/10 https://www.scientificamerican.com/article/majorana-particle-ma
 tter-and-
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 386--387
+Underfull \hbox (badness 2326) in paragraph at lines 385--386
 []\OT1/cmr/m/n/10 Brumfiel, Ge-of-frey. \OT1/cmr/m/it/10 "D-Wave quan-tum com-p
 uter solves pro-tein fold-
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 386--387
+Underfull \hbox (badness 3547) in paragraph at lines 385--386
 \OT1/cmr/m/it/10 ing prob-lem"\OT1/cmr/m/n/10 . Au-gust 17 2012. Na-ture. Ac-ce
 ssed Au-gust 1 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 \OT1/cmr/m/n/10 http://blogs.nature.com/news/2012/08/d-wave-quantum-computer-so
 lves-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 390--391
+Underfull \hbox (badness 1748) in paragraph at lines 389--390
 []\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
 1/cmr/m/n/10 MIT Open-Course-ware. Mas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 \OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
 tion-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 408.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 407.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 []\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
 e to Bench-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 \OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
 6 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 \OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 422.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 421.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 435.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 434.
 
 
-Overfull \hbox (60.04631pt too wide) in paragraph at lines 611--612
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 610--611
 \OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
 putingFromThePerspectiveOfLadderLogic[] 
  []
 
-[7] (main.aux)
+[8] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 23536 strings out of 493305
- 519301 string characters out of 3129802
- 724316 words of memory out of 3000000
- 26724 multiletter control sequences out of 15000+200000
+ 23552 strings out of 493305
+ 519712 string characters out of 3129802
+ 725350 words of memory out of 3000000
+ 26740 multiletter control sequences out of 15000+200000
  10849 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,25n,56p,1463b,1139s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1318,9 +1315,9 @@ ro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 <C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (7 pages, 626652 bytes).
+Output written on main.pdf (8 pages, 631938 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

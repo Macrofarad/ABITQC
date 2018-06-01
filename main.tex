@@ -136,7 +136,7 @@ Balanced Ternary is not, strictly speaking a part of quantum computing, so with 
 \newline
 To do this, a brief nod to what numbers are at their core is needed. It's pretty obvious to most, but numbers are nothing more or less than a way to categorize quantity.  This concept of quantity is important as it is independent of stylistic choices such as base or notation.  In programming, binary is frequently used as it reflects the power state of transistors within the register.  For most general cases, this works quite well allowing for any number of tricks, or bit-hacks, to be employed to speed things up.  However, unsigned binary does have an Achilles' heel in that due to its basis in positive numbers, there is no simple way to show when a number is negative on hardware \footnote{Note: the "-" symbol seen in both binary and standard decimal is not a representation of quantity, it's more akin to a shorthand for the operation of 0 - Quantity, and thus it's fairly difficult to represent in hardware}.  To do so, one needs to employ a tactic such as the IEEE 754 standard, adding much more complexity than would otherwise be necessary.  One way to circumvent this issue is to use a balanced number system such as balanced ternary. \newline
 \newline
-These systems work by designating symbols as pre-signed.  In the case of balanced ternary, the symbols are designated as "0; +; -" and they represent "$3^{(s*n)}$" with "n" being the index number starting at zero from right to left and "s" being the sign as denoted by the "+" for positive, "-" for negative, or "0" for null quantity \footnote{ This notion of sign being a property of quantity will become relevant in later sections (~\ref{ternaryRelevance}), but for now, it is acceptable to use this idea as a base case.}.  From there it is a simple matter of adding the positive and negative values up in order to get the end result (see Table~\ref{tab:ternary}, for example and comparison between bases).
+These systems work by designating symbols as pre-signed.  In the case of balanced ternary, the symbols are designated as "0; +; -" and they represent "$3^{(s*n)}$" with "n" being the index number starting at zero from right to left and "s" being the sign as denoted by the "+" for positive, "-" for negative, or "0" for null quantity \footnote{ This notion of sign polarity being a property of quantity will become relevant in later sections (~\ref{ternaryRelevance}), but for now, it is acceptable to use this idea as a base case.}.  From there it is a simple matter of adding the positive and negative values up in order to get the end result (see Table~\ref{tab:ternary}, for example and comparison between bases).
 
 \begin{table} %Table used to illustrate comparison between bases
 	\centering
@@ -149,7 +149,8 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 	\end{tabular}
 	\caption{\label{tab:ternary}comparison table showing equivalent numbers in different display forms}
 \end{table}
-
+\subsection{Vectors}
+\label{THISNEEDSTOGETDONE} %or commented out until it is ready
 \section{Advanced Concepts}
 \label{sec:AdvConcepts}
 The following sections are more advanced concepts moving towards the target goal of quantum circuits.  These sections assume that the reader understands all prior sections and has completed further reading when necessary. 
@@ -180,7 +181,7 @@ A more advanced concept that is still core to quantum computing is the idea of r
 %consider deleting circuitikz if it isn't used elsewhere
 
 
-\begin{figure}
+\begin{figure} %note: Tikz does not like playing with multiple circuits.  Either find a solution by learning the syntax well enough to compensate or don't use any more standard circuits.  Given that this paper isn't on standard digital circuits, the latter is likely the better option
 %	\centering
 \label{tikzSettings} %in case it needs to move up
 \usetikzlibrary{arrows, shapes.gates.logic.US, calc}
@@ -232,18 +233,61 @@ A more advanced concept that is still core to quantum computing is the idea of r
 %\end{comment}%debugging
 
 
-\subsection{Probability Amplitudes}
+\subsection{Probability Current} %this topic is a terrifying monster
 \label{ternaryRelevance} %allows linking to this spot regardless of location
 \label{currentSpot}
+% and oh boy is it a heavy topic: https://www.math.ucdavis.edu/~greg/intro.pdf
+Back in the section involving balanced ternary it was mentioned that the concept of quantities innately having a sign polarity would be relevant later, this section is that aforementioned later.
 
+
+\label{FigureisThecommandYouAlwaysForget}
+%refer to https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/ProbabilityCurrent/ProbabilityCurrent.html 
+%for a comprehensive/interactive display
+
+% a good bloch sphere until a custom graphic is generated https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.activecyber.net%2Fwp-content%2Fuploads%2F2016%2F05%2FSlide2-1024x576.jpg&imgrefurl=http%3A%2F%2Fwww.activecyber.net%2Frise-quantum-computers-current-state-cryptographic-affairs%2F&docid=WlC5Z0oQpIQMoM&tbnid=PgRi_YmNYCO0VM%3A&vet=10ahUKEwjwndO69rHbAhVCHTQIHUmgDVwQMwhMKA8wDw..i&w=1024&h=576&client=firefox-b-1&bih=727&biw=1536&q=probability%20current%20graph%20quantum%20computing&ved=0ahUKEwjwndO69rHbAhVCHTQIHUmgDVwQMwhMKA8wDw&iact=mrc&uact=8
+
+
+
+\begin{figure} %note this area is not yet complete as the equations are a beast to input
+	\begin{tikzpicture}
+	\draw[gray] (0,-3) grid (12,3);
+	%blue line start
+	\draw[blue] (0,0) sin (1,1) cos (2,0) sin (3,-1) cos (4,0);
+	\draw[blue] (4,0) sin (5,1) cos (6,0) sin (7,-1) cos (8,0);
+	\draw[blue] (8,0) sin (9,1) cos (10,0) sin (11,-1) cos (12,0);
+	%blue line end
+	\end{tikzpicture}
+	\caption{Probability Density Placeholder}\label{ProbDensity1}
+\end{figure}
+
+
+\begin{figure} %note: this area is not correct, you need two graphs, one for density and one for current
+\begin{tikzpicture}
+\draw[gray] (0,-3) grid (12,3);
+%blue line start
+\draw[green] (0,0) sin (1,1) cos (2,0) sin (3,-1) cos (4,0);
+\draw[green] (4,0) sin (5,1) cos (6,0) sin (7,-1) cos (8,0);
+\draw[green] (8,0) sin (9,1) cos (10,0) sin (11,-1) cos (12,0);
+%blue line end
+\end{tikzpicture}
+\caption{Probability Current Placeholder}\label{ProbCurrent1}
+\end{figure}
+
+
+%\section{Hardware Implementation} %go over a few examples such as d-wave, topological, ion trap, josephson junctions and etc.  If a specific company pioneered or is the primary utilizer of an implementation, mention them by name
 
 \section{Quantum Coding}
 This section deals in the various coding languages utilized in programming quantum computers.  As these languages are still in active development, expect this section to change frequently.
 
 \subsection{Quantum Ladder Logic}
 \label{QladderLogicHere} %referenced in a previous section
+\subsubsection{Qubits}
+\subsubsection{Single-Qubit Gates}
+\subsubsection{Multi-Qubit Gates}
 
-\subsection{Quantum Assembly}
+
+\subsection{Quantum Assembly Language}
+
 
 
 \section{Experiment 1-2 pages}
@@ -258,45 +302,11 @@ Explain the experimental set-up here.
 \section{Results and interpretation 2-3 pages}
 Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
 
-%\begin{figure}
-%\centering
-%\includegraphics[width=1\textwidth]{raw_data.png}
-%\caption{\label{fig:data}Raw (unprocessed) data. Replace this %figure %with the one you've made, that shows the resistivity.}
-%\end{figure}
-\begin{comment} %comment out defaults
-\subsection{Classical regime}
-Calculate the sheet electron density $n_{s}$ and electron mobility $\mu$ from the data in the low-field regime, and refer to the theory in section \ref{sec:theory}. Explain how you retrieved the values from the data (did you use a linear fit?).
-Round values off to 1 or 2 significant digits: 8.1643 ~= 8.2. Also, 5e-6 is easier to read than 0.000005.
-
-!OBS: This part is optional (only if you have time left).
-Calculate the uncertainty as follows: \newline $u(f(x, y, z)) = \sqrt{(\frac{\delta f}{\delta{x}} u(x))^{2} + (\frac{\delta f}{\delta{y}} u(y))^{2} + (\frac{\delta f}{\delta{z}} u(z))^{2}}$, where $f$ is the calculated value ($n_{s}$ or $\mu$), $x, y, z$ are the variables taken from the measurement and $u(x)$ is the uncertainty in x (and so on).
-
-\subsection{Quantum regime}
-Calculate $n_{s}$ for the high-field regime.
-Show a graph of the longitudinal conductivity ($\rho_{xx}$) and Hall conductivity($\rho_{xy}$) \textbf{in units of the resistance quantum} ($\frac{h}{e^{2}}$), depicting the integer filling factors for each plateau.
-Show a graph of the plateau number versus its corresponding value of $1/B$. From this you can determine the slope, which you use to calculate the electron density.
-Again, calculate the uncertainty for your obtained values.
-\end{comment} %comment out defaults
 
 \section{Discussion 1/2-1 page}
 Discuss your results. Compare the two values of $n_{s}$ that you've found in the previous section. Compare your results with literature and comment on the difference. If you didn't know the value of the resistance quantum, would you be able to deduce it from your measurements? If yes/no, why?
 
 \begin{comment} %comment out defaults
-
-\newpage
-\section{Some LaTeX tips}
-\label{sec:latex}
-\subsection{How to Include Figures}
-
-First you have to upload the image file (JPEG, PNG or PDF) from your computer to writeLaTeX using the upload link the project menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.3\textwidth]{frog.jpg}
-%\caption{\label{fig:frog}This frog was uploaded to writeLaTeX via %the project menu.}
-%\end{figure}
-
-
 
 \subsection{How to Write Mathematics}
 
@@ -305,16 +315,11 @@ First you have to upload the image file (JPEG, PNG or PDF) from your computer to
 \begin{equation}
 S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
       = \frac{1}{n}\sum_{i}^{n} X_i
-\label{eq:sn}
+\label{equationNotation}
 \end{equation}
 
 denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
 
-The equation \ref{eq:sn} is very nice.
-
-\subsection{How to Make Sections and Subsections}
-
-Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
 
 \subsection{How to Make Lists}
 
@@ -335,12 +340,6 @@ You can make lists with automatic numbering \dots
 \item[Concept] Explanation
 \item[Idea] Text
 \end{description}
-
-
-
-We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
-
-
 \end{comment} %comment out defaults
 
 
