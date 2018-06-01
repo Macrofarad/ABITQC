@@ -66,7 +66,11 @@ Keywords:  Quantum, QISKit, Computing, Ladder, Logic, QASM, Introduction
 
 Make no mistake, quantum physics as a whole is an exceptionally advanced topic.  The type of scenarios it brings to the table can be almost mind boggling at times \cite{mindBoggle}.  Add to this a slew of misleading analogies and the fact that "Qubit" may refer to any number of technologies, such as ion traps, superconducting qubits, or spin qubits and it's no wonder that people get confused.   With all of that said, while quantum computing does use the underlying principals of quantum mechanics, it is still nothing more than a programming architecture.  To put this statement in another context, an individual does not need to understand how to bias a transistor to be good at programming in C.
 
+\subsection{Use Case for Quantum Computing} 
+Quantum computing is what's called a Disruptive Emergent Technology.  Meaning, as far as industry is concerned, the implementation of these concepts have not only never been seen in any technology prior, but they also have the potential to revolutionize how things are done should these implementations prove successful.  Quantum computing is not a magic bullet that can handle every problem; however, it does have the potential to be exceptionally good at problems that current technology has issues solving.  Examples of such problems can be as varied as weather prediction, factoring \cite{shorsAlgorithm}, or even protein folding \cite{dwavepfold}. 
 
+\subsection{Relevance to Reader} %AKA, why should you care
+To avoid mincing words or dancing around the point, all that is fine, but this leads to the famous words (paraphrased ,of course) uttered at one point by nearly every person between the ages of twelve and nineteen: "Why should I care?".  To that, there are two primary categories of answers.  First, advances in technology usually creates a higher standard of living, in the case of quantum computing, these advances may end up finding the cure to debilitating ailments, reducing cost of living, or even allowing for a faster, more secure means to transport data (Quantum Internet \cite{qinternetNature}).  The second category deals with economics, the reality of the situation is that there aren't enough people who are skilled in this area to fit the demand \cite{qc5ycommercialize}.  Meaning, not only are jobs available to those with the skills to fill the required roles, but due to the shortage of supply when compared to the demand, these jobs generally pay quite well. 
 
 
 \section{Background Concepts}
@@ -75,11 +79,7 @@ Make no mistake, quantum physics as a whole is an exceptionally advanced topic. 
 %This section is not meant to be an exhaustive list, but, in my personal experience, learning about the background concepts below will greatly assist a person’s ability to better understand quantum computing.  The following sections will provide a brief explanation of the concepts.
 In order to avoid excessive noise, this paper assumes the reader has some basic knowledge of programming as well as electronics.  It will not go into depth with much of the math, instead focusing primarily on the act of programming itself.  There are many topics which should be covered if one wishes to become skilled in quantum computing, most of which the reader will need to research on their own time; however, the sections below should provide enough context in order to provide a suitable foothold should one wish to continue with the subject.
 
-\subsection{Use Case for Quantum Computing} 
-Quantum computing is what's called a Disruptive Emergent Technology.  Meaning, as far as industry is concerned, the implementation of these concepts have not only never been seen in any technology prior, but they also have the potential to revolutionize how things are done should these implementations prove successful.  Quantum computing is not a magic bullet that can handle every problem; however, it does have the potential to be exceptionally good at problems that current technology has issues solving.  Examples of such problems can be as varied as weather prediction, factoring \cite{shorsAlgorithm}, or even protein folding \cite{dwavepfold}. 
 
-\subsection{Relevance to Reader} %AKA, why should you care
-To avoid mincing words or dancing around the point, all that is fine, but this leads to the famous words (paraphrased ,of course) uttered at one point by nearly every person between the ages of twelve and nineteen: "Why should I care?".  To that, there are two primary categories of answers.  First, advances in technology usually creates a higher standard of living, in the case of quantum computing, these advances may end up finding the cure to debilitating ailments, reducing cost of living, or even allowing for a faster, more secure means to transport data (Quantum Internet \cite{qinternetNature}).  The second category deals with economics, the reality of the situation is that there aren't enough people who are skilled in this area to fit the demand \cite{qc5ycommercialize}.  Meaning, not only are jobs available to those with the skills to fill the required roles, but due to the shortage of supply when compared to the demand, these jobs generally pay quite well. 
 
 
 \subsection{Removing Misleading Assumptions}
@@ -96,25 +96,26 @@ To briefly summarize, Schrödinger's cat is a brilliant thought experiment meant
 
 \subsection{Balanced Ternary} %The basics from the ground up
 %note: blanaced ternary is not, strictly speaking a core mechanic in quantum computing.  However, it could serve as a gentle introduction to non-binary coding for many students.  A bridge between hard digital and the strangeness of qubits
-\label{currentSpot}
+
 Balanced Ternary is not, strictly speaking a part of quantum computing, so with that knowledge, it may seem like a strange item to include as background information when discussing the subject. However, given this author's personal experience, it is nearly ideal to serve not only as a bridge to more advanced concepts but also as a demonstration of why said concepts are important. \newline
 \newline
+To do this, a brief nod to what numbers are at their core is needed. It's pretty obvious to most, but numbers are nothing more or less than a way to categorize quantity.  This concept of quantity is important as it is independent of stylistic choices such as base or notation.  In programming, binary is frequently used as it reflects the power state of transistors within the register.  For most general cases, this works quite well allowing for any number of tricks, or bit-hacks, to be employed to speed things up.  However, unsigned binary does have an Achilles' heel in that due to its basis in positive numbers, there is no simple way to show when a number is negative on hardware \footnote{Note: the "-" symbol seen in both binary and standard decimal is not a representation of quantity, it's more akin to a shorthand for the operation of 0 - Quantity, and thus it's fairly difficult to represent in hardware}.  To do so, one needs to employ a tactic such as the IEEE 754 standard, adding much more complexity than would otherwise be necessary (see Table~\ref{tab:ternary}, for example).  One way to circumvent this issue is to use a balanced number system such as balanced ternary. \newline
+\newline
+These systems work by designating symbols as pre-signed.  In the case of balanced ternary, the symbols are designated as "0; +; -" and they represent "$3^{(s*n)}$" with "n" being the index number starting at zero from right to left and "s" being the sign as denoted by the "+" for positive, "-" for negative, or "0" for null quantity. This notion of sign being a property of quantity will become relevant in later sections~\ref{ternaryRelevance}, but for now, it is acceptable to use this idea as a base case.
 
-
-%\subsection{How to Make Tables}
-
-%Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example.
+\label{currentSpot}
+\label{ternaryRelevance}
 
 \begin{table} %Table used to illustrate comparison between bases
 	\centering
 	\begin{tabular}{l|l|l} % Justification l-left, c-center, r-right
-		Decimal & Binary (IEEE 754*) & Balanced Ternary \\\hline %might remove the 754 example if it becomes an issue to clarity
+		Signed Decimal & Binary (IEEE 754*) & Balanced Ternary \\\hline %might remove the 754 example if it becomes an issue to clarity
 		0 & 0 & 0 \\
 		3 & 11 & 10 \\
 		5 & 101 & + 0 - \\
 		-254 & 11000011011111100000000000000000* & - 0 0 - + - \\ % -3^5 + 0 + 0 - 3^2 + 3^1 -3^0
 	\end{tabular}
-	\caption{\label{tab:widgets}comparison table showing equivalent numbers in different display forms}
+	\caption{\label{tab:ternary}comparison table showing equivalent numbers in different display forms}
 \end{table}
 
 
