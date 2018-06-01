@@ -43,7 +43,7 @@ replace emphasis in biblio with italix to fix the spacing issues
 \label{customCommands}
 \definecolor{mygray}{gray}{0.6}
 % Put a URL Define Here
-
+\usetikzlibrary{arrows.meta}
 \newcommand{\volt}[1]{${#1} V$} % shortcut to volt
 \newcommand{\ohms}[1]{${#1} \Omega$} % shortcut to ohms
 
@@ -167,14 +167,11 @@ Back to the previous section, the fact that the sum of the probability of all po
 $\sum\psi^{*}_{n} \psi_{n}=1$ \newline
 This will be discussed in more detail in the qubit section (\ref{Qubits}) in regards to what are called bloch spheres. % don't go too deep into superposition yet
 
-
-
-
-
 %$\expval{A}{\Psi}$
 
 %http://detexify.kirelabs.org/classify.html
 %Use to help figure out what symbol is where and how to write it out
+
 \section{Advanced Concepts}
 \label{sec:AdvConcepts}
 The following sections are more advanced concepts moving towards the target goal of quantum circuits.  These sections assume that the reader understands all prior sections and has completed further reading when necessary. 
@@ -259,14 +256,15 @@ A more advanced concept that is still core to quantum computing is the idea of r
 
 \subsection{Probability Current} %this topic is a terrifying monster
 \label{ternaryRelevance} %allows linking to this spot regardless of location
-\label{currentSpot}
-% and oh boy is it a heavy topic: https://www.math.ucdavis.edu/~greg/intro.pdf
+
+% and oh boy is it a heavy topic, helpful link for some wording: https://www.math.ucdavis.edu/~greg/intro.pdf
 Back in the section involving balanced ternary it was mentioned that the concept of quantities innately having a sign polarity would be relevant later, this section is that aforementioned later. Fair warning, this section will get very math heavy. \newline
 \newline
 
 
 
-\label{FigureisThecommandYouAlwaysForget}
+\label{FigureisThecommandYouAlwaysForget}%saved a lot of time putting this here
+\label{captionIsTheOtherOne}
 %refer to https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/ProbabilityCurrent/ProbabilityCurrent.html 
 %for a comprehensive/interactive display
 
@@ -301,14 +299,63 @@ Back in the section involving balanced ternary it was mentioned that the concept
 
 
 %\section{Hardware Implementation} %go over a few examples such as d-wave, topological, ion trap, josephson junctions and etc.  If a specific company pioneered or is the primary utilizer of an implementation, mention them by name
+\newpage %should make it look better, remove if it becomes an issue
 
 \section{Quantum Coding}
 This section deals in the various coding languages utilized in programming quantum computers.  As these languages are still in active development, expect this section to change frequently.
 
 \subsection{Quantum Ladder Logic}
 \label{QladderLogicHere} %referenced in a previous section
-\subsubsection{Qubits}
+%brief explanation of this stuff
+\subsubsection{Qubits} %another section to check details heavily, might raise it up a level and move other things around
 \label{Qubits}
+Into the meat of the matter, qubits are to quantum computers what register bits are to a classical computer. A qubit is a two-state quantum mechanical system such as photon polarization or the spin of a trapped ion.
+
+\paragraph{Bloch Sphere} %lots of nested sections in this area
+\label{currentSpot} %to find where I last left off
+See Figure~\ref{bloch1} for visual.  A Bloch sphere is a geometrical representation of the pure state space of a two level quantum mechanical system (qubit).\newline
+\newline
+Since the total probability of the system has to be one: $\bra{\psi}\ket{\psi}=1$ this gives us the constraint required in order to write $\ket{\psi}$  using the following representation. \newline
+$\ket{\psi}=\cos(\dfrac{\theta}{2})\ket{0} + e^{i\phi}\sin(\dfrac{\theta}{2})\ket{1}=\cos(\dfrac{\theta}{2})\ket{0}+(cos(\phi)+i\sin(\phi))\sin(\dfrac{\theta}{2})\ket{1}$ \newline
+Where $0\leq\theta\leq\pi$. \newline
+\newline
+All of that is a bit of a mouth-full, so to speak, but for most practical purposes, the Bloch sphere is one of the best tools to visually understand and debug a quantum circuit on the qubit level when it is an option that is available.
+
+
+
+
+\begin{figure}%Draws a bloch sphere, make sure to label parts later
+	%https://tex.stackexchange.com/questions/345420/how-to-draw-a-bloch-sphere
+	
+	\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
+	\clip(-2.19,-2.49) rectangle (2.66,2.58);
+	\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (56.7:0.4) arc (56.7:90.:0.4) -- cycle;
+	\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (-135.7:0.4) arc (-135.7:-33.2:0.4) -- cycle;
+	\draw(0,0) circle (2cm);
+	\draw [rotate around={0.:(0.,0.)},dash pattern=on 3pt off 3pt] (0,0) ellipse (2cm and 0.9cm);
+	\draw (0,0)-- (0.70,1.07);
+	\draw [->] (0,0) -- (0,2);
+	\draw [->] (0,0) -- (-0.81,-0.79);
+	\draw [->] (0,0) -- (2,0);
+	\draw [dotted] (0.7,1)-- (0.7,-0.46);
+	\draw [dotted] (0,0)-- (0.7,-0.46);
+	\draw (-0.08,-0.3) node[anchor=north west] {$\varphi$};
+	\draw (0.01,0.9) node[anchor=north west] {$\theta$};
+	\draw (-1.01,-0.72) node[anchor=north west] {$\mathbf {\hat{x}}$};
+	\draw (2.07,0.3) node[anchor=north west] {$\mathbf {\hat{y}}$};
+	\draw (-0.5,2.6) node[anchor=north west] {$\mathbf {\hat{z}=|0\rangle}$};
+	\draw (-0.4,-2) node[anchor=north west] {$-\mathbf {\hat{z}=|1\rangle}$};
+	\draw (0.4,1.65) node[anchor=north west] {$|\psi\rangle$};
+	\scriptsize
+	\draw [fill] (0,0) circle (1.5pt);
+	\draw [fill] (0.7,1.1) circle (0.5pt);
+	\end{tikzpicture}
+	
+	
+	\caption{Bloch Sphere}\label{bloch1}
+\end{figure}
+
+
 \subsubsection{Single-Qubit Gates}
 \subsubsection{Multi-Qubit Gates}
 
