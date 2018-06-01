@@ -425,9 +425,12 @@ For all this interface brings to the table, there is one very important thing th
 Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
 \end{comment}
 \subsection{Example Source Code}
-The following are examples of code that was run live on a quantum computer, specifically on IBM Q 5 Yorktown. The following is the QASM source code for superdense coding.
+The following are examples of code that was run live on a quantum computer, specifically on IBM Q 5 Yorktown and related devices. 
 \subsubsection{Superdense Coding}
+In this section, the code provided is in both QASM and ladder logic.  It is worth noting that there is a discrepancy between the ladder logic and the QASM in regards to the cnot and controlled z gates.  This is due to the fact that at this time, there is no direct hardware implementation of a controlled z gate, thus for simplicity's sake the QASM code assumes non-existent control bits of 1.  This assumption can be changed to a control bit of zero by commenting out these gates.
+
 %\begin{small}
+
 \begin{multicols}{2}
 \begin{verbatim}
 include "qelib1.inc";
