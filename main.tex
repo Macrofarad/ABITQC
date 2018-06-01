@@ -448,12 +448,13 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 \label{currentSpot} %to find where I last left off
 Quantum Assembly Language~\cite{qasmWhitePaper}, also known as QASM or OpenQASM is a coding back end that is widely used throughout industry.  It was developed to solve many of the coding issues that had been plaguing the architecture due to lack of a widely accepted standard.  As well as being part of IBM's Quantum Experience interface, its utilization can be seen in projects such as QISKit as well as many smaller projects. \newline
 \newline
-In terms of programming, QASM is relatively straightforward; there are only two types of storage, classical registers, and quantum registers.  These registers are nothing more than  one dimensional arrays of bits or qubits respectively and can then have gates applied to them which are unitary subroutines.
+In terms of programming, QASM is relatively straightforward; there are only two types of storage, classical registers, and quantum registers.  These registers are nothing more than  one dimensional arrays of bits or qubits respectively and can then have gates applied to them which are unitary subroutines. Below is an example of QASM in use as well as the quantum ladder logic equivalent.
 
-\begin{comment} %placeholder
+%\begin{comment} %placeholder
 \begin{multicols}{2}
 \begin{verbatim}
 include "qelib1.inc";
+
 qreg q[5];
 creg c[5];
 h q[0];
@@ -471,11 +472,12 @@ Which Equates to the following code in Ladder Logic
 \[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
 \lstick{0} 		& \gate{H}	& \ctrl{1} 	& \gate{X} 	& \gate{Z}		& \ctrl{1}		& \gate{H}		& \meter \\	%& \cw \cwx \control{4}\\
 \lstick{0} 		& \qw 		& \targ 	& \qw 		& \qw 			& \targ			& \qw 			& \meter \\	%& \cw \cwx \control{3}\\
-\lstick{\psi} 	& \qw 		& \qw 		& \ctrl{-2}	\\ %line done
-\lstick{\psi}	& \qw 		& \qw 		& \qw 		& \ctrl{-3}		\\ %line done
-%\lstick{C}		& \qw 		& \qw 		& \qw 		& \qw			& \qw 			& \qw 			& \qw 		& \meter  \\
+\lstick{0} 	& \qw 		& \qw 		& \ctrl{-2}		& \qw 			& \qw 			& \qw			& \meter  \\%
+\lstick{0}	& \qw 		& \qw 		& \qw 		& \ctrl{-3}			& \qw 			& \qw 			& \meter  \\%e
+\lstick{0}		& \qw 		& \qw 		& \qw 		& \qw			& \qw 			& \qw 			& \meter  \\%
 }\]
-\end{comment}
+\end{multicols} %and go back to normal formatting
+%\end{comment}
 
 
 
@@ -545,6 +547,7 @@ Which Equates to the following code in Ladder Logic
 	\lstick{0} 		& \qw 		& \targ 	& \qw 		& \qw 			& \targ			& \qw 			& \meter \\	%& \cw \cwx \control{3}\\
 	\lstick{\psi} 	& \qw 		& \qw 		& \ctrl{-2}	\\ %line done
 	\lstick{\psi}	& \qw 		& \qw 		& \qw 		& \ctrl{-3}		\\ %line done
+	%\lstick{\psi} \\%	& \qw 		& \qw 		& \qw 		& \qw			& \qw 			& \qw 			& \qw 		& \meter  \\
 	%\lstick{C}		& \qw 		& \qw 		& \qw 		& \qw			& \qw 			& \qw 			& \qw 		& \meter  \\
 }\]
 
