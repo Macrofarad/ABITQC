@@ -427,7 +427,7 @@ Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity 
 \subsection{Example Source Code}
 The following are examples of code that was run live on a quantum computer, specifically on IBM Q 5 Yorktown and related devices. 
 \subsubsection{Superdense Coding}
-In this section, the code provided is in both QASM and ladder logic.  It is worth noting that there is a discrepancy between the ladder logic and the QASM in regards to the cnot and controlled z gates.  This is due to the fact that at this time, there is no direct hardware implementation of a controlled z gate, thus for simplicity's sake the QASM code assumes non-existent control bits of 1.  This assumption can be changed to a control bit of zero by commenting out these gates. See Figure~\ref{IBMQE:ExampleResuts} for an example of program output on IBM's interface.
+In this section, the code provided is in both QASM and ladder logic.  It is worth noting that there is a discrepancy between the ladder logic and the QASM in regards to the cnot and controlled z gates.  This is due to the fact that at this time, there is no direct hardware implementation of a controlled z gate, thus for simplicity's sake the QASM code assumes non-existent control bits of 1.  This assumption can be changed to a control bit of zero by commenting out these gates. See Figure~\ref{IBMQE:ExampleResuts} in the Appendix for an example of program output on IBM's interface.
 
 %\begin{small}
 
@@ -514,7 +514,7 @@ For future plans, this project is something I intend to continuously work on, wi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Figures} %Might need a different name, for larger images that don't fit in elsewhere
+\section{Appendix} %Might need a different name, for larger images that don't fit in elsewhere
 %not sure if there's a fix for the strange image placement that tex does
 
 \begin{figure}[H] % Display image under the section name
@@ -527,6 +527,11 @@ For future plans, this project is something I intend to continuously work on, wi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\begin{comment}
+\section{Bibliography}
+\end{comment}%this is used to trick the navigation side bar into thinking there is a dedicated bibliography section without messing with the formatting as the block comment isn't recognized as comment until after the sections render on sidebar
+
+
 \begin{thebibliography}{9}
 	\label{sec:bibliography} %allows for quick navigation via side bar	
 %========================================================================================
