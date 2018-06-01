@@ -121,7 +121,7 @@ To briefly summarize, Schrödinger's cat is a brilliant thought experiment meant
 \newline
  In context, this is meant to demonstrate the concepts of complex, superimposed states collapsing upon measurement. For better or worse, this concept of a not dead, yet dead cat in a box has spread like wildfire, it has become the cornerstone of what the public sees as quantum computing. This has allowed the idea that the quantum state is both 1 and 0 to become the very first thing that anyone learns in regards to quantum computing.  While this statement is not technically wrong, it is fundamentally incomplete. In many ways, it's similar to the question "which came first: the chicken, or the egg?", the answer to which can only be something along the lines of 'invalid question', as it not only fails to define what denotes the term chicken, but it also leads the individual being asked to assume the term 'egg' is specifically in the context of a chicken egg. \newline
  \newline
- In reality, a better way to think of this is through vectors and complex numbers.  The value is in fact both 1 and 0, but it's that way not because it is two things in a binary sense, but because it is a complex mixing of both.  To put this back into cat analogies, let's take the premise back to the start.  There is a cat, that cat is now infected with a zombie pathogen.  For all purposes, the cat is neither alive, nor dead, as it cannot cleanly fit into either category, yet it does have many of the defining characteristics that comprise both.  From here, the cat is injected with an antidote,  being a rushed marvel of medicine meant to save the feline race, it will near instantly result in either a complete cure or certain death for our kitten subject.  For this analogy, the zombified state represents the ability of qubits to be in a mixed state, the antidote representing the act of measuring this mixed state and thus collapsing the end result into a binary value: 1 or 0, alive or dead.
+ In reality, a better way to think of this is through vectors and complex numbers.  The value is in fact both 1 and 0, but it's that way not because it is two things in a binary sense, but because it is a complex mixing of both.  To put this back into cat analogies, let's take the premise back to the start.  There is a cat, that cat is now infected with a zombie pathogen.  For all purposes, the cat is neither alive, nor dead, as it cannot cleanly fit into either category, yet it does have many of the defining characteristics that comprise both.  From here, the cat is injected with an antidote,  being a rushed marvel of medicine meant to save the feline race, it will near instantly result in either a complete cure or certain death for our kitten subject.  For this analogy, the zombified state represents the ability of qubits to be in a mixed state, the antidote representing the act of measuring this mixed state and thus collapsing it into a binary value. %: 1 or 0, alive or dead.
 
 
 \subsection{Balanced Ternary} %The basics from the ground up
@@ -147,6 +147,8 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 
 \section{Advanced Concepts}
 \label{sec:AdvConcepts}
+The following sections are more advanced concepts moving towards the target goal of quantum circuits.  These sections assume that the reader understands all prior sections and has completed further reading when necessary. 
+
 
 %helpful link: https://arxiv.org/pdf/quant-ph/0406003.pdf Q-circuit latex tutorial
 % https://www.media.mit.edu/quanta/qasm2circ/
@@ -168,7 +170,7 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 
 \subsection{Reversible Logic Gates} %The basics from the ground up
 %there was a time when reversible logic was seen as a fatal flaw in QC, but some dude who was pretty clever figured out any standard logic gate could be simulated within reversible logic
-A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the digital logic circuit as seen in Figure~\ref{Circuit:1}.  In this circuit, there are three inputs and a single output, even knowing the gate layout and the end value of $f_{1}$, the best that could be done for determining the input values is narrowing it to a range of possibilities as all the values have been combined into one, irreversible output. Now consider the reversible logic circuit as seen in Figure~\ref{Circuit:2}, while the notation may be unfamiliar\footnote{This notation is that of a simple quantum ladder logic circuit, the elements of which will be covered in a following section}, each input has its own unique output.  Due to this, so long as one knows what gates are in the circuit and what the output values are, the input values can be derived relatively easily.
+A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the digital logic circuit as seen in Figure~\ref{Circuit:1}.  In this circuit, there are three inputs and a single output, even knowing the gate layout and the end value of $f_{1}$, the best that could be done for determining the input values is narrowing it to a range of possibilities as all the values have been combined into one, irreversible output. Now consider the reversible logic circuit as seen in Figure~\ref{Circuit:2}, while the notation may be unfamiliar\footnote{This notation is that of a simple quantum ladder logic circuit, the elements of which will be covered in section~\ref{QladderLogicHere}}, each input has its own unique output.  Due to this, so long as one knows what gates are in the circuit and what the output values are, the input values can be derived relatively easily.
 
 %consider deleting circuitikz if it isn't used elsewhere
 
@@ -229,9 +231,14 @@ A more advanced concept that is still core to quantum computing is the idea of r
 \label{ternaryRelevance} %allows linking to this spot regardless of location
 \label{currentSpot}
 
-\section{Quantum Ladder Logic}
 
+\section{Quantum Coding}
+This section deals in the various coding languages utilized in programming quantum computers.  As these languages are still in active development, expect this section to change frequently.
 
+\subsection{Quantum Ladder Logic}
+\label{QladderLogicHere} %referenced in a previous section
+
+\subsection{Quantum Assembly}
 
 
 \section{Experiment 1-2 pages}
