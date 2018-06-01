@@ -12,6 +12,7 @@
 \usepackage{physics}
 \usepackage{float} % Fixing formatting
 \usepackage{multicol} %to allow sections to have different column styles
+\usepackage{mathtools}%for more formatting stuff
 
 
 
@@ -446,12 +447,7 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 	}\]
 	
 	\begin{figure}[H]
-		\[\]$\theta_{4}=\theta_{H}=\dfrac{1}{\sqrt{2}}$\[\begin{bmatrix}
-		$1$ & $1$ \\
-		$1$ & $-1$ 
-		\end{bmatrix}
-		\]
-		
+		$\theta_4 = \theta_H = \frac{1}{\sqrt{2}} \Bigg[\begin{matrix*}1&1\\1&-1\end{matrix*}\Bigg]$	% math matrix stuff	
 	\end{figure}
 	
 \end{multicols}
@@ -462,13 +458,7 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 	}\]
 	
 	\begin{figure}[H]
-		%\newline
-		$\theta_{5}=\theta_{S} =$ % \newline
-		\[\begin{bmatrix}
-		$1$ & $0$ \\
-		$0$ & $i$ \\
-		\end{bmatrix}
-		\]
+		$\theta_{5}=\theta_{S} = \Bigg[\begin{matrix*}1&0\\1&i\end{matrix*}\Bigg]$
 	\end{figure}
 	
 \end{multicols}
