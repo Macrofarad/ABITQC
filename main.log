@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  31 MAY 2018 21:08
 entering extended mode
 **./main.tex
 (main.tex
@@ -975,16 +975,6 @@ Overfull \hbox (1.33417pt too wide) in paragraph at lines 137--144
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
-
- []
-
-
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibraryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
@@ -1169,13 +1159,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20722 strings out of 493305
- 486507 string characters out of 3129802
- 618611 words of memory out of 3000000
- 23972 multiletter control sequences out of 15000+200000
+ 20720 strings out of 493305
+ 486461 string characters out of 3129802
+ 617502 words of memory out of 3000000
+ 23970 multiletter control sequences out of 15000+200000
  9976 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,1185b,836s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,8n,56p,1185b,834s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1193,7 +1183,7 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Mac
 ro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
 C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmti10.pfb>
-Output written on main.pdf (6 pages, 201827 bytes).
+Output written on main.pdf (6 pages, 201953 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

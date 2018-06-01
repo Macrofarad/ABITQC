@@ -167,8 +167,7 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 
 \subsection{Reversible Logic Gates} %The basics from the ground up
 %there was a time when reversible logic was seen as a fatal flaw in QC, but some dude who was pretty clever figured out any standard logic gate could be simulated within reversible logic
-A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the following digital logic circuit:\newline % for spacing
-\newline % for spacing
+A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the digital logic circuit as seen in Figure~\ref{Circuit:1}.  In this circuit, there are three inputs and a single output, even knowing the gate layout and the end value of $f_{1}$, the best that could be done for determining the input values is narrowing it to a range of possibilities. 
 
 %consider deleting circuitikz if it isn't used elsewhere
 
@@ -185,7 +184,8 @@ A more advanced concept that is still core to quantum computing is the idea of r
 
 \node[not gate US, draw] at ($(x) + (0.8, 0)$) (notx) {};
 \node[not gate US, draw] at ($(y) + (0.8, 0)$) (noty) {};
-\node[nor gate US, draw, rotate=0, logic gate inputs=nnnn] at ($(noty) + (2, 0.085)$) (xory) {};
+%\node[and gate US, draw, rotate=0, logic gate inputs=nnnn] at ($(noty) + (2, 0.085)$) (xory) {};
+\node[or gate US, draw, rotate=0, logic gate inputs=nnn] at ($(noty) + (2, 0.085)$) (xory) {};
 
 \draw (x) -- (notx.input);
 \draw (y) -- (noty.input);
@@ -193,12 +193,12 @@ A more advanced concept that is still core to quantum computing is the idea of r
 \path ($(notx.input) + (0.2, 0)$) -- coordinate (puntx) (x |- notx);
 %\draw (x) -- (puntx) node[branch] {} |- ($(notx.output) + (0.4, 0.4)$) |- (xory.input 1);
 
-\draw (notx.output) -- ([xshift=0.2cm]notx.output) |- (xory.input 2);
-\draw (noty.output) -- ([xshift=0.2cm]noty.output) |- (xory.input 3);
-\draw (z) -| ($(noty.output) + (0.2, -0.5)$) |- (xory.input 4);
+\draw (notx.output) -- ([xshift=0.2cm]notx.output) |- (xory.input 1);
+\draw (noty.output) -- ([xshift=0.2cm]noty.output) |- (xory.input 2);
+\draw (z) -| ($(noty.output) + (0.2, -0.5)$) |- (xory.input 3);
 
-\draw (xory.output) -- node[above]{$f_1$} ($(xory) + (3, 0)$);
-% f1 is $\overline{x + \bar x + \bar y + z}$
+\draw (xory.output) -- node[above]{$f_{1}$} ($(xory) + (3, 0)$);
+%\draw (xory.output) -- node[above]{$\overline{x + \bar x + \bar y + z}$} ($(xory) + (3, 0)$);
 \end{tikzpicture}
 \caption{Digital Logic Circuit}\label{Circuit:1}
 \end{figure}
