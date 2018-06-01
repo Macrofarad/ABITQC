@@ -11,6 +11,9 @@
 \usepackage{ amssymb } %for math notation that is needed
 \usepackage{physics}
 \usepackage{float} % Fixing formatting
+\usepackage{multicol} %to allow sections to have different column styles
+
+
 
 %more complex installs with file dependancies
 \usepackage[american]{circuitikzgit} % To draw digital logic circuits 
@@ -424,20 +427,23 @@ Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity 
 \subsection{Example Source Code}
 The following are examples of code that was run live on a quantum computer, specifically on IBM Q 5 Yorktown. The following is the QASM source code for superdense coding.
 \subsubsection{Superdense Coding}
+%\begin{small}
+\begin{multicols}{2}
 \begin{verbatim}
 include "qelib1.inc";
 qreg q[5];
 creg c[5];
-
 h q[0];
 cx q[0],q[1];
 x q[0];
 z q[0];
 cx q[0],q[1];
 h q[0];
+
 measure q[0] -> c[0];
 measure q[1] -> c[1];
 \end{verbatim}
+%\end{small}
 Which Equates to the following code in Ladder Logic
 \[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
 	\lstick{0} 		& \gate{H}	& \ctrl{1} 	& \gate{X} 	& \gate{Z}		& \ctrl{1}		& \gate{H}		& \meter \\	%& \cw \cwx \control{4}\\
@@ -456,25 +462,9 @@ Which Equates to the following code in Ladder Logic
 	\end{center}
 	\caption{Example IBM Quantum Experience Results}\label{IBMQE:ExampleResuts}
 \end{figure}
-
-include "qelib1.inc";
-qreg q[5];
-creg c[5];
-
-h q[0];
-cx q[0],q[1];
-x q[0];
-z q[0];
-cx q[0],q[1];
-h q[0];
-measure q[0] -> c[0];
-measure q[1] -> c[1];
-
-
-
-
 \end{comment}
-
+\end{multicols}
+This may not seem like much at first glance but this small circuit shows many of the key fundamentals of quantum computing.
 
 \subsection{Analysis} %First person should be fine for this section given that it's commentary
 Given that the goal of this project was to teach myself the basics of quantum computing and provide a path for other undergraduates to do the same, this project was a resounding success.  In the scope of this project, I taught myself the following languages: Quantum Ladder Logic, Quantum Assembly Language, Q\# (Microsoft's Quantum Computing language), LaTeX, CSS, and how to work with QISKit a specific coding API for quantum computers which is written in Python.\newline
