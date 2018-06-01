@@ -313,7 +313,7 @@ This section deals in the various coding languages utilized in programming quant
 Into the meat of the matter, qubits are to quantum computers what register bits are to a classical computer. A qubit is a two-state quantum mechanical system such as photon polarization or the spin of a trapped ion.
 
 \paragraph{Bloch Sphere} %lots of nested sections in this area
-\label{currentSpot} %to find where I last left off
+
 See Figure~\ref{bloch1} for visual.  A Bloch sphere is a geometrical representation of the pure state space of a two level quantum mechanical system (qubit).\newline
 \newline
 Since the total probability of the system has to be one: $\bra{\psi}\ket{\psi}=1$ this gives us the constraint required in order to write $\ket{\psi}$  using the following representation. \newline
@@ -365,8 +365,13 @@ All of that is a bit of a mouth-full, so to speak, but for most practical purpos
 
 Much like a digital logic gate operates on an individual or set of classical bits, a Quantum gate operates on individual or sets of qubits.  Given that each qubit is effectively a matrix, quantum gates are matrices which are used to modify the vector space. % Fact check, it's basically right, but after going on for a page about context and stuff, the last thing I want to do is be inaccurate.
 \paragraph{Single-Qubit Gates}
-\paragraph{Multi-Qubit Gates}
+%Pauli gates
+\label{pauliGates} %this section is important
+\label{currentSpot} %to find where I last left off
+Of the single qubit gates, generally the most well known and frequently used are the Pauli gates.
 
+\paragraph{Multi-Qubit Gates}
+%advanced Gates
 
 \subsection{Quantum Assembly Language}
 
@@ -378,24 +383,36 @@ This section contains information on experiments performed on both real world qu
 %discuss pros and cons of each system, language, interface etc.
 
 \subsection{IBM Quantum Experience}
+%basic sum of it
 \subsubsection{Ladder logic}
 \subsubsection{QASM}
 \subsubsection{Limitations}
 \subsection{QISKit}%API called from external code
+
+
 \subsection{Quirk}%Easily one of the best interfaces
+\subsubsection{What it is}
+Quirk is an idealized, online drag-and-drop quantum circuit simulator. This simulator is hosted on Craig Gidney's block Algorithmic Assertions\cite{algoassert}.  It is open source and due to the fact that he works as a part of Google's Quantum AI Team, it is owned by Google.
+\subsubsection{Pros}%make better name
+Among all currently available quantum simulation interfaces, this one stands out from the crowd.  It is responsive, accessible online without having to download software and extremely intuitive.  All in all, it's an excellent place to begin learning about quantum computing, especially given that the blog hosting it has a plethora of articles about the inner workings of many quantum algorithms.
+\subsubsection{Cons}%Also needs a better name
+For all this interface brings to the table, there is one very important thing that it does not do.  Quirk is incapable of interfacing with a live quantum computer via API or otherwise; moreover, given the fact that circuits are stored as URL's to be generated, this severely limits how well the code can store as all it takes to lose a code is accidentally overwriting the clipboard or text document that said circuit is stored within.
 
 
+\section{Results and Interpretation}% 2-3 pages
 
-
-
-\section{Results and interpretation 2-3 pages}
+\begin{comment}
 Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
+\end{comment}
+
+\section{Discussion} % 1/2 page to a page
 
 
-\section{Discussion 1/2-1 page}
-Discuss your results. Compare the two values of $n_{s}$ that you've found in the previous section. Compare your results with literature and comment on the difference. If you didn't know the value of the resistance quantum, would you be able to deduce it from your measurements? If yes/no, why?
 
 \begin{comment} %comment out defaults
+Discuss your results. Compare the two values of $n_{s}$ that you've found in the previous section. Compare your results with literature and comment on the difference. If you didn't know the value of the resistance quantum, would you be able to deduce it from your measurements? If yes/no, why?
+
+
 
 \subsection{How to Write Mathematics}
 

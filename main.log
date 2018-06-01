@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  1 JUN 2018 03:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  1 JUN 2018 03:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -2313,197 +2313,191 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--324
 
 [8]
 
-LaTeX Warning: Reference `fig:data' on page 9 undefined on input line 392.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 449.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 432.
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 448--449
+Underfull \hbox (badness 1681) in paragraph at lines 465--466
 []\OT1/cmr/m/n/10 University of New Mex-ico. \OT1/cmr/m/it/10 "Q-circuit Tu-to-
 rial" \OT1/cmr/m/n/10 ARXIV, Au-gust 24
  []
 
-
-Underfull \hbox (badness 2707) in paragraph at lines 451--452
+[9]
+Underfull \hbox (badness 2707) in paragraph at lines 468--469
 []\OT1/cmr/m/n/10 Google Quan-tum AI Lab-o-ra-tory. \OT1/cmr/m/it/10 "Com-mer-c
 ial-ize quan-tum tech-nolo-
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 451--452
+Underfull \hbox (badness 1688) in paragraph at lines 468--469
 \OT1/cmr/m/it/10 gies in five years"\OT1/cmr/m/n/10 . March 03 2017. Ma-soud Mo
 hseni, Pe-ter Read,
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 451--452
+Underfull \hbox (badness 1540) in paragraph at lines 468--469
 \OT1/cmr/m/n/10 Fowler, Vadim Smelyan-skiy, John Mar-ti-nis. Ac-cessed May 06 2
 018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 \OT1/cmr/m/n/10 https://www.nature.com/news/commercialize-quantum-technologies-
 in-
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 454--455
+Underfull \hbox (badness 4673) in paragraph at lines 471--472
 []\OT1/cmr/m/n/10 Castelvecchi, Da-vide. \OT1/cmr/m/it/10 "The quan-tum in-ter-
 net has ar-rived (and it
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 454--455
+Underfull \hbox (badness 4621) in paragraph at lines 471--472
 \OT1/cmr/m/it/10 hasn't)"\OT1/cmr/m/n/10 . Febru-ary 14 2018, Na-ture. Ac-cesse
 d Febru-ary 20 2018.
  []
 
-[9]
-Underfull \hbox (badness 2435) in paragraph at lines 460--461
+
+Underfull \hbox (badness 2435) in paragraph at lines 477--478
 \OT1/cmr/m/n/10 30 1995, eprint arXiv:quant-ph/9508027. Ac-cessed Au-gust 30 20
 17.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 []\OT1/cmr/m/n/10 Forum Users. \OT1/cmr/m/it/10 "Prime Num-bers: In Lay-man's T
 erms, How
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 \OT1/cmr/m/it/10 does Shors Al-go-rithm Work?"\OT1/cmr/m/n/10 , Oc-to-ber 9 201
 2. Cryp-tog-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 \OT1/cmr/m/n/10 phy Stack Ex-change. Stack-Ex-change, Ac-cessed March 4 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 \OT1/cmr/m/n/10 https://crypto.stackexchange.com/questions/3932/in-laymans-term
 s-
  []
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 471--472
+Underfull \hbox (badness 7362) in paragraph at lines 488--489
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 471--472
+Underfull \hbox (badness 2221) in paragraph at lines 488--489
 \OT1/cmr/m/it/10 ter"\OT1/cmr/m/n/10 . Oc-to-ber 2 2014, Sci-en-tific Amer-i-ca
 n. Ac-cessed April 4 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 \OT1/cmr/m/n/10 https://www.scientificamerican.com/article/majorana-particle-ma
 tter-and-
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 474--475
+Underfull \hbox (badness 2326) in paragraph at lines 491--492
 []\OT1/cmr/m/n/10 Brumfiel, Ge-of-frey. \OT1/cmr/m/it/10 "D-Wave quan-tum com-p
 uter solves pro-tein fold-
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 474--475
+Underfull \hbox (badness 3547) in paragraph at lines 491--492
 \OT1/cmr/m/it/10 ing prob-lem"\OT1/cmr/m/n/10 . Au-gust 17 2012. Na-ture. Ac-ce
 ssed Au-gust 1 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 474--475
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 \OT1/cmr/m/n/10 http://blogs.nature.com/news/2012/08/d-wave-quantum-computer-so
 lves-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 478--479
+Underfull \hbox (badness 1748) in paragraph at lines 495--496
 []\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
 1/cmr/m/n/10 MIT Open-Course-ware. Mas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 \OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
 tion-
  []
 
+[10]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 496.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 513.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 []\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
 e to Bench-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 \OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
 6 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 \OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 510.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 527.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 523.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 540.
 
 
-Overfull \hbox (60.04631pt too wide) in paragraph at lines 699--700
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 716--717
 \OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
 putingFromThePerspectiveOfLadderLogic[] 
  []
 
-[10] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[11] (main.aux) ) 
 Here is how much of TeX's memory you used:
  33772 strings out of 493305
- 715932 string characters out of 3129802
- 894499 words of memory out of 3000000
+ 715934 string characters out of 3129802
+ 894512 words of memory out of 3000000
  36915 multiletter control sequences out of 15000+200000
  542646 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,25n,67p,1463b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Macro/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Macro/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mac
-ro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Macro/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Macro/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/M
-acro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-<C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (10 pages, 655923 bytes).
+<C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Macro/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/M
+acro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Macro/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Macro/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Macro/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Use
+rs/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Macro/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (11 pages, 655963 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
