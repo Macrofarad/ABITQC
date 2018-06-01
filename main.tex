@@ -472,6 +472,7 @@ Quantum Assembly Language~\cite{qasmWhitePaper}, also known as QASM or OpenQASM 
 \newline
 In terms of programming, QASM is relatively straightforward; there are only two types of storage, classical registers, and quantum registers.  These registers are nothing more than  one dimensional arrays of bits or qubits respectively and can then have gates applied to them which are unitary subroutines. Below is an example of QASM in use as well as the quantum ladder logic equivalent.
 
+\begin{figure}[H] %This keeps the code in the same place
 \begin{multicols}{2} %multiple columns allows space to be better utilized for sections with circuits and the like
 \begin{verbatim}
 include "qelib1.inc";
@@ -504,7 +505,7 @@ Which Equates to the following code in Ladder Logic
 \lstick{\ket{q_{2}}=\ket{0}} 	& \qw 		& \qw 		& \targ 		& \qw 			& \targ 	& \ctrl{-2}	&\qw & \qw		& \meter  \\ %
 }\]
 \end{multicols} %and go back to normal formatting
-
+\end{figure}
 The circuit and code given above is for a known simplification of quantum teleportation~\cite{nielsonChuangQCQI}.
 
 
