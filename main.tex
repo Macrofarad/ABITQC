@@ -384,7 +384,11 @@ This section contains information on experiments performed on both real world qu
 
 \subsection{IBM Quantum Experience}
 %basic sum of it
-\subsubsection{Ladder logic}
+When this project first began, IBM's Quantum Experience was still very young.  It was and still is revolutionary in that it gave registered users the ability to program and test code on real quantum computers.
+\subsubsection{Ladder logic} % cite sources for JJ stuff
+For most users of IBMQE this is the primary thing they'll see.  It's a standard ladder logic interface and because of this, it is fairly intuitive.  With that said, because IBMQE is running on real hardware, it suffers from the restrictions of said hardware.  Qubits here are implemented physically via Pi Josephson Junctions, effectively a superconducting anharmonic oscillator.  This means that the frequency a qubit is oscillating at determines what qubits it can interact with.  Speaking from experience, to a new user that is extremely confusing if one isn't given an explanation.  The interface also lacks many basic multi-qubit gates due to their physical implementation not being possible at current time.\newline
+\newline
+IBMQE can move into a pure simulation mode, but it lacks the live feedback to properly make that mode seem responsive.  Where it does excel is in the next section, Quantum Assembly.
 \subsubsection{QASM}
 \subsubsection{Limitations}
 \subsection{QISKit}%API called from external code
