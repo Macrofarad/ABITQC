@@ -14,9 +14,9 @@
 % http://texdoc.net/texmf-dist/doc/latex/circuitikz/circuitikzmanual.pdf
 % circuitikz install instructions https://github.com/circuitikz/circuitikz/wiki/Installation
 
-
-\usepackage[matrix,frame,arrow]{xypic}
-\usepackage{qcircuit}
+\label{depreciateRemove} %things that should be removed in final version but might still be useful here
+%\usepackage[matrix,frame,arrow]{xypic}
+%\usepackage{qcircuit}
 %https://github.com/CQuIC/qcircuit
 
 
@@ -148,8 +148,23 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 \label{sec:AdvConcepts}
 \label{currentSpot}
 %helpful link: https://arxiv.org/pdf/quant-ph/0406003.pdf Q-circuit latex tutorial
+% https://www.media.mit.edu/quanta/qasm2circ/
 %https://github.com/CQuIC/qcircuit Qcircuit package location
 %https://tex.stackexchange.com/questions/32839/drawing-circuit-diagrams-with-logic-gates-in-latex
+%self note: tons of comments here
+
+
+\begin{comment} % A helpful Demo circuit graphic
+\begin{circuitikz} 
+	\draw
+(0,2) node[and port] (myand1) {}
+(0,0) node[and port] (myand2) {}
+(2,1) node[xnor port] (myxnor) {}
+(myand1.out) -- (myxnor.in 1)
+(myand2.out) -- (myxnor.in 2);
+\end{circuitikz}
+\end{comment}
+
 \subsection{Reversible Logic Gates} %The basics from the ground up
 %there was a time when reversible logic was seen as a fatal flaw in QC, but some dude who was pretty clever figured out any standard logic gate could be simulated within reversible logic
 A more advanced concept that is still core to quantum computing is the idea of reversible logic gates.
