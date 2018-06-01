@@ -153,15 +153,19 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 \end{table}
 \subsection{Vectors}
 \label{THISNEEDSACCURACYREVIEW} % Getting into nitpick notation stuff, need to be careful
-A proper discussion of quantum computing cannot be had without discussing vectors and their function in understanding the circuit.  This will be discussed more in a later section (~\ref{Qubits}); however, the shorthand version is as follows.  Due to the fact that quantum computers operate on qubits rather than classical (binary) bits, a quantum computer is effectively nothing more than a very complex probabilistic vector equation. To be specific, this state space $\mathcal{H}$, is not just vector space but a Hilbert space, meaning it has a positive-definite Hermitian inner product $\bra{\cdot}\ket{\cdot}$.  This has quite a few implications and entire papers can be written on the vector space alone, but in simple terms what it means is that the sum of the probabilities of a quantum computer being in any given state post measurement will always be 1.
+A proper discussion of quantum computing cannot be had without discussing vectors and their function in understanding the circuit.  This will be discussed more in a later section (\ref{Qubits}); however, the shorthand version is as follows.  Due to the fact that quantum computers operate on qubits rather than classical (binary) bits, a quantum computer is effectively nothing more than a very complex probabilistic vector equation. To be specific, this state space $\mathcal{H}$, is not just vector space but a Hilbert space, meaning it has a positive-definite Hermitian inner product $\bra{\cdot}\ket{\cdot}$.  This has quite a few implications and entire papers can be written on the vector space alone, but in simple terms what it means is that the sum of the probabilities of a quantum computer being in any given state post measurement will always be 1.
 
 \subsubsection{Notation}
 %https://tex.stackexchange.com/questions/214728/braket-notation-in-latex
-In quantum computing, and quantum mechanics as a whole for that matter the standard notation is Bra-Ket notation, also known as Dirac notation. \newline $\bra{\phi}\ket{\psi}$ \newline
-The right part, called ket, is typically represented as a column vector and written as $\ket{\psi}$.
-
-The left part, called bra, is the Hermitian conjugate of the ket with the same label, is typically represented as a row vector and written as $\bra{\phi}$.
-
+In quantum computing, and quantum mechanics as a whole for that matter the standard notation is Bra-Ket notation, also known as Dirac notation. Example: $\bra{\phi}\ket{\psi}$. The right part, called ket, is typically represented as a column vector and written as $\ket{\psi}$. The left part, called bra, is the Hermitian conjugate of the ket with the same label, is typically represented as a row vector and written as $\bra{\phi}$. \newline
+\newline
+This may seem like a bit much for those whom have never worked with this sort of thing before, but the following example should help clarify things.\newline
+$\ket{\psi}=\alpha\ket{H} + \beta\ket{V}$ \newline
+What the above example notates is the simplest meaningful version of a quantum system that can be in two possible states, for example the polarization of a photon. When measured, the system will collapse into either the horizontal state $\ket{H}$ or the vertical state $\ket{V}$, until that moment it exists in a superposition of the two.  To find the probability of the system collapsing into a given state upon measurement, simply take the multiplier in front of the desired ket and square it.  For instance, in the case of finding the probability of a vertical state the answer would be $\beta^2$. \newline
+\newline
+Back to the previous section, the fact that the sum of the probability of all possible states is equal to 1 was brought up.  This can be notated as:\newline
+$\sum\psi^{*}_{n} \psi_{n}=1$ \newline
+This will be discussed in more detail in the qubit section (\ref{Qubits}) in regards to what are called bloch spheres. % don't go too deep into superposition yet
 
 
 
