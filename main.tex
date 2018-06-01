@@ -59,36 +59,44 @@ replace emphasis in biblio with italix to fix the spacing issues
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{A Brief Introduction to Quantum Computing from the Perspective of Ladder Logic}
-
-\author{Jerry Kensler}
-
-\date{\today}
-
+\title{A Brief Introduction to Quantum Computing from the Perspective of Ladder Logic\vspace{-0ex}}
+\author{Jerry Kensler\vspace{-0ex}}
+\date{\today\vspace{-0ex}}
+\usepackage{titling}
 \begin{document}
-\maketitle
+	%\begin{figure}	
+		\maketitle %this one command gave way more trouble than it should have in regards to spacing
+		%\setlength{\droptitle}{10pt}
+		%{\let\newpage\relax\maketitle}
+		\let\originalnewpage\newpage \let\newpage\relax \let\newpage\originalnewpage
+		%\begin{figure}
+		
+		\begin{center}		\includegraphics[scale=0.12]{googlequantumcomputer} % image source https://www.technologyreview.com/s/602283/googles-quantum-dream-may-be-just-around-the-corner/
+		\end{center}
+			\begin{figure}
+			\caption{Photograph courtesy of Google}\label{titleImage}
+			\end{figure}
+	\begin{abstract}
+		
+		
+		While Quantum Computing is a fairly advanced topic, it suffers from a perception of complexity beyond what is reasonable for the actual subject matter.  This paper provides a means to take that perception and bring it down to a more realistic level.  The primary targets of this paper are students currently enrolled in or freshly graduated from an electrical engineering or similar program; however, any individual with a base knowledge in programming or digital logic should be able to gain some level of benefit.
+		
+		Keywords:  Quantum, QISKit, Computing, Ladder, Logic, QASM, Introduction
+		% Need to reword this section, Find the abstract from source and merge the two
+		% Author note: the intention of this paper is to fill some of the skill gap many novices encounter in learning quantum computing.  By no means should this be considered an all-encompassing guide to the subject matter.
+	\end{abstract}
+	%\newpage %looks better as it's own page
+%	\end{figure}
+
+
+
 %\begin{figure}
-\begin{center}
-\includegraphics[scale=0.14]{googlequantumcomputer} % image source https://www.technologyreview.com/s/602283/googles-quantum-dream-may-be-just-around-the-corner/
-\end{center}
-%\caption{\label{titleImage}Photograph courtesy of Google
+%	\centering
+
 %\end{figure}
 
-\begin{figure}
-	\centering
-\begin{abstract}
 
-
-While Quantum Computing is a fairly advanced topic, it suffers from a perception of complexity beyond what is reasonable for the actual subject matter.  This paper provides a means to take that perception and bring it down to a more realistic level.  The primary targets of this paper are students currently enrolled in or freshly graduated from an electrical engineering or similar program; however, any individual with a base knowledge in programming or digital logic should be able to gain some level of benefit.
-
-Keywords:  Quantum, QISKit, Computing, Ladder, Logic, QASM, Introduction
-% Need to reword this section, Find the abstract from source and merge the two
-% Author note: the intention of this paper is to fill some of the skill gap many novices encounter in learning quantum computing.  By no means should this be considered an all-encompassing guide to the subject matter.
-\end{abstract}
-\end{figure}
-
-\newpage %looks better as it's own page
-
+\newpage
 \section{Introduction}
 \label{sec:introduction}
 
@@ -384,13 +392,15 @@ This section contains information on experiments performed on both real world qu
 
 \subsection{IBM Quantum Experience}
 %basic sum of it
-When this project first began, IBM's Quantum Experience was still very young.  It was and still is revolutionary in that it gave registered users the ability to program and test code on real quantum computers.
+When this project first began, IBM's Quantum Experience (IBMQE) was still very young.  It was and still is revolutionary in that it gave registered users the ability to program and test code on real quantum computers.
 \subsubsection{Ladder logic} % cite sources for JJ stuff
 For most users of IBMQE this is the primary thing they'll see.  It's a standard ladder logic interface and because of this, it is fairly intuitive.  With that said, because IBMQE is running on real hardware, it suffers from the restrictions of said hardware.  Qubits here are implemented physically via Pi Josephson Junctions, effectively a superconducting anharmonic oscillator.  This means that the frequency a qubit is oscillating at determines what qubits it can interact with.  Speaking from experience, to a new user that is extremely confusing if one isn't given an explanation.  The interface also lacks many basic multi-qubit gates due to their physical implementation not being possible at current time.\newline
 \newline
-IBMQE can move into a pure simulation mode, but it lacks the live feedback to properly make that mode seem responsive.  Where it does excel is in the next section, Quantum Assembly.
-\subsubsection{QASM}
-\subsubsection{Limitations}
+IBMQE can move into a pure simulation mode, but it lacks the live feedback to properly make that mode seem responsive.  Where it does excel is in the next section, Quantum Assembly language (QASM).
+\subsubsection{QASM} %redo wording
+In addition to the ability to program in ladder logic, IBMQE allows users to code their circuits in QASM.  This feature is extremely powerful as users can not only code in ladder logic or QASM, but they can also flip between them depending on what view best suits their needs.  A skilled user can easily define custom gates based on matrices should the standard pauli gates not be sufficient.  
+
+%\subsubsection{Limitations} % Reserve, should be covered pretty well in previous sections
 \subsection{QISKit}%API called from external code
 
 
@@ -412,49 +422,19 @@ Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity 
 \section{Discussion} % 1/2 page to a page
 
 
+\newpage
+\section{Figures} %Might need a different name, for larger images that don't fit in elsewhere
 
-\begin{comment} %comment out defaults
-Discuss your results. Compare the two values of $n_{s}$ that you've found in the previous section. Compare your results with literature and comment on the difference. If you didn't know the value of the resistance quantum, would you be able to deduce it from your measurements? If yes/no, why?
-
-
-
-\subsection{How to Write Mathematics}
-
-\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-
-\begin{equation}
-S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-      = \frac{1}{n}\sum_{i}^{n} X_i
-\label{equationNotation}
-\end{equation}
-
-denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
-
-
-\subsection{How to Make Lists}
-
-You can make lists with automatic numbering \dots
-
-\begin{enumerate}
-\item Like this,
-\item and like this.
-\end{enumerate}
-\dots or bullet points \dots
-\begin{itemize}
-\item Like this,
-\item and like this.
-\end{itemize}
-\dots or with words and descriptions \dots
-\begin{description}
-\item[Word] Definition
-\item[Concept] Explanation
-\item[Idea] Text
-\end{description}
-\end{comment} %comment out defaults
+\begin{figure}
+\begin{center}
+	\includegraphics[scale=0.14]{googlequantumcomputer} % image source https://www.technologyreview.com/s/602283/googles-quantum-dream-may-be-just-around-the-corner/
+\end{center}
+\caption{Example IBM Quantum Experience Results}\label{IBMQE:ExampleResuts}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \begin{thebibliography}{9}
 	\label{sec:bibliography} %allows for quick navigation via side bar	
 %========================================================================================
