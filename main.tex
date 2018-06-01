@@ -382,7 +382,7 @@ Much like a digital logic gate operates on an individual or set of classical bit
 %Pauli gates
 \label{pauliGates} %this section is important
 
-Among the single qubit gates, the most well known and frequently used are the Pauli gates. These gates are as follows: \newline
+Among the single qubit gates, the most well known and frequently used are the Pauli gates, the Hadamard transform, the Phase gate, and the $\dfrac{\pi}{8}$ gate (denoted as T). These gates are as follows: \newline
 \subparagraph{Pauli X} %this section has strange formatting, needs to be fixed later
 \begin{multicols}{2}
 \[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
@@ -439,8 +439,57 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 
 \end{multicols}
 
-
-
+\subparagraph{Hadamard Transform}
+\begin{multicols}{2}
+	\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+		\lstick{ } & \gate{H} & \qw \\
+	}\]
+	
+	\begin{figure}[H]
+		%\newline
+		$\theta_{4}=\theta_{H} =$ % \newline
+		\[\begin{bmatrix}
+		$1$ & $1$ \\
+		$1$ & $-1$ \\
+		\end{bmatrix}
+		\]
+	\end{figure}
+	
+\end{multicols}
+\subparagraph{Phase Gate}
+\begin{multicols}{2}
+	\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+		\lstick{ } & \gate{S} & \qw \\
+	}\]
+	
+	\begin{figure}[H]
+		%\newline
+		$\theta_{5}=\theta_{S} =$ % \newline
+		\[\begin{bmatrix}
+		$1$ & $0$ \\
+		$0$ & $i$ \\
+		\end{bmatrix}
+		\]
+	\end{figure}
+	
+\end{multicols}
+\subparagraph{$\frac{\pi}{8}$ or T gate}
+\begin{multicols}{2}
+	\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+		\lstick{ } & \gate{T} & \qw \\
+	}\]
+	
+	\begin{figure}[H]
+		%\newline
+		$\theta_{6}=\theta_{T} =$ % \newline
+		\[\begin{bmatrix}
+		$1$ & $0$ \\
+		$0$ & exp(\frac{i\pi}{4}) \\
+		\end{bmatrix}
+		\]
+	\end{figure}
+	
+\end{multicols}
 %\paragraph{Multi-Qubit Gates} %Add section back in once Pauli gate details are complete 
 %advanced Gates
 
