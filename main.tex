@@ -7,12 +7,22 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{xcolor} % note: there's also a color package instead of xcolor
 \usepackage{verbatim} % For block comments
-%\usepackage{circuitikz} % To draw digital logic circuits % http://texdoc.net/texmf-dist/doc/latex/circuitikz/circuitikzmanual.pdf
-
+\usepackage{tikz} % allow the drawing of images
+%\usepackage{siunitx} % not in use
+% circuitikz install instructions https://github.com/circuitikz/circuitikz/wiki/Installation
+\usepackage[american]{circuitikzgit} % To draw digital logic circuits % http://texdoc.net/texmf-dist/doc/latex/circuitikz/circuitikzmanual.pdf
 
 \label{includes}
 
+
+
+
+
+
 %TODO
+
+
+
 
 \begin{comment}
  Add background concepts
@@ -26,9 +36,21 @@ replace emphasis in biblio with italix to fix the spacing issues
 
 \end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Custom Defines
+\label{customCommands}
 \definecolor{mygray}{gray}{0.6}
 % Put a URL Define Here
+
+\newcommand{\volt}[1]{${#1} V$} % shortcut to volt
+\newcommand{\ohms}[1]{${#1} \Omega$} % shortcut to ohms
+
+
+\begin{comment} % test circuit, not error free but draws well, fix in later revision
+\begin{circuitikz}
+\draw (0,0) to[R=\ohms{1}, i=?, \volt{84}] (2,0) --
+(2,2) to[V=\volt{84}] (0,2)
+-- (0,0);
+\end{circuitikz}
+\end{comment}
 
 
 
@@ -41,6 +63,8 @@ replace emphasis in biblio with italix to fix the spacing issues
 
 \begin{document}
 \maketitle
+
+
 
 \begin{abstract}
 
