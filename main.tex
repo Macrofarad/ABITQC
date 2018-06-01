@@ -421,7 +421,59 @@ For all this interface brings to the table, there is one very important thing th
 \begin{comment}
 Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
 \end{comment}
-\subsection{Source Code}
+\subsection{Example Source Code}
+The following are examples of code that was run live on a quantum computer, specifically on IBM Q 5 Yorktown. The following is the QASM source code for superdense coding.
+\subsubsection{Superdense Coding}
+\begin{verbatim}
+include "qelib1.inc";
+qreg q[5];
+creg c[5];
+
+h q[0];
+cx q[0],q[1];
+x q[0];
+z q[0];
+cx q[0],q[1];
+h q[0];
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+\end{verbatim}
+Which Equates to the following code in Ladder Logic
+\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+	\lstick{0} 		& \gate{H}	& \ctrl{1} 	& \gate{X} 	& \gate{Z}		& \ctrl{1}		& \gate{H}		& \meter \\	%& \cw \cwx \control{4}\\
+	\lstick{0} 		& \qw 		& \targ 	& \qw 		& \qw 			& \targ			& \qw 			& \meter \\	%& \cw \cwx \control{3}\\
+	\lstick{\psi} 	& \qw 		& \qw 		& \ctrl{-2}	\\ %line done
+	\lstick{\psi}	& \qw 		& \qw 		& \qw 		& \ctrl{-3}		\\ %line done
+	%\lstick{C}		& \qw 		& \qw 		& \qw 		& \qw			& \qw 			& \qw 			& \qw 		& \meter  \\
+}\]
+
+
+
+\begin{comment}%decided against image, kept here in case I reverted back again
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.34]{ScreencapIBMQE_Superdense} 
+	\end{center}
+	\caption{Example IBM Quantum Experience Results}\label{IBMQE:ExampleResuts}
+\end{figure}
+
+include "qelib1.inc";
+qreg q[5];
+creg c[5];
+
+h q[0];
+cx q[0],q[1];
+x q[0];
+z q[0];
+cx q[0],q[1];
+h q[0];
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+
+
+
+
+\end{comment}
 
 
 \subsection{Analysis} %First person should be fine for this section given that it's commentary
@@ -615,6 +667,7 @@ https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&p
 
 
 http://paulklemm.com/blog/2014-07-16-use-github-for-scientific-writing/
+	The guide I used to start writing
 
 https://arxiv.org/abs/1804.03719
 	Quantum Algorithm Implementations for Beginners
