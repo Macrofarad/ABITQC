@@ -167,12 +167,7 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 
 \subsection{Reversible Logic Gates} %The basics from the ground up
 %there was a time when reversible logic was seen as a fatal flaw in QC, but some dude who was pretty clever figured out any standard logic gate could be simulated within reversible logic
-A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the digital logic circuit as seen in Figure~\ref{Circuit:1}.  In this circuit, there are three inputs and a single output, even knowing the gate layout and the end value of $f_{1}$, the best that could be done for determining the input values is narrowing it to a range of possibilities as all the values have been combined into one, irreversible output. Now consider the reversible logic circuit as seen in Figure~\ref{Circuit:2}
-
-
-
-\label{currentSpot}
-
+A more advanced concept that is still core to quantum computing is the idea of reversible logic gates. Normally when it comes to digital logic inputs and outputs are decoupled. Consider the digital logic circuit as seen in Figure~\ref{Circuit:1}.  In this circuit, there are three inputs and a single output, even knowing the gate layout and the end value of $f_{1}$, the best that could be done for determining the input values is narrowing it to a range of possibilities as all the values have been combined into one, irreversible output. Now consider the reversible logic circuit as seen in Figure~\ref{Circuit:2}, while the notation may be unfamiliar\footnote{This notation is that of a simple quantum ladder logic circuit, the elements of which will be covered in a following section}, each input has its own unique output.  Due to this, so long as one knows what gates are in the circuit and what the output values are, the input values can be derived relatively easily.
 
 %consider deleting circuitikz if it isn't used elsewhere
 
@@ -211,41 +206,15 @@ A more advanced concept that is still core to quantum computing is the idea of r
 %\begin{comment}%debugging
 
 \begin{figure}
-\begin{comment}%keeping for reference
-\[ \Qcircuit @C=1em @R=.7em {
-	& \gate{X} & \qw
-}\]
-
-\[ \Qcircuit @C=1em @R=.7em {
-& \gate{H} & \gate{Z} & \gate{H} & \qw \\
-& \qw & \gate{X} & \qw & \qw
-} \]
-
-	\[ \Qcircuit @C=1em @R=.7em {
-& \ctrl{1} & \targ & \qw \\
-& \targ & \ctrl{-1} & \qw
-}\]
-
-
-\end{comment}
- 
  %helpful for understanding the syntax https://github.com/CQuIC/qcircuit/blob/master/Qtutorial.tex
 
-\begin{comment}%backup
-\[\Qcircuit @C=1em @R=.7em {
-	& \targ & \targ & \qw & \targ & \qw\\
-	& \ctrl{-1} & \qw &\qw & \qw & \qw \\
-	& \qw & \ctrl{-2} & \qw & \qw & \qw \\
-	& \qw & \qw & \qw & \ctrl{-3} & \qw \\
-}\]
-\end{comment}%backup
 
 %\small \begin{verbatim} %verbatim displays the code itself instead of rendering it
-\[\Qcircuit @C=1em @R=.7em {
-	& \lstick{\ket{\psi}} & \targ & \targ & \qw & \targ & \qw & \meter \\
-	& \lstick{\ket{\psi}} & \ctrl{-1} & \qw &\qw & \qw & \qw & \meter \\
-	& \lstick{\ket{\psi}} & \qw & \ctrl{-2} & \qw & \qw & \qw & \meter \\
-	& \lstick{\ket{\psi}} & \qw & \qw & \qw & \ctrl{-3} & \qw & \meter\\
+\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+	 \lstick{\psi} & \targ & \targ & \qw & \targ & \meter \\
+	 \lstick{\psi} & \ctrl{-1} & \qw &\qw & \qw & \meter \\
+	 \lstick{\psi} & \qw & \ctrl{-2} & \qw & \qw & \meter \\
+	 \lstick{\psi} & \qw & \qw & \qw & \ctrl{-3} & \meter\\
 }\]
 %\end{verbatim}}
 %&\lstick{\ket{\psi}}
@@ -257,7 +226,7 @@ A more advanced concept that is still core to quantum computing is the idea of r
 
 \subsection{Probability Amplitudes}
 \label{ternaryRelevance} %allows linking to this spot regardless of location
-
+\label{currentSpot}
 
 
 
