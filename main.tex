@@ -422,7 +422,7 @@ This section contains information on experiments performed on both real world qu
 
 \subsection{IBM Quantum Experience}
 %basic sum of it
-When this project first began, IBM's Quantum Experience (IBMQE) was still very young.  It was and still is revolutionary in that it gave registered users the ability to program and test code on real quantum computers.
+When this project first began, IBM's Quantum Experience (IBMQE) was still very young.  It was and still is revolutionary in that it gave registered users the ability to program and test code on real quantum computers.  The next sections will cover details in regards to the primary methods of programming through this interface.
 \subsubsection{Ladder logic} % cite sources for JJ stuff
 For most users of IBMQE this is the primary thing they'll see.  It's a standard ladder logic interface and because of this, it is fairly intuitive.  With that said, because IBMQE is running on real hardware, it suffers from the restrictions of said hardware.  Qubits here are implemented physically via Pi Josephson Junctions, effectively a superconducting anharmonic oscillator.  This means that the frequency a qubit is oscillating at determines what qubits it can interact with.  Speaking from experience, to a new user that is extremely confusing if one isn't given an explanation.  The interface also lacks many basic multi-qubit gates due to their physical implementation not being possible at current time.\newline
 \newline
@@ -431,8 +431,12 @@ IBMQE can move into a pure simulation mode, but it lacks the live feedback to pr
 In addition to the ability to program in ladder logic, IBMQE allows users to code their circuits in QASM.  This feature is extremely powerful as users can not only code in ladder logic or QASM, but they can also flip between them depending on what view best suits their needs.  A skilled user can easily define custom gates based on matrices should the standard pauli gates not be sufficient.  
 
 %\subsubsection{Limitations} % Reserve, should be covered pretty well in previous sections
-\subsection{QISKit}%API called from external code
+%\subsection{QISKit}%API called from external code
+\label{QISKit}
+%While this section is currently commented out, it is quite important to include in later versions of this document
 
+%basic summary: QISKit is an api that allows classical programming languages such as python to communicate with quantum computers
+%Real world Implementations: Quantum Battleship, Using game to determine efficiency
 
 \subsection{Quirk}%Easily one of the best interfaces
 \subsubsection{What it is}
