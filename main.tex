@@ -260,7 +260,8 @@ A more advanced concept that is still core to quantum computing is the idea of r
 % and oh boy is it a heavy topic, helpful link for some wording: https://www.math.ucdavis.edu/~greg/intro.pdf
 Back in the section involving balanced ternary it was mentioned that the concept of quantities innately having a sign polarity would be relevant later, this section is that aforementioned later. Fair warning, this section will get very math heavy. \newline
 \newline
-
+% Use music to help explain this.  
+% The sum of probability amplitudes is akin to the sum of notes playing in a chorus.  All of them constructively and destructively interfere with each other to make the music that is heard by our ears
 
 
 \label{FigureisThecommandYouAlwaysForget}%saved a lot of time putting this here
@@ -321,7 +322,11 @@ Where $0\leq\theta\leq\pi$. \newline
 \newline
 All of that is a bit of a mouth-full, so to speak, but for most practical purposes, the Bloch sphere is one of the best tools to visually understand and debug a quantum circuit on the qubit level when it is an option that is available.
 
+% Would be worthwhile to list how to find the X, Y, and Z components of the vector from a given sphere or visa versa
+% See http://www.vcpc.univie.ac.at/~ian/hotlist/qc/talks/bloch-sphere-rotations.pdf
+%for reference details
 
+%further reading topic: Gyrovector Space
 
 
 \begin{figure}%Draws a bloch sphere, make sure to label parts later
@@ -355,23 +360,33 @@ All of that is a bit of a mouth-full, so to speak, but for most practical purpos
 	\caption{Bloch Sphere}\label{bloch1}
 \end{figure}
 
+\subsubsection{Quantum Gates} %another mention of http://www.vcpc.univie.ac.at/~ian/hotlist/qc/talks/bloch-sphere-rotations.pdf
+%turns out they have an exceptionally good explanation of Pauli gates
 
-\subsubsection{Single-Qubit Gates}
-\subsubsection{Multi-Qubit Gates}
+Much like a digital logic gate operates on an individual or set of classical bits, a Quantum gate operates on individual or sets of qubits.  Given that each qubit is effectively a matrix, quantum gates are matrices which are used to modify the vector space. % Fact check, it's basically right, but after going on for a page about context and stuff, the last thing I want to do is be inaccurate.
+\paragraph{Single-Qubit Gates}
+\paragraph{Multi-Qubit Gates}
 
 
 \subsection{Quantum Assembly Language}
 
 
 
-\section{Experiment 1-2 pages}
-\begin{comment} %comment out defaults
-\subsection{Fabrication}
-Explain a step-by-step recipe for fabrication here. How long did you etch and why? What is an Ohmic contact?
-\subsection{Experimental set-up}
-Explain the experimental set-up here.
+\section{Experiment} % 1-2 pages
+This section contains information on experiments performed on both real world quantum computers as well as simulations and approximations of quantum computers.
 
-\end{comment} %comment out defaults
+%discuss pros and cons of each system, language, interface etc.
+
+\subsection{IBM Quantum Experience}
+\subsubsection{Ladder logic}
+\subsubsection{QASM}
+\subsubsection{Limitations}
+\subsection{QISKit}%API called from external code
+\subsection{Quirk}%Easily one of the best interfaces
+
+
+
+
 
 \section{Results and interpretation 2-3 pages}
 Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
