@@ -99,12 +99,9 @@ To briefly summarize, Schrödinger's cat is a brilliant thought experiment meant
 
 Balanced Ternary is not, strictly speaking a part of quantum computing, so with that knowledge, it may seem like a strange item to include as background information when discussing the subject. However, given this author's personal experience, it is nearly ideal to serve not only as a bridge to more advanced concepts but also as a demonstration of why said concepts are important. \newline
 \newline
-To do this, a brief nod to what numbers are at their core is needed. It's pretty obvious to most, but numbers are nothing more or less than a way to categorize quantity.  This concept of quantity is important as it is independent of stylistic choices such as base or notation.  In programming, binary is frequently used as it reflects the power state of transistors within the register.  For most general cases, this works quite well allowing for any number of tricks, or bit-hacks, to be employed to speed things up.  However, unsigned binary does have an Achilles' heel in that due to its basis in positive numbers, there is no simple way to show when a number is negative on hardware \footnote{Note: the "-" symbol seen in both binary and standard decimal is not a representation of quantity, it's more akin to a shorthand for the operation of 0 - Quantity, and thus it's fairly difficult to represent in hardware}.  To do so, one needs to employ a tactic such as the IEEE 754 standard, adding much more complexity than would otherwise be necessary (see Table~\ref{tab:ternary}, for example).  One way to circumvent this issue is to use a balanced number system such as balanced ternary. \newline
+To do this, a brief nod to what numbers are at their core is needed. It's pretty obvious to most, but numbers are nothing more or less than a way to categorize quantity.  This concept of quantity is important as it is independent of stylistic choices such as base or notation.  In programming, binary is frequently used as it reflects the power state of transistors within the register.  For most general cases, this works quite well allowing for any number of tricks, or bit-hacks, to be employed to speed things up.  However, unsigned binary does have an Achilles' heel in that due to its basis in positive numbers, there is no simple way to show when a number is negative on hardware \footnote{Note: the "-" symbol seen in both binary and standard decimal is not a representation of quantity, it's more akin to a shorthand for the operation of 0 - Quantity, and thus it's fairly difficult to represent in hardware}.  To do so, one needs to employ a tactic such as the IEEE 754 standard, adding much more complexity than would otherwise be necessary.  One way to circumvent this issue is to use a balanced number system such as balanced ternary. \newline
 \newline
-These systems work by designating symbols as pre-signed.  In the case of balanced ternary, the symbols are designated as "0; +; -" and they represent "$3^{(s*n)}$" with "n" being the index number starting at zero from right to left and "s" being the sign as denoted by the "+" for positive, "-" for negative, or "0" for null quantity. This notion of sign being a property of quantity will become relevant in later sections~\ref{ternaryRelevance}, but for now, it is acceptable to use this idea as a base case.
-
-\label{currentSpot}
-\label{ternaryRelevance}
+These systems work by designating symbols as pre-signed.  In the case of balanced ternary, the symbols are designated as "0; +; -" and they represent "$3^{(s*n)}$" with "n" being the index number starting at zero from right to left and "s" being the sign as denoted by the "+" for positive, "-" for negative, or "0" for null quantity \footnote{ This notion of sign being a property of quantity will become relevant in later sections (~\ref{ternaryRelevance}), but for now, it is acceptable to use this idea as a base case.}.  From there it is a simple matter of adding the positive and negative values up in order to get the end result (see Table~\ref{tab:ternary}, for example and comparison between bases).
 
 \begin{table} %Table used to illustrate comparison between bases
 	\centering
@@ -118,27 +115,23 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 	\caption{\label{tab:ternary}comparison table showing equivalent numbers in different display forms}
 \end{table}
 
-
+\section{Advanced Concepts}
+\label{sec:AdvConcepts}
+\label{currentSpot}
+%helpful link: https://arxiv.org/pdf/quant-ph/0406003.pdf Q-circuit latex tutorial
+%https://github.com/CQuIC/qcircuit Qcircuit package location
+%https://tex.stackexchange.com/questions/32839/drawing-circuit-diagrams-with-logic-gates-in-latex
 \subsection{Reversible Logic Gates} %The basics from the ground up
 %there was a time when reversible logic was seen as a fatal flaw in QC, but some dude who was pretty clever figured out any standard logic gate could be simulated within reversible logic
-Talk about why reversible logic gates are important to quantum computing, a bit of the history, etc.
+A more advanced concept that is still core to quantum computing is the idea of reversible logic gates.
+
+\subsection{Probability Amplitudes}
+\label{ternaryRelevance} %allows linking to this spot regardless of location
 
 
-\section{Theory 2-3 pages}
-\label{sec:theory}
 
 
-\begin{comment} %comment out defaults
-\subsection{Two-dimensional Electron Gas}
-Here, explain the concept of a 2-DEG in GaAs/AlGaAs. What is a 2-DEG and why does it arise?
 
-\subsection{Hall Effect}
-Explain the classical Hall effect in your own words. What do I measure at $B=0$? And what happens if $B>0$? Which effect gives rise to the voltage drop in the vertical direction?
-
-\subsection{Quantum Hall Effect}
-Explain the IQHE in your own words. What does the density of states look like in a 2-DEG when $B=0$? What are Landau levels and how do they arise? What are edge states? What does the electron transport look like when you change the magnetic field? What do you expect to measure?
-
-\end{comment}
 \section{Experiment 1-2 pages}
 \begin{comment} %comment out defaults
 \subsection{Fabrication}
@@ -249,6 +242,9 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 %https://owl.english.purdue.edu/owl/resource/747/01/
 
 %========================================================================================
+\bibitem{qcircuitLatex}
+	University of New Mexico. \emph{"Q-circuit Tutorial"} ARXIV, August 24 2004, eprint arXiv:quant-ph/0406003. Bryan Eastin, Steven T. Flammia, Department of Physics and Astronomy. Accessed May 20 2018. https://arxiv.org/pdf/quant-ph/0406003.pdf 
+
 \bibitem{qc5ycommercialize}
 	Google Quantum AI Laboratory. \emph{"Commercialize quantum technologies in five years"}. March 03 2017. Masoud Mohseni, Peter Read, Hartmut Neven, Sergio Boxio, Vasil Denchev, Ryan Babbush, Austin Fowler, Vadim Smelyanskiy, John Martinis.  Accessed May 06 2018.  https://www.nature.com/news/commercialize-quantum-technologies-in-five-years-1.21583
 
