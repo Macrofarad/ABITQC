@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  1 JUN 2018 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  1 JUN 2018 16:46
 entering extended mode
 **./main.tex
 (main.tex
@@ -2404,22 +2404,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
 [8] <xymatrix 3x1 143> <xymatrix 3x1 143> <xymatrix 3x1 143> <xymatrix 3x1
 143> <xymatrix 3x1 143> <xymatrix 3x1 143>
-Underfull \hbox (badness 10000) in paragraph at lines 487--490
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
 
  []
 
 [9] <xymatrix 10x3 1698>
-Overfull \hbox (12.14137pt too wide) detected at line 521
+Overfull \hbox (12.14137pt too wide) detected at line 499
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--540
+Underfull \hbox (badness 10000) in paragraph at lines 515--518
 
  []
 
 [10] [11] <xymatrix 8x4 1318>
-Underfull \hbox (badness 10000) in paragraph at lines 612--615
+Underfull \hbox (badness 10000) in paragraph at lines 590--593
 
  []
 
@@ -2427,177 +2427,177 @@ Underfull \hbox (badness 10000) in paragraph at lines 612--615
 <ScreencapIBMQE_Superdense.png, id=59, 1149.5447pt x 714.41907pt>
 File: ScreencapIBMQE_Superdense.png Graphic file (type png)
 <use ScreencapIBMQE_Superdense.png>
-Package pdftex.def Info: ScreencapIBMQE_Superdense.png  used on input line 661.
+Package pdftex.def Info: ScreencapIBMQE_Superdense.png  used on input line 639.
 
 (pdftex.def)             Requested size: 390.84003pt x 242.89926pt.
 
-Overfull \hbox (45.84003pt too wide) in paragraph at lines 661--662
+Overfull \hbox (45.84003pt too wide) in paragraph at lines 639--640
  [] 
  []
 
 [13 <./ScreencapIBMQE_Superdense.png>]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 671.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 649.
 
 
-Underfull \hbox (badness 6944) in paragraph at lines 688--689
+Underfull \hbox (badness 6944) in paragraph at lines 666--667
 []\OT1/cmr/m/n/10 Andrew W. Cross, Lev S. Bishop, John A. Smolin, Jay M.
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 688--689
+Underfull \hbox (badness 4156) in paragraph at lines 666--667
 \OT1/cmr/m/n/10 Gam-betta. \OT1/cmr/m/it/10 "Open Quan-tum As-sem-bly Lan-guage
 "\OT1/cmr/m/n/10 . ARXIV July 12
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 691--692
+Underfull \hbox (badness 1681) in paragraph at lines 669--670
 []\OT1/cmr/m/n/10 University of New Mex-ico. \OT1/cmr/m/it/10 "Q-circuit Tu-to-
 rial" \OT1/cmr/m/n/10 ARXIV, Au-gust 24
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 694--695
+Underfull \hbox (badness 2707) in paragraph at lines 672--673
 []\OT1/cmr/m/n/10 Google Quan-tum AI Lab-o-ra-tory. \OT1/cmr/m/it/10 "Com-mer-c
 ial-ize quan-tum tech-nolo-
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 694--695
+Underfull \hbox (badness 1688) in paragraph at lines 672--673
 \OT1/cmr/m/it/10 gies in five years"\OT1/cmr/m/n/10 . March 03 2017. Ma-soud Mo
 hseni, Pe-ter Read,
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 694--695
+Underfull \hbox (badness 1540) in paragraph at lines 672--673
 \OT1/cmr/m/n/10 Fowler, Vadim Smelyan-skiy, John Mar-ti-nis. Ac-cessed May 06 2
 018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
+Underfull \hbox (badness 10000) in paragraph at lines 672--673
 \OT1/cmr/m/n/10 https://www.nature.com/news/commercialize-quantum-technologies-
 in-
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 697--698
+Underfull \hbox (badness 4673) in paragraph at lines 675--676
 []\OT1/cmr/m/n/10 Castelvecchi, Da-vide. \OT1/cmr/m/it/10 "The quan-tum in-ter-
 net has ar-rived (and it
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 697--698
+Underfull \hbox (badness 4621) in paragraph at lines 675--676
 \OT1/cmr/m/it/10 hasn't)"\OT1/cmr/m/n/10 . Febru-ary 14 2018, Na-ture. Ac-cesse
 d Febru-ary 20 2018.
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 703--704
+Underfull \hbox (badness 2435) in paragraph at lines 681--682
 \OT1/cmr/m/n/10 30 1995, eprint arXiv:quant-ph/9508027. Ac-cessed Au-gust 30 20
 17.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
 []\OT1/cmr/m/n/10 Forum Users. \OT1/cmr/m/it/10 "Prime Num-bers: In Lay-man's T
 erms, How
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
 \OT1/cmr/m/it/10 does Shors Al-go-rithm Work?"\OT1/cmr/m/n/10 , Oc-to-ber 9 201
 2. Cryp-tog-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
 \OT1/cmr/m/n/10 phy Stack Ex-change. Stack-Ex-change, Ac-cessed March 4 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
 \OT1/cmr/m/n/10 https://crypto.stackexchange.com/questions/3932/in-laymans-term
 s-
  []
 
 
-Underfull \hbox (badness 5504) in paragraph at lines 714--715
+Underfull \hbox (badness 5504) in paragraph at lines 692--693
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 714--715
+Underfull \hbox (badness 2221) in paragraph at lines 692--693
 \OT1/cmr/m/it/10 ter"\OT1/cmr/m/n/10 . Oc-to-ber 2 2014, Sci-en-tific Amer-i-ca
 n. Ac-cessed April 4 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
+Underfull \hbox (badness 10000) in paragraph at lines 692--693
 \OT1/cmr/m/n/10 https://www.scientificamerican.com/article/majorana-particle-ma
 tter-and-
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 717--718
+Underfull \hbox (badness 1406) in paragraph at lines 695--696
 []\OT1/cmr/m/n/10 Brumfiel, Ge-of-frey. \OT1/cmr/m/it/10 "D-Wave quan-tum com-p
 uter solves pro-tein fold-
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 717--718
+Underfull \hbox (badness 3547) in paragraph at lines 695--696
 \OT1/cmr/m/it/10 ing prob-lem"\OT1/cmr/m/n/10 . Au-gust 17 2012. Na-ture. Ac-ce
 ssed Au-gust 1 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
 \OT1/cmr/m/n/10 http://blogs.nature.com/news/2012/08/d-wave-quantum-computer-so
 lves-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 721--722
+Underfull \hbox (badness 1748) in paragraph at lines 699--700
 []\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
 1/cmr/m/n/10 MIT Open-Course-ware. Mas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--722
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
 \OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
 tion-
  []
 
 [14]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 739.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 717.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 []\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
 e to Bench-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 \OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
 6 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 \OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 753.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 731.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 767.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 745.
 
 
-Overfull \hbox (60.04631pt too wide) in paragraph at lines 943--944
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 921--922
 \OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
 putingFromThePerspectiveOfLadderLogic[] 
  []
@@ -2606,7 +2606,7 @@ putingFromThePerspectiveOfLadderLogic[]
 Here is how much of TeX's memory you used:
  34502 strings out of 493305
  728481 string characters out of 3129802
- 935459 words of memory out of 3000000
+ 933375 words of memory out of 3000000
  37625 multiletter control sequences out of 15000+200000
  542814 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2631,7 +2631,7 @@ blic/amsfonts/cm/cmsy10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Macro/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Macro/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (15 pages, 743937 bytes).
+Output written on main.pdf (15 pages, 743968 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
