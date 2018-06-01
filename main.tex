@@ -450,34 +450,39 @@ Quantum Assembly Language~\cite{qasmWhitePaper}, also known as QASM or OpenQASM 
 \newline
 In terms of programming, QASM is relatively straightforward; there are only two types of storage, classical registers, and quantum registers.  These registers are nothing more than  one dimensional arrays of bits or qubits respectively and can then have gates applied to them which are unitary subroutines. Below is an example of QASM in use as well as the quantum ladder logic equivalent.
 
-%\begin{comment} %placeholder
-\begin{multicols}{2}
+\begin{multicols}{2} %multiple columns allows space to be better utilized for sections with circuits and the like
 \begin{verbatim}
 include "qelib1.inc";
 
-qreg q[5];
-creg c[5];
-h q[0];
-cx q[0],q[1];
-x q[0];
-z q[0];
-cx q[0],q[1];
-h q[0];
+def c-Z,1,'Z'
+
+qubit q0, $\psi$
+qubit q1, 0
+qubit q2, 0
+
+H q1
+cnot q0,q1
+cnot q1,q2
+cnot q0,q1
+cnot q1,q2
+H q0
+c-Z q2,q0
+H q0
+H q0
 
 measure q[0] -> c[0];
 measure q[1] -> c[1];
+measure q[2] -> c[2];
 \end{verbatim}
-%\end{small}
+
 Which Equates to the following code in Ladder Logic
-\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
-\lstick{0} 		& \gate{H}	& \ctrl{1} 	& \gate{X} 	& \gate{Z}		& \ctrl{1}		& \gate{H}		& \meter \\	%& \cw \cwx \control{4}\\
-\lstick{0} 		& \qw 		& \targ 	& \qw 		& \qw 			& \targ			& \qw 			& \meter \\	%& \cw \cwx \control{3}\\
-\lstick{0} 	& \qw 		& \qw 		& \ctrl{-2}		& \qw 			& \qw 			& \qw			& \meter  \\%
-\lstick{0}	& \qw 		& \qw 		& \qw 		& \ctrl{-3}			& \qw 			& \qw 			& \meter  \\%e
-\lstick{0}		& \qw 		& \qw 		& \qw 		& \qw			& \qw 			& \qw 			& \meter  \\%
+\[\Qcircuit @C=0.7em @R=0.5em @!R { %Spacing for rows and columns, pretty standard
+\lstick{\ket{q_{0}}=\ket{\psi}}& \qw		& \ctrl{1} 	& \qw 			& \ctrl{1}		& \gate{H}	& \gate{Z}	&\gate{H}&\gate{H}	& \meter \\	%& \cw \cwx \control{4}\\
+\lstick{\ket{q_{1}}=\ket{0}} 	& \gate{H} 	& \targ 	& \ctrl{1}		& \targ 		& \ctrl{1}	& \qw 		&\qw & \qw	& \meter \\	%& \cw \cwx \control{3}\\
+\lstick{\ket{q_{2}}=\ket{0}} 	& \qw 		& \qw 		& \targ 		& \qw 			& \targ 	& \ctrl{-2}	&\qw & \qw		& \meter  \\ %
 }\]
 \end{multicols} %and go back to normal formatting
-%\end{comment}
+
 
 
 
