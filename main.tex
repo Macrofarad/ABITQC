@@ -306,8 +306,8 @@ This section deals in the various coding languages utilized in programming quant
 \label{Qubits}
 Qubits are to quantum computers what register bits are to a classical computer. A qubit is a two-state quantum mechanical system based on properties such as photon polarization or the spin of a trapped ion.  
 
-\paragraph{Decoherence}
-In order to create the properties necessary to enable a quantum computer, specific conditions need to be met.  This conditions vary between machines but common threads among them include noise isolation and extremely low temperatures.  The temperatures in question, in the case of IBM's machines this temperature can be around 15 Milli-Kelvin ~\cite{IBM_IsCold}. 
+\paragraph{Decoherence} % could use a pass for wording, but a spinning top is a rather good analogy to explain entropy
+In order to create the properties necessary to enable a quantum computer, specific conditions need to be met.  These conditions vary between machines but common threads among them include noise isolation and extremely low temperatures.  For IBM's machines these temperature can reach around 15 milli-Kelvin, a feat only capable with specialized hardware, and even then requiring several days to do so ~\cite{IBM_IsCold}. Due to this, and a myriad of other factors, qubits are inherently fragile, with stable states generally only lasting for periods of \textcolor{red}{CITE AND GRAB NUMBER} milliseconds. While this duration is constantly being improved upon by the tireless engineers and researchers across the many teams in quantum computing, to the programmer, the reality is that every operation counts. Much like a spinning top, a qubit (or set of qubits) has a finite amount of time before the system collapses into meaningless noise.  Keeping with the spinning top analogy, every operation performed on a given qubit is akin to a gentle nudge in order to guide its path.  Each nudge (or quantum gate) has a set cost in terms of run time with the more complex gates being akin to a large flick.  This is the process called decoherence, at its root, it is nothing more than entropy, but it must always be kept in mind when creating any quantum circuit.  
 
 
 \paragraph{Bloch Sphere} %lots of nested sections in this area
@@ -358,7 +358,7 @@ All of that is a bit of a mouth-full, so to speak, but for most practical purpos
 	\caption{Bloch Sphere}\label{bloch1}
 \end{figure}
 
-\newpage %here for layout manipulation, comment out when not needed
+%\newpage %here for layout manipulation, comment out when not needed
 \subsubsection{Circuit Layout} % Would Probably be helpful to have an introduction to how it actually worked prior to the meat
 
 
@@ -392,7 +392,7 @@ All of that is a bit of a mouth-full, so to speak, but for most practical purpos
 	This methodology of parallelism is a core property inherent to how a quantum computer processes data at a fundamental level. Thus, regardless of how a quantum computer is programmed, most quantum circuits can be approximated in this manor.
 	
 
-\newpage
+%\newpage
 
 
 \subsubsection{Quantum Gates} %another mention of http://www.vcpc.univie.ac.at/~ian/hotlist/qc/talks/bloch-sphere-rotations.pdf
