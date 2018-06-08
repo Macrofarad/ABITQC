@@ -13,8 +13,8 @@
 \usepackage{float} % Fixing formatting
 \usepackage{multicol} %to allow sections to have different column styles
 \usepackage{mathtools}%for more formatting stuff
-\usepackage{hyperref} % allows for hyperlinks as well as makes underscores in a URL not break the document
-
+\usepackage[hidelinks]{hyperref} % allows for hyperlinks as well as makes underscores in a URL not break the document
+	% Hidelinks Option removes the ugly boxes from clickable links
 
 
 %more complex installs with file dependancies
@@ -73,7 +73,7 @@
 		\end{center}
 	\textcolor{mygray}{
 			\begin{figure}%https://ai.google/research/pubs?area=QuantumAI
-			\caption{Photograph of Bristlecone courtesy of Google\textcolor{red}{(CITE)}}\label{titleImage} %https://ai.googleblog.com/search/label/Quantum%20Computing
+			\caption{Photograph of Bristlecone courtesy of Google~\cite{coverImage}}\label{titleImage} %https://ai.googleblog.com/search/label/Quantum%20Computing
 			%https://www.popsci.com/quantum-computer-photos  % Not the one needed
 			\end{figure}}
 	\begin{abstract}
@@ -87,9 +87,11 @@
 %\raggedleft
 %\setlength{\parindent}{15cm}
 %\phantom{This text will be invisible, use it for search terms in different documents}
-\tableofcontents
-\newpage 
 
+
+\tableofcontents % yep, that's the whole code for a ToC
+\newpage % See: https://www.latex-tutorial.com/tutorials/table-of-contents/
+% for further tutorials
 \section{Introduction}
 \label{sec:introduction} % reword pass 1
 %$\>\>\>\>$ tab should be 8? spaces
@@ -743,10 +745,20 @@ For future plans, this project is something I intend to continuously work on, wi
 
 %from: https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
 %\url{<my_url>}
-%\href{<my_url>}{<description>}
-%mailto:my_address@wikibooks.org}{my\_address@wikibooks.org}
+%    \href{<my_url>}{<description>}
+%    \href{mailto:my_address@wikibooks.org}{my\_address@wikibooks.org}
+%    \href{ActualURL}{DisplayURL}
 %========================================================================================
+
+
 % Something to keep an eye on: https://github.com/strangeworks 
+
+
+\bibitem{coverImage} % This is not a proper source, but it'll do as a placeholder until google quantum AI team can get back to me  
+		\emph{"D-Wave Cooling System"}. Google Quantum AI team. \newline \href{https://www.technologyreview.jp/wp-content/uploads/sites/2/2016/09/googlequantumcomputer.jpg}{Direct Image Link}
+	% Email the address at %https://www.dwavesys.com/resources/media-resources to get permission and the data required to properly cite this as it's pretty impossible to find barring the mit journal in japanese which has it and doesn't link or use full citation
+	%Possibly Larry Goldstein?
+
 \bibitem{IBM_IsCold} % this link actually broke the entire document at one point due to underscores
 	IBM Research, IBM QX Team. \emph{"The Quantum Bit (Qubit)"}. IBM Q Experience Documentation. IBM, 2007.  Accessed June 08 2018. 	\href{https://quantumexperience.ng.bluemix.net/proxy/tutorial/full-user-guide/002-The_Weird_and_Wonderful_World_of_the_Qubit/001-The_Quantum_Bit_(Qubit).html}{https://quantumexperience.ng.bluemix.net/proxy/tutorial/full-user-guide/002-The\_Weird\_and\_Wonderful\_World\_of\_the\_Qubit/001-The\_Quantum\_Bit\_(Qubit).html}
 
@@ -951,6 +963,8 @@ News.ycombinator.com
 ARXiV
 	Publicly available research documents in PDF form.  This is a goldmine to say the least
 
+BitHacks - For binary numbers, ways to speed up computation or reduce op count
+	http://graphics.stanford.edu/~seander/bithacks.html
 ========================
 ==========Might use section==============
 https://www.overleaf.com/latex/examples/title-page-with-logo/hrskypjpkrpd
