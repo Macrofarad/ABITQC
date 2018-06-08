@@ -8,7 +8,7 @@
 \usepackage{xcolor} % note: there's also a color package instead of xcolor
 \usepackage{verbatim} % For block comments
 \usepackage{tikz} % allow the drawing of images
-\usepackage{ amssymb } %for math notation that is needed
+\usepackage{amssymb} %for math notation that is needed
 \usepackage{physics}
 \usepackage{float} % Fixing formatting
 \usepackage{multicol} %to allow sections to have different column styles
@@ -17,7 +17,8 @@
 
 
 %more complex installs with file dependancies
-\usepackage[american]{circuitikzgit} % To draw digital logic circuits 
+%\usepackage[american]{circuitikzgit} % To draw digital logic circuits 
+	% Wasn't Used, commented out in case it's needed later
 % http://texdoc.net/texmf-dist/doc/latex/circuitikz/circuitikzmanual.pdf
 % circuitikz install instructions https://github.com/circuitikz/circuitikz/wiki/Installation
 
@@ -34,33 +35,27 @@
 
 
 \begin{comment}
- Add background concepts
-	use balanced ternary as an intro to probability current
-Physical Implementations
-Brief discussion of the different architectures
-Discuss access of machines themselves
-Discuss how to use code API such as QiSkit
-Find a way to highlight comment begins and ends
-replace emphasis in biblio with italix to fix the spacing issues
-Add graphics for all the pauli gates
-
+	See github repository for current issues and required changes
 \end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \label{customCommands}
-\definecolor{mygray}{gray}{0.6}
-% Put a URL Define Here
-\usetikzlibrary{arrows.meta}
-\newcommand{\volt}[1]{${#1} V$} % shortcut to volt
-\newcommand{\ohms}[1]{${#1} \Omega$} % shortcut to ohms
+\definecolor{mygray}{gray}{0.6} % Low priority, see if this can be acheived without this dependancy
+\usetikzlibrary{arrows.meta} %this might be redundant
+%\newcommand{\volt}[1]{${#1} V$} % shortcut to volt
+%\newcommand{\ohms}[1]{${#1} \Omega$} % shortcut to ohms
+\newcommand{\tabhere}{} % Currently commented Out
+\newcommand{\tabhereB}[1]{{#1}} % Currently commented Out
+%\newcommand{\tabhere}{$\>\>\>\>$ } % Bypasses some formatting issues %backup
+%\newcommand{\tabhereB}[1]{$\>\>\>\>$ {#1}} % Bypasses some formatting issues %backup
 
 
-\begin{comment} % test circuit, not error free but draws well, fix in later revision
-\begin{circuitikz}
-\draw (0,0) to[R=\ohms{1}, i=?, \volt{84}] (2,0) --
-(2,2) to[V=\volt{84}] (0,2)
--- (0,0);
-\end{circuitikz}
-\end{comment}
+%\begin{comment} % test circuit, not error free but draws well, fix in later revision
+%\begin{circuitikz}
+%\draw (0,0) to[R= $\Omega${1}, i=?, \volt{84}] (2,0) --
+%(2,2) to[V=\volt{84}] (0,2)
+%-- (0,0);
+%\end{circuitikz}
+%\end{comment}
 
 
 
@@ -70,13 +65,9 @@ Add graphics for all the pauli gates
 \date{\today\vspace{-0ex}}
 \usepackage{titling}
 \begin{document}
-	%\begin{figure}	
+	
 		\maketitle %this one command gave way more trouble than it should have in regards to spacing
-		%\setlength{\droptitle}{10pt}
-		%{\let\newpage\relax\maketitle}
 		\let\originalnewpage\newpage \let\newpage\relax \let\newpage\originalnewpage
-		%\begin{figure}
-		
 		\begin{center}		\includegraphics[scale=0.12]{googlequantumcomputer} % image source https://www.technologyreview.com/s/602283/googles-quantum-dream-may-be-just-around-the-corner/
 		\end{center}
 	\textcolor{mygray}{
@@ -85,53 +76,32 @@ Add graphics for all the pauli gates
 			\end{figure}}
 	\begin{abstract}
 		
-		\begin{comment} %pre BY changes
-			While Quantum Computing is a fairly advanced topic, it suffers from a perception of complexity beyond what is reasonable for the actual subject matter.  This paper provides a means to take that perception and bring it down to a more realistic level.  The primary targets of this paper are students currently enrolled in or freshly graduated from an electrical engineering or similar program; however, any individual with a base knowledge in programming or digital logic should be able to gain some level of benefit.
-		\end{comment}
 		Quantum Computing is an advanced topic, it suffers from a perception of complexity beyond what is reasonable for the actual subject matter.  The intent of this paper is to soften that perception and bring the topic down to a less intimidating level.  The primary targets of this paper are students currently enrolled in or freshly graduated from an electrical engineering program; however, any individual with a base knowledge in programming or digital logic should be able to gain some level of benefit. 
 		
 		Keywords:  Quantum, QISKit, Computing, Ladder, Logic, QASM, Introduction
-		% Need to reword this section, Find the abstract from source and merge the two
 		% Author note: the intention of this paper is to fill some of the skill gap many novices encounter in learning quantum computing.  By no means should this be considered an all-encompassing guide to the subject matter.
 	\end{abstract}
-	%\newpage %looks better as it's own page
-%	\end{figure}
-
-
-
-%\begin{figure}
-%	\centering
-
-%\end{figure}
-
-
 \newpage
+%\raggedleft
+%\setlength{\parindent}{15cm}
+%\phantom{This text will be invisible, use it for search terms in different documents}
 \section{Introduction}
 \label{sec:introduction}
-
-%Explain the context of the experiment here. Why is condensed matter physics interesting or important?
-%Optional things you could talk about (but don't have to -- this is up to you): transistors, computers, Quantum computers, fundamental knowledge (e.g. the resistance quantum).
-
-%Briefly explain what methods you will use in the experiment, and what values you will extract from the data.
-
-%For this section and all following sections: If you refer to an equation, previous result or theory that is not regarded as common knowledge, then cite the source (article or book) where you found this. For example, you can cite the Nano 3 Lecture notes \cite{nano3}.
-
-%This section is for context.  The how, and why.  From here on out, if I refer to a theory that isn't common knowledge, cite the source. \cite{junctNew}.
-
-Make no mistake, quantum physics as a whole is an exceptionally advanced topic.  The type of scenarios it brings to the table can be almost mind boggling at times \cite{mindBoggle}.  Add to this a slew of misleading analogies and the fact that "Qubit" may refer to any number of technologies, such as ion traps, superconducting qubits, or spin qubits and it's no wonder that people get confused.   With all of that said, while quantum computing does use the underlying principals of quantum mechanics, it is still nothing more than a programming architecture.  To put this statement in another context, an individual does not need to understand how to bias a transistor to be good at programming in C.
+%$\>\>\>\>$ tab should be 8? spaces
+\tabhere Quantum physics as a whole is an exceptionally advanced topic and the applications, occasionally breaching into concepts such as particles that are both matter and antimatter\cite{mindBoggle} which may at first seem contradictory by their very nature.  Add to this many common misleading analogies and the fact that "Qubit" may refer to any number of technologies, such as ion traps, superconducting qubits, or spin qubits and it is no wonder that people get confused.  While quantum computing does use the underlying principles of quantum mechanics, it is still nothing more than a programming architecture.  To put this statement in another context, an individual does not need to understand how to bias a transistor to be good at programming in C.
 
 \subsection{Use Case for Quantum Computing} 
-Quantum computing is what's called a Disruptive Emergent Technology.  Meaning, as far as industry is concerned, the implementation of these concepts have not only never been seen in any technology prior, but they also have the potential to revolutionize how things are done should these implementations prove successful.  Quantum computing is not a magic bullet that can handle every problem; however, it does have the potential to be exceptionally good at problems that current technology has issues solving.  Examples of such problems can be as varied as weather prediction, factoring \cite{shorsAlgorithm}, or even protein folding \cite{dwavepfold}. 
+\tabhere Quantum computing is what's called a Disruptive Emergent Technology.  Meaning, as far as industry is concerned, the implementation of these concepts have not only never been seen in any technology prior, but they also have the potential to revolutionize how things are done should these implementations prove successful.  Quantum computing is not a magic bullet that can handle every problem; however, it does have the potential to be exceptionally good at problems that current technology has issues solving.  Examples of such problems can be as varied as weather prediction, factoring \cite{shorsAlgorithm}, or even protein folding \cite{dwavepfold}. 
 
 \subsection{Relevance to Reader} %AKA, why should you care
-To avoid mincing words or dancing around the point, all that is fine, but this leads to the famous words (paraphrased ,of course) uttered at one point by nearly every person between the ages of twelve and nineteen: "Why should I care?".  To that, there are two primary categories of answers.  First, advances in technology usually creates a higher standard of living, in the case of quantum computing, these advances may end up finding the cure to debilitating ailments, reducing cost of living, or even allowing for a faster, more secure means to transport data (Quantum Internet \cite{qinternetNature}).  The second category deals with economics, the reality of the situation is that there aren't enough people who are skilled in this area to fit the demand \cite{qc5ycommercialize}.  Meaning, not only are jobs available to those with the skills to fill the required roles, but due to the shortage of supply when compared to the demand, these jobs generally pay quite well. 
+\tabhere To avoid mincing words or dancing around the point, all that is fine, but this leads to the famous words (paraphrased ,of course) uttered at one point by nearly every person between the ages of twelve and nineteen: "Why should I care?".  To that, there are two primary categories of answers.  First, advances in technology usually creates a higher standard of living, in the case of quantum computing, these advances may end up finding the cure to debilitating ailments, reducing cost of living, or even allowing for a faster, more secure means to transport data (Quantum Internet \cite{qinternetNature}).  The second category deals with economics, the reality of the situation is that there aren't enough people who are skilled in this area to fit the demand \cite{qc5ycommercialize}.  Meaning, not only are jobs available to those with the skills to fill the required roles, but due to the shortage of supply when compared to the demand, these jobs generally pay quite well. 
 
 
 \section{Background Concepts}
 \label{sec:backgroundconcepts}
 %brief intro to this section, needs rewording
 %This section is not meant to be an exhaustive list, but, in my personal experience, learning about the background concepts below will greatly assist a person’s ability to better understand quantum computing.  The following sections will provide a brief explanation of the concepts.
-In order to avoid excessive noise, this paper assumes the reader has some basic knowledge of programming as well as electronics.  It will not go into depth with much of the math, instead focusing primarily on the act of programming itself.  There are many topics which should be covered if one wishes to become skilled in quantum computing, most of which the reader will need to research on their own time; however, the sections below should provide enough context in order to provide a suitable foothold should one wish to continue with the subject.
+\tabhere In order to avoid excessive noise, this paper assumes the reader has some basic knowledge of programming as well as electronics.  It will not go into depth with much of the math, instead focusing primarily on the act of programming itself.  There are many topics which should be covered if one wishes to become skilled in quantum computing, most of which the reader will need to research on their own time; however, the sections below should provide enough context in order to provide a suitable foothold should one wish to continue with the subject.
 
 
 
@@ -143,9 +113,9 @@ One prime example of this is Erwin Schrödinger and the concept of Schrödinger'
 \newline %helpful link to brush up https://en.wikipedia.org/wiki/Copenhagen_interpretation
 To briefly summarize, Schrödinger's cat is a brilliant thought experiment meant to illustrate a potential paradox present within the Copenhagen interpretation of quantum mechanics.  This thought experiment was meant to highlight the bizarre nature of EPR (Einstein, Podolsky, Rosen), or superposition states.  This is demonstrated via a cat, radioactive particle, flask of poison, and a Geiger counter being sealed in a theoretical box.  Should the counter detect radioactivity, the flask would be broken causing the cat to die immediately.  Under the Copenhagen interpretation of quantum mechanics, this cat should be considered simultaneously both alive and dead, however, looking into the sealed box will reveal either a very scared cat, or a testament to animals killed in the name of science. \newline
 \newline
- In context, this is meant to demonstrate the concepts of complex, superimposed states collapsing upon measurement. For better or worse, this concept of a not dead, yet dead cat in a box has spread like wildfire, it has become the cornerstone of what the public sees as quantum computing. This has allowed the idea that the quantum state is both 1 and 0 to become the very first thing that anyone learns in regards to quantum computing.  While this statement is not technically wrong, it is fundamentally incomplete. In many ways, it's similar to the question "which came first: the chicken, or the egg?", the answer to which can only be something along the lines of 'invalid question', as it not only fails to define what denotes the term chicken, but it also leads the individual being asked to assume the term 'egg' is specifically in the context of a chicken egg. \newline
+In context, this is meant to demonstrate the concepts of complex, superimposed states collapsing upon measurement. For better or worse, this concept of a not dead, yet dead cat in a box has spread like wildfire, it has become the cornerstone of what the public sees as quantum computing. This has allowed the idea that the quantum state is both 1 and 0 to become the very first thing that anyone learns in regards to quantum computing.  While this statement is not technically wrong, it is fundamentally incomplete. In many ways, it's similar to the question "which came first: the chicken, or the egg?", the answer to which can only be something along the lines of 'invalid question', as it not only fails to define what denotes the term chicken, but it also leads the individual being asked to assume the term 'egg' is specifically in the context of a chicken egg. \newline
  \newline
- In reality, a better way to think of this is through vectors and complex numbers.  The value is in fact both 1 and 0, but it's that way not because it is two things in a binary sense, but because it is a complex mixing of both.  To put this back into cat analogies, let's take the premise back to the start.  There is a cat, that cat is now infected with a zombie pathogen.  For all purposes, the cat is neither alive, nor dead, as it cannot cleanly fit into either category, yet it does have many of the defining characteristics that comprise both.  From here, the cat is injected with an antidote,  being a rushed marvel of medicine meant to save the feline race, it will near instantly result in either a complete cure or certain death for our kitten subject.  For this analogy, the zombified state represents the ability of qubits to be in a mixed state, the antidote representing the act of measuring this mixed state and thus collapsing it into a binary value. %: 1 or 0, alive or dead.
+In reality, a better way to think of this is through vectors and complex numbers.  The value is in fact both 1 and 0, but it's that way not because it is two things in a binary sense, but because it is a complex mixing of both.  To put this back into cat analogies, let's take the premise back to the start.  There is a cat, that cat is now infected with a zombie pathogen.  For all purposes, the cat is neither alive, nor dead, as it cannot cleanly fit into either category, yet it does have many of the defining characteristics that comprise both.  From here, the cat is injected with an antidote,  being a rushed marvel of medicine meant to save the feline race, it will near instantly result in either a complete cure or certain death for our kitten subject.  For this analogy, the zombified state represents the ability of qubits to be in a mixed state, the antidote representing the act of measuring this mixed state and thus collapsing it into a binary value. %: 1 or 0, alive or dead.
 
 
 \subsection{Balanced Ternary} %The basics from the ground up

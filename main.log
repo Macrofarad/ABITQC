@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  7 JUN 2018 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.14)  7 JUN 2018 22:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -2044,29 +2044,6 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen264
 \l_MT_above_shortintertext_sep=\dimen265
 \l_MT_below_shortintertext_sep=\dimen266
-) (circuitikzgit.sty
-Package: circuitikzgit 2017/11/26{} The CircuiTikz circuit drawing package vers
-ion git:cf53489
-
-("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
-r\tikz\libraries\tikzlibrarycalc.code.tex"
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-)
-("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
-flibraryarrows.code.tex"
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen267
-)
-\pgf@circ@res@up=\dimen268
-\pgf@circ@res@down=\dimen269
-\pgf@circ@res@zero=\dimen270
-\pgf@circ@res@left=\dimen271
-\pgf@circ@res@right=\dimen272
-\pgf@circ@res@other=\dimen273
-\pgf@circ@res@step=\dimen274
-\pgf@circ@res@temp=\dimen275
-\pgfstartlinewidth=\dimen276
-\pgf@circ@Rlen=\dimen277
 )
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypic.sty"
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.sty"
@@ -2082,45 +2059,45 @@ ex")
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen278
-\Y@c=\dimen279
-\U@c=\dimen280
-\D@c=\dimen281
-\L@c=\dimen282
-\R@c=\dimen283
+\X@c=\dimen267
+\Y@c=\dimen268
+\U@c=\dimen269
+\D@c=\dimen270
+\L@c=\dimen271
+\R@c=\dimen272
 \Edge@c=\toks40
-\X@p=\dimen284
-\Y@p=\dimen285
-\U@p=\dimen286
-\D@p=\dimen287
-\L@p=\dimen288
-\R@p=\dimen289
+\X@p=\dimen273
+\Y@p=\dimen274
+\U@p=\dimen275
+\D@p=\dimen276
+\L@p=\dimen277
+\R@p=\dimen278
 \Edge@p=\toks41
-\X@origin=\dimen290
-\Y@origin=\dimen291
-\X@xbase=\dimen292
-\Y@xbase=\dimen293
-\X@ybase=\dimen294
-\Y@ybase=\dimen295
-\X@min=\dimen296
-\Y@min=\dimen297
-\X@max=\dimen298
-\Y@max=\dimen299
+\X@origin=\dimen279
+\Y@origin=\dimen280
+\X@xbase=\dimen281
+\Y@xbase=\dimen282
+\X@ybase=\dimen283
+\Y@ybase=\dimen284
+\X@min=\dimen285
+\Y@min=\dimen286
+\X@max=\dimen287
+\Y@max=\dimen288
 \lastobjectbox@=\box82
 \zerodotbox@=\box83
-\almostz@=\dimen300
+\almostz@=\dimen289
  direction,
-\d@X=\dimen301
-\d@Y=\dimen302
+\d@X=\dimen290
+\d@Y=\dimen291
 \K@=\count292
 \KK@=\count293
 \Direction=\count294
-\K@dXdY=\dimen303
-\K@dYdX=\dimen304
+\K@dXdY=\dimen292
+\K@dYdX=\dimen293
 \xyread@=\read4
 \xywrite@=\write4
 \csp@=\count295
-\quotPTK@=\dimen305
+\quotPTK@=\dimen294
 
 utility macros; pictures: \xy, positions,
 \swaptoks@@=\toks42
@@ -2163,12 +2140,12 @@ x"  Xy-pic option: Curve and Spline extension v.3.12 curve,
 \crv@cnt@=\count301
 \crvpts@=\toks46
 \splinebox@=\box85
-\splineval@=\dimen306
-\splinedepth@=\dimen307
-\splinetol@=\dimen308
-\splinelength@=\dimen309
+\splineval@=\dimen295
+\splinedepth@=\dimen296
+\splinetol@=\dimen297
+\splinelength@=\dimen298
  circles,
-\L@=\dimen310
+\L@=\dimen299
  loaded)
 Xy-pic pdf driver: `curve' extension support
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.t
@@ -2201,10 +2178,10 @@ elliptical arcs, loaded))
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
 flibraryarrows.meta.code.tex"
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen311
-\pgfarrowlength=\dimen312
-\pgfarrowwidth=\dimen313
-\pgfarrowlinewidth=\dimen314
+\pgfarrowinset=\dimen300
+\pgfarrowlength=\dimen301
+\pgfarrowwidth=\dimen302
+\pgfarrowlinewidth=\dimen303
 )
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titling\titling.st
 y"
@@ -2215,30 +2192,30 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
-\scratchdimen=\dimen315
+\scratchdimen=\dimen304
 \scratchbox=\box86
 \nofMPsegments=\count303
 \nofMParguments=\count304
 \everyMPshowfont=\toks47
 \MPscratchCnt=\count305
-\MPscratchDim=\dimen316
+\MPscratchDim=\dimen305
 \MPnumerator=\count306
 \makeMPintoPDFobject=\count307
 \everyMPtoPDFconversion=\toks48
@@ -2301,66 +2278,66 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.39998pt on input line 72.
+Package xypdf Info: Line width: 0.39998pt on input line 67.
 <googlequantumcomputer.jpg, id=4, 1216.545pt x 1872.9975pt>
 File: googlequantumcomputer.jpg Graphic file (type jpg)
 <use googlequantumcomputer.jpg>
-Package pdftex.def Info: googlequantumcomputer.jpg  used on input line 80.
+Package pdftex.def Info: googlequantumcomputer.jpg  used on input line 71.
 (pdftex.def)             Requested size: 145.9791pt x 224.75pt.
 [1
 
 {C:/Users/Macro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./googlequa
 ntumcomputer.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 140--149
+Underfull \hbox (badness 10000) in paragraph at lines 110--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--149
+Underfull \hbox (badness 10000) in paragraph at lines 110--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--149
+Underfull \hbox (badness 10000) in paragraph at lines 110--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--149
+Underfull \hbox (badness 10000) in paragraph at lines 110--119
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 154--159
+Underfull \hbox (badness 10000) in paragraph at lines 124--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--159
+Underfull \hbox (badness 10000) in paragraph at lines 124--129
 
  []
 
 [3]
-Overfull \hbox (1.33417pt too wide) in paragraph at lines 162--169
+Overfull \hbox (1.33417pt too wide) in paragraph at lines 132--139
  [][] 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 177--186
+Underfull \hbox (badness 10000) in paragraph at lines 147--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--186
+Underfull \hbox (badness 10000) in paragraph at lines 147--156
 
  []
 
@@ -2368,7 +2345,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--186
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibraryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-)
+
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen306
+))
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibraryshapes.gates.logic.US.code.tex"
 File: tikzlibraryshapes.gates.logic.US.code.tex 2008/01/25 v3.0.1a (rcs-revisio
@@ -2377,49 +2359,53 @@ n 1.1)
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
 apes\circuits\pgflibraryshapes.gates.logic.US.code.tex"
 ("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
-apes\circuits\pgflibraryshapes.gates.logic.code.tex"))) <xymatrix 6x4 1124>
-Underfull \hbox (badness 10000) in paragraph at lines 278--282
+apes\circuits\pgflibraryshapes.gates.logic.code.tex")))
+("C:\Users\Macro\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+) <xymatrix 6x4 1124>
+Underfull \hbox (badness 10000) in paragraph at lines 250--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--282
+Underfull \hbox (badness 10000) in paragraph at lines 250--254
 
  []
 
 [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 334--341
+Underfull \hbox (badness 10000) in paragraph at lines 306--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--341
+Underfull \hbox (badness 10000) in paragraph at lines 306--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 [8] <xymatrix 3x1 143> <xymatrix 3x1 143> <xymatrix 3x1 143> <xymatrix 3x1
 143> <xymatrix 3x1 143> <xymatrix 3x1 143>
-Underfull \hbox (badness 10000) in paragraph at lines 473--476
+Underfull \hbox (badness 10000) in paragraph at lines 445--448
 
  []
 
 <xymatrix 10x3 1698>
-Overfull \hbox (12.14137pt too wide) detected at line 508
+Overfull \hbox (12.14137pt too wide) detected at line 480
 []
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 524--527
+Underfull \hbox (badness 10000) in paragraph at lines 496--499
 
  []
 
 [10] [11] <xymatrix 8x4 1318>
-Underfull \hbox (badness 10000) in paragraph at lines 599--602
+Underfull \hbox (badness 10000) in paragraph at lines 571--574
 
  []
 
@@ -2427,190 +2413,190 @@ Underfull \hbox (badness 10000) in paragraph at lines 599--602
 <ScreencapIBMQE_Superdense.png, id=59, 1149.5447pt x 714.41907pt>
 File: ScreencapIBMQE_Superdense.png Graphic file (type png)
 <use ScreencapIBMQE_Superdense.png>
-Package pdftex.def Info: ScreencapIBMQE_Superdense.png  used on input line 648.
+Package pdftex.def Info: ScreencapIBMQE_Superdense.png  used on input line 620.
 
 (pdftex.def)             Requested size: 390.84003pt x 242.89926pt.
 
-Overfull \hbox (45.84003pt too wide) in paragraph at lines 648--649
+Overfull \hbox (45.84003pt too wide) in paragraph at lines 620--621
  [] 
  []
 
 [13 <./ScreencapIBMQE_Superdense.png>]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 658.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 630.
 
 
-Underfull \hbox (badness 6944) in paragraph at lines 675--676
+Underfull \hbox (badness 6944) in paragraph at lines 647--648
 []\OT1/cmr/m/n/10 Andrew W. Cross, Lev S. Bishop, John A. Smolin, Jay M.
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 675--676
+Underfull \hbox (badness 4156) in paragraph at lines 647--648
 \OT1/cmr/m/n/10 Gam-betta. \OT1/cmr/m/it/10 "Open Quan-tum As-sem-bly Lan-guage
 "\OT1/cmr/m/n/10 . ARXIV July 12
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 678--679
+Underfull \hbox (badness 1681) in paragraph at lines 650--651
 []\OT1/cmr/m/n/10 University of New Mex-ico. \OT1/cmr/m/it/10 "Q-circuit Tu-to-
 rial" \OT1/cmr/m/n/10 ARXIV, Au-gust 24
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 681--682
+Underfull \hbox (badness 2707) in paragraph at lines 653--654
 []\OT1/cmr/m/n/10 Google Quan-tum AI Lab-o-ra-tory. \OT1/cmr/m/it/10 "Com-mer-c
 ial-ize quan-tum tech-nolo-
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 681--682
+Underfull \hbox (badness 1688) in paragraph at lines 653--654
 \OT1/cmr/m/it/10 gies in five years"\OT1/cmr/m/n/10 . March 03 2017. Ma-soud Mo
 hseni, Pe-ter Read,
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 681--682
+Underfull \hbox (badness 1540) in paragraph at lines 653--654
 \OT1/cmr/m/n/10 Fowler, Vadim Smelyan-skiy, John Mar-ti-nis. Ac-cessed May 06 2
 018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--682
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
 \OT1/cmr/m/n/10 https://www.nature.com/news/commercialize-quantum-technologies-
 in-
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 684--685
+Underfull \hbox (badness 4673) in paragraph at lines 656--657
 []\OT1/cmr/m/n/10 Castelvecchi, Da-vide. \OT1/cmr/m/it/10 "The quan-tum in-ter-
 net has ar-rived (and it
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 684--685
+Underfull \hbox (badness 4621) in paragraph at lines 656--657
 \OT1/cmr/m/it/10 hasn't)"\OT1/cmr/m/n/10 . Febru-ary 14 2018, Na-ture. Ac-cesse
 d Febru-ary 20 2018.
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 690--691
+Underfull \hbox (badness 2435) in paragraph at lines 662--663
 \OT1/cmr/m/n/10 30 1995, eprint arXiv:quant-ph/9508027. Ac-cessed Au-gust 30 20
 17.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
 []\OT1/cmr/m/n/10 Forum Users. \OT1/cmr/m/it/10 "Prime Num-bers: In Lay-man's T
 erms, How
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
 \OT1/cmr/m/it/10 does Shors Al-go-rithm Work?"\OT1/cmr/m/n/10 , Oc-to-ber 9 201
 2. Cryp-tog-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
 \OT1/cmr/m/n/10 phy Stack Ex-change. Stack-Ex-change, Ac-cessed March 4 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
 \OT1/cmr/m/n/10 https://crypto.stackexchange.com/questions/3932/in-laymans-term
 s-
  []
 
 
-Underfull \hbox (badness 5504) in paragraph at lines 701--702
+Underfull \hbox (badness 5504) in paragraph at lines 673--674
 []\OT1/cmr/m/n/10 Moskowitz, Clara. \OT1/cmr/m/it/10 "New Par-ti-cle Is Both Ma
 t-ter and An-ti-mat-
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 701--702
+Underfull \hbox (badness 2221) in paragraph at lines 673--674
 \OT1/cmr/m/it/10 ter"\OT1/cmr/m/n/10 . Oc-to-ber 2 2014, Sci-en-tific Amer-i-ca
 n. Ac-cessed April 4 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
 \OT1/cmr/m/n/10 https://www.scientificamerican.com/article/majorana-particle-ma
 tter-and-
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 704--705
+Underfull \hbox (badness 1406) in paragraph at lines 676--677
 []\OT1/cmr/m/n/10 Brumfiel, Ge-of-frey. \OT1/cmr/m/it/10 "D-Wave quan-tum com-p
 uter solves pro-tein fold-
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 704--705
+Underfull \hbox (badness 3547) in paragraph at lines 676--677
 \OT1/cmr/m/it/10 ing prob-lem"\OT1/cmr/m/n/10 . Au-gust 17 2012. Na-ture. Ac-ce
 ssed Au-gust 1 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 \OT1/cmr/m/n/10 http://blogs.nature.com/news/2012/08/d-wave-quantum-computer-so
 lves-
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 708--709
+Underfull \hbox (badness 1748) in paragraph at lines 680--681
 []\OT1/cmr/m/n/10 Shor, Pe-ter. \OT1/cmr/m/it/10 "Quan-tum Com-pu-ta-tion". \OT
 1/cmr/m/n/10 MIT Open-Course-ware. Mas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--709
+Underfull \hbox (badness 10000) in paragraph at lines 680--681
 \OT1/cmr/m/n/10 https://ocw.mit.edu/courses/mathematics/18-435j-quantum-computa
 tion-
  []
 
 [14]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 726.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 698.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--730
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 []\OT1/cmr/m/n/10 Wooten, James. \OT1/cmr/m/it/10 "Us-ing a Sim-ple Puz-zle Gam
 e to Bench-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--730
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 \OT1/cmr/m/it/10 mark Quan-tum Com-put-ers". \OT1/cmr/m/n/10 Medium, Jan-uary 1
 6 2018.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--730
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 \OT1/cmr/m/n/10 https://medium.com/@decodoku/understanding-quantum-computers-
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 740.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 712.
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 754.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 726.
 
 
-Overfull \hbox (60.04631pt too wide) in paragraph at lines 930--931
+Overfull \hbox (60.04631pt too wide) in paragraph at lines 902--903
 \OT1/cmr/m/n/7 https://www.github.com/Macrofarad/ABriefIntroductionToQuantumCom
 putingFromThePerspectiveOfLadderLogic[] 
  []
 
 [15] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 34502 strings out of 493305
- 728481 string characters out of 3129802
- 949934 words of memory out of 3000000
- 37625 multiletter control sequences out of 15000+200000
+ 28124 strings out of 493305
+ 533907 string characters out of 3129802
+ 648116 words of memory out of 3000000
+ 31250 multiletter control sequences out of 15000+200000
  542814 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,26n,67p,1463b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,26n,67p,1463b,1406s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbx10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Macro/AppData/Local/Progra
@@ -2631,7 +2617,7 @@ blic/amsfonts/cm/cmsy10.pfb><C:/Users/Macro/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Macro/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Macro/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (15 pages, 743664 bytes).
+Output written on main.pdf (15 pages, 743706 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
