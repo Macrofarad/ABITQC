@@ -139,7 +139,7 @@ These systems work by designating symbols as pre-signed.  In the case of balance
 	\end{tabular}
 	\caption{\label{tab:ternary}Comparison table showing equivalent numbers in different display forms}
 \end{table}
-\subsection{Vectors}
+\subsection{Vectors \textcolor{red}{(Explain Each New symbol)}}
 \label{THISNEEDSACCURACYREVIEW} % Getting into nitpick notation stuff, need to be careful
 A proper discussion of quantum computing cannot be had without discussing vectors and their function in understanding the circuit.  This will be discussed more in a later section (\ref{Qubits}); however, the shorthand version is as follows.  Due to the fact that quantum computers operate on qubits rather than classical (binary) bits, a quantum computer is effectively nothing more than a very complex probabilistic vector equation. To be specific, this state space $\mathcal{H}$, is not just vector space but a Hilbert space, meaning it has a positive-definite Hermitian inner product $\bra{\cdot}\ket{\cdot}$.  This has quite a few implications and entire papers can be written on the vector space alone, but in simple terms what it means is that the sum of the probabilities of a quantum computer being in any given state post measurement will always be 1.
 
@@ -240,15 +240,18 @@ A more advanced concept that is still core to quantum computing is the idea of r
 \end{figure}
 
 %\end{comment}%debugging
+\subsection{PLC Ladder Logic \textcolor{red}{images and content required}}
+\label{PLC_Here}
 
 
-\subsection{Probability Current} %this topic is a terrifying monster
+\subsection{Probability Current\textcolor{red}{ (Placeholder)}} %this topic is a terrifying monster
 \label{ternaryRelevance} %allows linking to this spot regardless of location
 %https://archive.org/details/MagneticAmplifiers
 % Further Reading: http://sparkbangbuzz.com/mag-amp/mag-amp.htm 
 
 % and oh boy is it a heavy topic, helpful link for some wording: https://www.math.ucdavis.edu/~greg/intro.pdf
-Back in the section involving balanced ternary it was mentioned that the concept of quantities innately having a sign polarity would be relevant later, this section is that aforementioned later. Fair warning, this section will get very math heavy. \newline
+
+In the previous section involving balanced ternary it was mentioned that the concept of quantities innately having a sign polarity would be relevant later, this section is that aforementioned later. Fair warning, this section will get very math heavy. \newline
 \newline
 % Use music to help explain this.  
 % The sum of probability amplitudes is akin to the sum of notes playing in a chorus.  All of them constructively and destructively interfere with each other to make the music that is heard by our ears
@@ -259,7 +262,7 @@ Back in the section involving balanced ternary it was mentioned that the concept
 %refer to https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/ProbabilityCurrent/ProbabilityCurrent.html 
 %for a comprehensive/interactive display
 
-% a good bloch sphere until a custom graphic is generated https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.activecyber.net%2Fwp-content%2Fuploads%2F2016%2F05%2FSlide2-1024x576.jpg&imgrefurl=http%3A%2F%2Fwww.activecyber.net%2Frise-quantum-computers-current-state-cryptographic-affairs%2F&docid=WlC5Z0oQpIQMoM&tbnid=PgRi_YmNYCO0VM%3A&vet=10ahUKEwjwndO69rHbAhVCHTQIHUmgDVwQMwhMKA8wDw..i&w=1024&h=576&client=firefox-b-1&bih=727&biw=1536&q=probability%20current%20graph%20quantum%20computing&ved=0ahUKEwjwndO69rHbAhVCHTQIHUmgDVwQMwhMKA8wDw&iact=mrc&uact=8
+% a good bloch sphere to use as a reference point for own graphics https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.activecyber.net%2Fwp-content%2Fuploads%2F2016%2F05%2FSlide2-1024x576.jpg&imgrefurl=http%3A%2F%2Fwww.activecyber.net%2Frise-quantum-computers-current-state-cryptographic-affairs%2F&docid=WlC5Z0oQpIQMoM&tbnid=PgRi_YmNYCO0VM%3A&vet=10ahUKEwjwndO69rHbAhVCHTQIHUmgDVwQMwhMKA8wDw..i&w=1024&h=576&client=firefox-b-1&bih=727&biw=1536&q=probability%20current%20graph%20quantum%20computing&ved=0ahUKEwjwndO69rHbAhVCHTQIHUmgDVwQMwhMKA8wDw&iact=mrc&uact=8
 
 
 
@@ -350,9 +353,33 @@ All of that is a bit of a mouth-full, so to speak, but for most practical purpos
 	\caption{Bloch Sphere}\label{bloch1}
 \end{figure}
 
+\newpage %here for layout manipulation, comment out when not needed
+\subsubsection{Circuit Layout} % Would Probably be helpful to have an introduction to how it actually worked prior to the meat
+
+
+%\begin{figure}[H] %This keeps the code in the same place % note footnote doesn't play well with figure
+	Similar to PLC Ladder logic (See section \ref{PLC_Here} for details),
+	%\begin{multicols}{2} %multiple columns allows space to be better utilized for sections with circuits and the like
+		\label{NEEDSMOAR} % and rewording
+		 quantum circuits displayed in ladder logic generally follow a fairly well established layout. 		
+		\[\Qcircuit @C=0.7em @R=0.5em @!R { %Spacing for rows and columns, pretty standard
+			\lstick{\ket{\psi}}& \qw	& \qw	& \gate{?}	& \qw & \qw	& \meter \\	%& \cw \cwx \control{4}\\
+			\lstick{\ket{0}}& \qw	& \qw	& \gate{!}	& \qw & \qw	& \meter \\	%& \cw \cwx \control{4}\\
+		}\]
+	
+	Unless otherwise noted, all quantum circuits are treated as going from left to right. Each row is a unique qubit and the line going across the row is the quantum wire \footnote{It is important to note here that all operations, including a 'blank' wire are 'gates' so to speak.  The implications of this will be discussed in the section regarding quantum gates (\ref{QuantumGatesWhole})}.  In the above circuit, there are two qubits, the top qubit has been initialized to $\ket{\psi}$, or an arbitrary quantum state, below it the bottom qubit has been initialized to $\ket{0}$.  \newline
+	\newline For theoretical purposes, most qubits in quantum circuits are notated as having an initial state of $\ket{\psi}$, this is to show that the algorithm these qubits are within works regardless of the input state of these qubits; however, when it comes to real-world applications, most qubits will start in a state of either $\ket{1}$ or $\ket{0}$ as it eliminates unnecessary variables when performing calculations.
+	
+	
+	%\end{multicols} %and go back to normal formatting
+%\end{figure}
+
+
+
+
 \subsubsection{Quantum Gates} %another mention of http://www.vcpc.univie.ac.at/~ian/hotlist/qc/talks/bloch-sphere-rotations.pdf
 %turns out they have an exceptionally good explanation of Pauli gates
-
+\label{QuantumGatesWhole}
 Much like a digital logic gate operates on an individual or set of classical bits, a Quantum gate operates on individual or sets of qubits.  Given that each qubit is effectively a matrix, quantum gates are matrices which are used to modify the vector space. % Fact check, it's basically right, but after going on for a page about context and stuff, the last thing I want to do is be inaccurate.
 \paragraph{Single-Qubit Gates}
 %Pauli gates
@@ -438,8 +465,65 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 	\end{figure}
 	
 \end{multicols}
-%\paragraph{Multi-Qubit Gates} %Add section back in once Pauli gate details are complete 
-%advanced Gates
+\paragraph{Multi-Qubit Gates} 
+\label{advancedGates}
+In addition to single qubit gates, most quantum circuits also utilize multi-qubit gates. There are many different types of these, but the most basic case is the controlled gate. 
+
+\subparagraph{Control}
+
+\begin{multicols}{2}
+	\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+		\lstick{ } & \ctrl{0} & \qw \\
+	}\]
+	
+	%\begin{figure}[H]% H is not for Hadamard, it just puts the diagram "here"
+	%	$\>$ \\ %this inserts a whitespace character so I can make a dummy line
+	%	$\theta_4 = \theta_H = \frac{1}{\sqrt{2}} \Bigg[\begin{matrix*}1&1\\1&-1\end{matrix*}\Bigg]$	% math matrix stuff	
+%	\end{figure}
+
+
+\end{multicols} 
+
+\subparagraph{Advanced Controls}
+
+\begin{multicols}{2}
+	\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+		\lstick{ } & \ctrlo{0} & \qw \\
+	}\]
+	
+	%\begin{figure}[H]% H is not for Hadamard, it just puts the diagram "here"
+	%	$\>$ \\ %this inserts a whitespace character so I can make a dummy line
+	%	$\theta_4 = \theta_H = \frac{1}{\sqrt{2}} \Bigg[\begin{matrix*}1&1\\1&-1\end{matrix*}\Bigg]$	% math matrix stuff	
+	%	\end{figure}
+	
+	
+\end{multicols} 
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}% backup area
+\begin{multicols}{2}
+	\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+		\lstick{ } & \gate{H} & \qw \\
+	}\]
+	
+	\begin{figure}[H]% H is not for Hadamard, it just puts the diagram "here"
+		$\>$ \\ %this inserts a whitespace character so I can make a dummy line
+		$\theta_4 = \theta_H = \frac{1}{\sqrt{2}} \Bigg[\begin{matrix*}1&1\\1&-1\end{matrix*}\Bigg]$	% math matrix stuff	
+	\end{figure}
+\end{multicols} 
+\end{comment}
+
+
+
 
 \subsection{Quantum Assembly Language}
 \label{currentSpot} %to find where I last left off
@@ -481,11 +565,11 @@ Which Equates to the following code in Ladder Logic
 }\]
 \end{multicols} %and go back to normal formatting
 \end{figure}
-The circuit and code given above is for a known simplification of quantum teleportation~\cite{nielsonChuangQCQI}.
+The circuit and code given above is for a known simplification of quantum teleportation~\cite{nielsonChuangQCQI}.   \textcolor{red}{(Repeated Content?)}
 
 
 
-\section{Experiment} % 1-2 pages
+\section{Experiment \textcolor{red}{(Provide screencaps for each)}} 
 This section contains information on experiments performed on both real world quantum computers as well as simulations and approximations of quantum computers.
 
 %discuss pros and cons of each system, language, interface etc.
@@ -509,19 +593,17 @@ In addition to the ability to program in ladder logic, IBMQE allows users to cod
 %Real world Implementations: Quantum Battleship, Using game to determine efficiency
 
 \subsection{Quirk}%Easily one of the best interfaces
-\subsubsection{What it is}
+\subsubsection{Definition} % Changed from "What it is"
 Quirk is an idealized, online drag-and-drop quantum circuit simulator. This simulator is hosted on Craig Gidney's block Algorithmic Assertions\cite{algoassert}.  It is open source and due to the fact that he works as a part of Google's Quantum AI Team, it is owned by Google.
 \subsubsection{Pros}%make better name
 Among all currently available quantum simulation interfaces, this one stands out from the crowd.  It is responsive, accessible online without having to download software and extremely intuitive.  All in all, it's an excellent place to begin learning about quantum computing, especially given that the blog hosting it has a plethora of articles about the inner workings of many quantum algorithms.
 \subsubsection{Cons}%Also needs a better name
-For all this interface brings to the table, there is one very important thing that it does not do.  Quirk is incapable of interfacing with a live quantum computer via API or otherwise; moreover, given the fact that circuits are stored as URL's to be generated, this severely limits how well the code can store as all it takes to lose a code is accidentally overwriting the clipboard or text document that said circuit is stored within.
+For all the Quirk interface brings to the table, there is one very important thing that it does not do.  Quirk is incapable of interfacing with a live quantum computer via API or otherwise; moreover, given the fact that circuits are stored as URL's to be generated, this severely limits how well the code can store as all it takes to lose a code is accidentally overwriting the clipboard or text document that said circuit is stored within.
 
+\textcolor{red}{(Create a table comparing the various simulation and programming interfaces)} % Possibly similar to something like GSM arena except instead of comparing phones, compare quantum giblets
 
 \section{Results and Interpretation}% 2-3 pages
 
-\begin{comment}
-Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
-\end{comment}
 \subsection{Example Source Code}
 The following are examples of code that was run live on a quantum computer, specifically on IBM Q 5 Yorktown and related devices. 
 \subsubsection{Superdense Coding}
@@ -568,10 +650,10 @@ Which Equates to the following code in Ladder Logic
 \end{multicols}
 This may not seem like much at first glance but this small circuit shows many of the key fundamentals of quantum computing.  Within this small circuit are important concepts such as superposition, entanglement, and even advanced controls.  These all coalesce to enable the top qubit to carry two bits of information which are controlled by the bottom two gates. From there, it can be referenced to the qubit that was previously entangled with it in order to determine what the net change is and output the results via measurement.
 
-\subsection{Analysis} %First person should be fine for this section given that it's commentary
+\subsection{Analysis \textcolor{red}{(Provide list of original goals)}} %First person should be fine for this section given that it's commentary
 Given that the goal of this project was to teach myself the basics of quantum computing and provide a path for other undergraduates to do the same, this project was a resounding success.  In the scope of this project, I taught myself the following languages: Quantum Ladder Logic, Quantum Assembly Language, Q\# (Microsoft's Quantum Computing language), LaTeX, CSS, and how to work with QISKit a specific coding API for quantum computers which is written in Python.\newline
 \newline
-In addition to the coding languages this project enabled me to pursue, I was able to meet with multiple professionals in the industry of Quantum Computing, from PhD's in quantum physics, to up and coming startups.  Moreover, the knowledge and source material required for this project to happen has also been requested by multiple professors at varied levels of teaching.  Partly in response to this, I have set up this paper to be hosted on GitHub so that anyone can provide feedback, allowing this document to stay relevant.
+In addition to the coding languages this project enabled me to pursue, I was able to meet with multiple professionals in the industry of Quantum Computing, from PhD's in quantum physics, to up and coming startups. \textcolor{red}{(Nod to companies and people perspectives, do not give individual's names)}  Moreover, the knowledge and source material required for this project to happen has also been requested by multiple professors at varied levels of teaching.  Partly in response to this, I have set up this paper to be hosted on GitHub so that anyone can provide feedback, allowing this document to stay relevant.
 
 \subsection{Future Plans}
 For future plans, this project is something I intend to continuously work on, with the eventual goal of including in depth tutorials for all extant programming languages in quantum computing.  At this point it has already been multiple years since this project was originally started and in all likelihood, this will be maintained and improved for years to come. It would be beneficial to add a few industry professionals to oversee the document, ensuring accuracy by catching errors that I would not notice.  Additionally, in time it should be possible to incorporate more features into this paper whether via source code or the output PDF itself, separating out functions such as the Bloch sphere into its own library that anyone would be able to use.
