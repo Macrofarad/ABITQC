@@ -13,6 +13,7 @@
 \usepackage{float} % Fixing formatting
 \usepackage{multicol} %to allow sections to have different column styles
 \usepackage{mathtools}%for more formatting stuff
+\usepackage{hyperref} % allows for hyperlinks as well as makes underscores in a URL not break the document
 
 
 
@@ -303,7 +304,11 @@ This section deals in the various coding languages utilized in programming quant
 %brief explanation of this stuff
 \subsubsection{Qubits} %another section to check details heavily, might raise it up a level and move other things around
 \label{Qubits}
-Into the meat of the matter, qubits are to quantum computers what register bits are to a classical computer. A qubit is a two-state quantum mechanical system such as photon polarization or the spin of a trapped ion.
+Qubits are to quantum computers what register bits are to a classical computer. A qubit is a two-state quantum mechanical system based on properties such as photon polarization or the spin of a trapped ion.  
+
+\paragraph{Decoherence}
+In order to create the properties necessary to enable a quantum computer, specific conditions need to be met.  This conditions vary between machines but common threads among them include noise isolation and extremely low temperatures.  The temperatures in question, in the case of IBM's machines this temperature can be around 15 Milli-Kelvin ~\cite{IBM_IsCold}. 
+
 
 \paragraph{Bloch Sphere} %lots of nested sections in this area
 
@@ -472,12 +477,33 @@ Among the single qubit gates, the most well known and frequently used are the Pa
 		\lstick{ } & \gate{T} & \qw \\
 	}\]
 	
-	\begin{figure}[H]
+	\begin{figure}[H] %H is to designate "Here"
 		$\>$ \\ %this inserts a whitespace character so I can make a dummy line
 		$\theta_{6}=\theta_{T} = \Bigg[\begin{matrix*}1&0\\1&exp(\frac{i\pi}{4})\end{matrix*}\Bigg]$
 	\end{figure}
 	
 \end{multicols}
+\paragraph{Special Single-Qubit Gates}
+The Following gates are special cases of the single qubit gates and thus deserve specific mention as thus.
+
+
+
+\subparagraph{Measurement Gate}
+% Extended Reading: 
+% https://stackoverflow.com/questions/36262270/how-does-measurement-gate-work
+% http://www-inst.eecs.berkeley.edu/~cs191/sp12/notes/chap1&2.pdf
+% https://physics.stackexchange.com/questions/184524/what-is-the-difference-between-general-measurement-and-projective-measurement/184540#184540
+
+
+
+	\[\Qcircuit @C=1em @R=0.5em @!R { %rows and columns, pretty standard
+			\lstick{\ket{\psi}} & \meter &  \rstick{} \cw & \dstick{1 \> or \> 0} \\ %qwx %rstick %dstick 
+	}\] \newline
+	Even among special case quantum gates, the measurement gate stands out as unique.  Unlike all other quantum gates which take in a quantum state, and output a transform of that gate, the measurement gate takes in a quantum gate, then collapses it to output a binary value. As such it's one of the only non-reversible gates in quantum computing \textcolor{red}{CITE THIS}. \newline\newline
+	In practice, while some circuits do measure mid run, it's impractical due to factors such as run time and decohesion, thus measurement gates are typically used at the end of a circuit in order to pass results to a digital computing device.
+	
+
+
 \paragraph{Multi-Qubit Gates} 
 \label{advancedGates}
 In addition to single qubit gates, most quantum circuits also utilize multi-qubit gates. There are many different types of these, but the most basic case is the controlled gate. 
@@ -735,7 +761,15 @@ For future plans, this project is something I intend to continuously work on, wi
 
 %https://owl.english.purdue.edu/owl/resource/747/01/
 
+
+%from: https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+%\url{<my_url>}
+%\href{<my_url>}{<description>}
+%\href{mailto:my_address@wikibooks.org}{my\_address@wikibooks.org}
 %========================================================================================
+\bibitem{IBM_IsCold} % this link actually broke the entire document at one point due to underscores
+	IBM Research, IBM QX Team. \emph{"The Quantum Bit (Qubit)"}. IBM Q Experience Documentation. IBM, 2007.  Accessed June 08 2018. 	\href{https://quantumexperience.ng.bluemix.net/proxy/tutorial/full-user-guide/002-The_Weird_and_Wonderful_World_of_the_Qubit/001-The_Quantum_Bit_(Qubit).html}{https://quantumexperience.ng.bluemix.net/proxy/tutorial/full-user-guide/002-The\_Weird\_and\_Wonderful\_World\_of\_the\_Qubit/001-The\_Quantum\_Bit\_(Qubit).html}
+
 \bibitem{nielsonChuangQCQI}
 	Nielson M.A., Chuang I.L. \emph{"Quantum Computation and Quantum Information}. Cambridge University Press, Cambridge. 10th Anniversary Edition. ISBN 978-1-107-00217-3
 
