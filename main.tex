@@ -370,26 +370,24 @@ All of that is a bit of a mouth-full, so to speak, but for most practical purpos
 	Unless otherwise noted, all quantum circuits are treated as going from left to right. Each row is a unique qubit and the line going across the row is the quantum wire \footnote{It is important to note here that all operations, including a 'blank' wire are 'gates' so to speak.  The implications of this will be discussed in the section regarding quantum gates (Section: \ref{QuantumGatesWhole})}.  In the above circuit, there are two qubits, the top qubit has been initialized to $\ket{\psi}$, or an arbitrary quantum state, below it the bottom qubit has been initialized to $\ket{0}$.  \newline
 	\newline For theoretical purposes, most qubits in quantum circuits are notated as having an initial state of $\ket{\psi}$, this is to show that the algorithm these qubits are within works regardless of the input state of these qubits; however, when it comes to real-world applications, most qubits will start in a state of either $\ket{1}$ or $\ket{0}$ as it eliminates unnecessary variables when performing calculations. \newline
 	\newline After initialization, the qubits continue along the wire from left to right in parallel.  Functionally, this is akin to having a vertical ruler with enough length to cover every row and a thin enough width to only take up a single column.  As this ruler advances, the operations under it will be evaluated. Any 'bare' wire will be evaluated as a no-op or no operation, and any gates will be evaluated for the time column they are contained in. \newline
-	\newline In the case of our example circuit above, after the initial states are set, the order of operations is as follows~\footnote{For this example, the $\rightarrow$ symbol is being used to represent the advancement of time between columns}:\newline 
+	\newline In the case of our example circuit above, after the initial states are set, the order of operations is as follows~\footnote{For this example, the $\rightarrow$ symbol is being used to represent the advancement of time between columns/steps}:\newline \newline
 	\fbox{$ Q_{1} = no-op; Q_{2}= no-op$}
 	\fbox{$\rightarrow $}
 	\fbox{$ Q_{1} = Gate "!"; Q_{2}= no-op$}
 	\fbox{$\rightarrow $}
-	\fbox{$ Q_{1} = nop; Q_{2}= no-op$}
+	\fbox{$ Q_{1} = no-op; Q_{2}= no-op$}
 	\fbox{$\rightarrow $}
 	\fbox{$ Q_{1} = Gate "?"; Q_{2}= Gate "!"$}
 	\fbox{$\rightarrow $}
 	\fbox{$ Q_{1} = no-op; Q_{2}= no-op$}
 	\fbox{$\rightarrow $}\newline %otherwise it clips
 	\fbox{$ Q_{1} = Measure; Q_{2}= Measure$}
-	\newline
+	\newline \newline
+	\label{CITENEEDEDHERE} % and wording adjustment
+	This methodology of parallelism is a core property inherent to how a quantum computer processes data at a fundamental level. Thus, regardless of how a quantum computer is programmed, most quantum circuits can be approximated in this manor.
 	
-	
-	
-	%\end{multicols} %and go back to normal formatting
-%\end{figure}
 
-
+\newpage
 
 
 \subsubsection{Quantum Gates} %another mention of http://www.vcpc.univie.ac.at/~ian/hotlist/qc/talks/bloch-sphere-rotations.pdf
